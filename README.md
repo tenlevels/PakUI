@@ -17,7 +17,7 @@ To get started with PakUI, follow these easy steps:
    Format a fresh SD card to fat32. Must use fresh format card and fat32 only.
 
 2. **Extract & Install:**  
-   Unzip the entire release package—**do not unzip individual folders inside**. Make sure that all folders and hidden files are preserved. The release includes both MinUI and TrimUI_EX (NOTE: this changes your device and upgrades some internal files needed. fresh format card is required and ALL files for this reason) along with everything you need for a complete installation. Copy all the files and folders directly onto your formatted SD card. Paks are not compatible with other MinUI variations/forks and the full package needs to stay together for everything to work.
+   Unzip the entire release package—**do not unzip individual folders inside**. Make sure that all folders and hidden files are preserved. The release includes both MinUI and TrimUI_EX (NOTE: this changes your device and upgrades some internal files needed. A fresh format card is required and ALL files in the release for this reason) along with everything you need for a complete installation. Copy all the files and folders directly onto your formatted SD card. Paks are not compatible with other MinUI variations/forks and the full package needs to stay together for everything to work.
 
 3. **Add Your Own Files:**  
    Once the file transfer to your SD card is complete, simply add your games and BIOS files to the appropriate folders.

@@ -1,10 +1,10 @@
 ![pakui](https://github.com/user-attachments/assets/06bb87f6-6daa-419c-b5d7-9ec5bb53a45e)
 
 ## PakUI
-A collection of paks/tools for MinUI
+A collection of paks/tools for MinUI ONLY - PakUI is a full set and most paks talk to one another. You will need the full release on a fresh card and new install. Fresh format card ONLY. I am sorry but PakUI is not compatible with other MinUI variants or forks.
 
 ## Compatibility
-
+- **MinUI ONLY**  
 - **TrimUI Brick**  
 - **TrimUI Smart Pro** (note: RetroArch coming soon for TSP) 
 - More devices coming soon!

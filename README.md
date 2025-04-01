@@ -6,7 +6,7 @@ A collection of paks/tools for MinUI
 ## Compatibility
 
 - **TrimUI Brick**  
-- **TrimUI Smart Pro**  
+- **TrimUI Smart Pro** (note: RetroArch coming soon for TSP) 
 - More devices coming soon!
 
 ## Installation

@@ -399,3 +399,42 @@ A tool for switching between different operating systems on your device.
 - Return to MinUI from other operating systems
 
 ---
+Credits & Acknowledgements
+PakUI stands on the shoulders of many talented individuals whose contributions, expertise, and support have made this project possible. We are deeply grateful to:
+
+Core Contributors
+JackMayHoffman
+Developed the picker, game picker, keyboard, and game switcher binary files, along with essential tools like LEDs, WiFi, and Syncthing. His mentorship and support were instrumental in launching PakUI.
+
+Shaun Inman
+Creator of MinUI, the foundation for PakUI paks. His unparalleled knowledge and community contributions set the gold standard for custom firmware.
+
+Nevrdid
+Provided the FBN core, enhanced Media Player functionality, added screenshot capabilities, and contributed to RetroArch integration.
+
+Karim
+Developed the NDS pak, adding valuable functionality to the project.
+
+Testing & Feedback
+Ry and Lonko
+Offered thorough testing and invaluable feedback that greatly refined the user experience.
+
+Visual Elements
+Jeltron and Oclain
+Crafted the overlays used in RetroArch.
+
+Ant
+Designed the themes, including icons and background images.
+
+Clintonium
+Created the Lens theme, adding a unique visual touch.
+
+Community Support
+Spruce Team
+Provided unwavering support and assistance with scraper functionalities.
+
+Russ (RetroGameCorps)
+Inspired our passion for retro gaming and ensured we never forgot the importance of snacks and drinks during long sessions.
+
+Personal Thanks
+We extend our heartfelt appreciation to our families, whose support and encouragement enable us to pursue our passions and share what we love with this amazing community.

@@ -16,7 +16,7 @@ To get started with PakUI, follow these easy steps:
    Format a fresh SD card using the FAT32 file system to ensure compatibility.
 
 2. **Extract & Install:**  
-   Unzip the entire contents of the `install` folder and copy them directly onto your formatted SD card.
+   Unzip the entire contents of the release and copy them directly onto your formatted SD card.
 
 3. **Boot Up:**  
    Insert the SD card into your TrimUI Brick or TrimUI Smart Pro, then power on your device and let the magic happen!

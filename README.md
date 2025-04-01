@@ -422,14 +422,15 @@ PakUI stands on the shoulders of many talented individuals whose contributions, 
   Offered thorough testing and invaluable feedback that greatly refined the user experience.
 
 ### Visual Elements
-- **Jeltron and Oclain**  
-  Crafted the overlays used in RetroArch.
 
 - **Ant**  
   Designed the themes, including icons and background images.
 
-- **Clintonium**  
+  - **Clintonium**  
   Created the Lens theme, adding a unique visual touch.
+  
+- **Jeltron and Oclain**  
+  Crafted the overlays used in RetroArch.
 
 ### Community Support
 - **Spruce Team**  

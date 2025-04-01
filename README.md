@@ -2,11 +2,30 @@
 
 A collection of paks/tools for MinUI
 
+# PakUI
+
+A collection of paks/tools for MinUI
+
 ## Compatibility
 
 - **TrimUI Brick**  
 - **TrimUI Smart Pro**  
 - More devices coming soon!
+
+## Installation
+
+To get started with PakUI, follow these easy steps:
+
+1. **Prepare Your SD Card:**  
+   Format a fresh SD card using the FAT32 file system to ensure compatibility.
+
+2. **Extract & Install:**  
+   Unzip the entire contents of the `install` folder and copy them directly onto your formatted SD card.
+
+3. **Boot Up:**  
+   Insert the SD card into your TrimUI Brick or TrimUI Smart Pro, then power on your device and let the magic happen!
+
+It's that simple—enjoy the enhanced experience and functionality of PakUI on your device!
 
 ## Table of Contents
 

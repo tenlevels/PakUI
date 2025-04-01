@@ -16,12 +16,16 @@ To get started with PakUI, follow these easy steps:
    Format a fresh SD card using the FAT32 file system to ensure compatibility.
 
 2. **Extract & Install:**  
-   Unzip the entire contents of the release and copy them directly onto your formatted SD card.
+   Unzip the entire contents of the release. This package includes both MinUI and TrimUI_EX, along with everything you need for a complete installation. Copy all files directly onto your formatted SD card.
 
-3. **Boot Up:**  
+3. **Add Your Own Files:**  
+   Once the install is complete, simply add your games and BIOS files to the appropriate folders.
+
+4. **Boot Up:**  
    Insert the SD card into your TrimUI Brick or TrimUI Smart Pro, then power on your device and let the magic happen!
 
-It's that simple—enjoy and Happy Gaming!
+It's that simple—enjoy and happy gaming!
+
 
 ## Table of Contents
 
@@ -425,6 +429,9 @@ PakUI stands on the shoulders of many talented individuals whose contributions, 
 
 - **Shaun Inman**  
   Creator of MinUI, the foundation for PakUI paks. His unparalleled knowledge and community contributions set the gold standard for custom firmware.
+
+- **kloptops**  
+  Developer of TrimUI_EX, which PakUI comes bundled with. His crucial system upgrades form the backbone that enables many of PakUI's features to work seamlessly. Many thanks!
 
 - **Nevrdid**  
   Provided the FBN core, enhanced Media Player functionality, added screenshot capabilities, and contributed to RetroArch integration.

@@ -130,7 +130,6 @@ A tool that selects and launches a random game from your collection when you're 
 **Features:**
 - Picks a random game from your library
 - Avoids recently played games
-- Remembers your last 10 random selections
 - Works across all your emulated systems
 
 ---

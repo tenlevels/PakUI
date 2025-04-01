@@ -406,7 +406,7 @@ PakUI stands on the shoulders of many talented individuals whose contributions, 
 
 ### Core Contributors
 - **JackMayHoffman**  
-  Developed the picker, game picker, keyboard, and game switcher binary files, along with essential tools like LEDs, WiFi, and Syncthing. His mentorship and support were instrumental in launching PakUI.
+  Developed the picker, game picker, keyboard, and game switcher binary files, along with essential tools like LEDs, WiFi, Display, and Syncthing. His mentorship and support were instrumental in launching PakUI.
 
 - **Shaun Inman**  
   Creator of MinUI, the foundation for PakUI paks. His unparalleled knowledge and community contributions set the gold standard for custom firmware.

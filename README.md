@@ -1,6 +1,6 @@
 ![pakui](https://github.com/user-attachments/assets/06bb87f6-6daa-419c-b5d7-9ec5bb53a45e)
 
-#PakUI
+## PakUI
 A collection of paks/tools for MinUI
 
 ## Compatibility

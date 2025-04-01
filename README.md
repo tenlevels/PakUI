@@ -1,7 +1,7 @@
 ![pakui](https://github.com/user-attachments/assets/06bb87f6-6daa-419c-b5d7-9ec5bb53a45e)
 
 ## PakUI
-A collection of paks/tools for MinUI ONLY - PakUI is a full set and most paks talk to one another. You will need the full release on a fresh card and new install. Fresh format card ONLY. I am sorry but PakUI is not compatible with other MinUI variants or forks.
+A collection of paks/tools for MinUI ONLY - PakUI is a full set and most paks talk to one another. You will need the full release on a fresh card and new install. Fresh format card ONLY. Sorry PakUI is not compatible with other MinUI variants or forks.
 
 ## Compatibility
 - **MinUI ONLY**  
@@ -14,13 +14,13 @@ A collection of paks/tools for MinUI ONLY - PakUI is a full set and most paks ta
 To get started with PakUI, follow these easy steps:
 
 1. **Prepare Your SD Card:**  
-   Format a fresh SD card using the FAT32 file system to ensure compatibility.
+   Format a fresh SD card to fat32. Must use fresh format card and fat32 only.
 
 2. **Extract & Install:**  
-   Unzip the entire release package—**do not unzip individual folders inside**. Make sure that all folders and hidden files are preserved. The release includes both MinUI and TrimUI_EX along with everything you need for a complete installation. Copy all the files and folders directly onto your formatted SD card.
+   Unzip the entire release package—**do not unzip individual folders inside**. Make sure that all folders and hidden files are preserved. The release includes both MinUI and TrimUI_EX (NOTE: this changes your device and upgrades some internal files needed. fresh format card is required and ALL files for this reason) along with everything you need for a complete installation. Copy all the files and folders directly onto your formatted SD card. Paks are not compatible with other MinUI variations/forks and the full package needs to stay together for everything to work.
 
 3. **Add Your Own Files:**  
-   Once the installation is complete, simply add your games and BIOS files to the appropriate folders.
+   Once the file transfer to your SD card is complete, simply add your games and BIOS files to the appropriate folders.
 
 4. **Boot Up:**  
    Insert the SD card into your TrimUI Brick or TrimUI Smart Pro, then power on your device and let the magic happen!

@@ -16,10 +16,10 @@ To get started with PakUI, follow these easy steps:
    Format a fresh SD card using the FAT32 file system to ensure compatibility.
 
 2. **Extract & Install:**  
-   Unzip the entire contents of the release. This package includes both MinUI and TrimUI_EX, along with everything you need for a complete installation. Copy all files directly onto your formatted SD card.
+   Unzip the entire release package—**do not unzip individual folders inside**. Make sure that all folders and hidden files are preserved. The release includes both MinUI and TrimUI_EX along with everything you need for a complete installation. Copy all the files and folders directly onto your formatted SD card.
 
 3. **Add Your Own Files:**  
-   Once the install is complete, simply add your games and BIOS files to the appropriate folders.
+   Once the installation is complete, simply add your games and BIOS files to the appropriate folders.
 
 4. **Boot Up:**  
    Insert the SD card into your TrimUI Brick or TrimUI Smart Pro, then power on your device and let the magic happen!

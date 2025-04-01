@@ -2,10 +2,6 @@
 
 A collection of paks/tools for MinUI
 
-# PakUI
-
-A collection of paks/tools for MinUI
-
 ## Compatibility
 
 - **TrimUI Brick**  

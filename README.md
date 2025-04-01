@@ -113,6 +113,8 @@ A tool that lets you switch between games without returning to the main menu, ma
 - Remembers recently played games
 - Works with save states
 - Simple options menu
+- Customizable hotkey shortcuts (L2, R2, F1, F2, or Menu button) for instant access from MinUI
+- Option to disable shortcuts when not needed
 
 ---
 

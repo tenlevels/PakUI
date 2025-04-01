@@ -21,7 +21,7 @@ To get started with PakUI, follow these easy steps:
 3. **Boot Up:**  
    Insert the SD card into your TrimUI Brick or TrimUI Smart Pro, then power on your device and let the magic happen!
 
-It's that simple—enjoy the enhanced experience and functionality of PakUI on your device!
+It's that simple—enjoy and Happy Gaming!
 
 ## Table of Contents
 

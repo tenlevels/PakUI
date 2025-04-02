@@ -448,15 +448,15 @@ PakUI stands on the shoulders of many talented individuals whose contributions, 
   Developed the NDS pak, adding valuable functionality to the project.
 
 ### Testing & Feedback
-- **Ry and Lonko**  
-  Offered thorough testing and invaluable feedback that greatly refined the user experience.
+- **Ry, Lonko, and Sun**  
+  Offered thorough testing and invaluable feedback that greatly refined the user experience. Thanks Sun for uploading the files!
 
 ### Visual Elements
 
 - **Ant**  
   Designed the themes, including icons and background images.
 
-  - **Clintonium**  
+- **Clintonium**  
   Created the Lens theme, adding a unique visual touch.
   
 - **Jeltron and Oclain**  
@@ -464,10 +464,10 @@ PakUI stands on the shoulders of many talented individuals whose contributions, 
 
 ### Community Support
 - **Spruce Team**  
-  Provided unwavering support and assistance with scraper functionalities.
+  Provided unwavering support and assistance and being great friends!
 
 - **Russ (RetroGameCorps)**  
-  Inspired our passion for retro gaming and ensured we never forgot the importance of snacks and drinks during long sessions.
+  Inspired our passion for retro gaming and ensured we never forgot the importance of snacks and drinks during long sessions. As well as early testing with valuable feedback on how GS should function with shortcut and other UI elements.
 
 ### Personal Thanks
 We extend our heartfelt appreciation to our families, whose support and encouragement enable us to pursue our passions and share what we love with this amazing community.

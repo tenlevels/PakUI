@@ -1,0 +1,1596 @@
+2025-01-06 14:08:20 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:20 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:20 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:22 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:22 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:25 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:25 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:28 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:28 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:31 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:34 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:34 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:37 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:37 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:42 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:42 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:42 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:49 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:49 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:51 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:54 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:08:54 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:08:59 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:02 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:02 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:02 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:04 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:04 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:30 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:30 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:32 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:32 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:36 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:36 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:38 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:38 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:40 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:40 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:44 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:47 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:47 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:49 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:49 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:51 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:51 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:09:58 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:09:58 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:03 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:03 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:03 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:03 checking for and killing existing process
+2025-01-06 14:10:03 parsing active led states
+2025-01-06 14:10:03 configuring LEDs
+2025-01-06 14:10:03 getting spacing and sleep times based on speed
+2025-01-06 14:10:03 starting animation
+2025-01-06 14:10:03 static rainbow
+2025-01-06 14:10:06 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:06 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:08 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:08 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:09 checking for and killing existing process
+2025-01-06 14:10:09 parsing active led states
+2025-01-06 14:10:09 configuring LEDs
+2025-01-06 14:10:09 getting spacing and sleep times based on speed
+2025-01-06 14:10:09 starting animation
+2025-01-06 14:10:09 static rainbow
+2025-01-06 14:10:11 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:11 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:19 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:25 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:25 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:25 checking for and killing existing process
+2025-01-06 14:10:25 parsing active led states
+2025-01-06 14:10:25 configuring LEDs
+2025-01-06 14:10:25 getting spacing and sleep times based on speed
+2025-01-06 14:10:25 starting animation
+2025-01-06 14:10:25 static rainbow
+2025-01-06 14:10:27 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:27 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:43 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:43 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:10:43 checking for and killing existing process
+2025-01-06 14:10:43 parsing active led states
+2025-01-06 14:10:43 configuring LEDs
+2025-01-06 14:10:43 getting spacing and sleep times based on speed
+2025-01-06 14:10:43 starting animation
+2025-01-06 14:10:43 static rainbow
+2025-01-06 14:10:45 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:10:45 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:11:12 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:11:41 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:11:41 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:11:41 checking for and killing existing process
+2025-01-06 14:11:41 parsing active led states
+2025-01-06 14:11:41 configuring LEDs
+2025-01-06 14:11:41 getting spacing and sleep times based on speed
+2025-01-06 14:11:41 starting animation
+2025-01-06 14:11:41 static rainbow
+2025-01-06 14:11:56 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:11:56 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:12:12 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:12:12 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:12:15 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:12:15 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:13:53 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:13:53 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:13:53 checking for and killing existing process
+2025-01-06 14:13:53 parsing active led states
+2025-01-06 14:13:53 configuring LEDs
+2025-01-06 14:13:53 getting spacing and sleep times based on speed
+2025-01-06 14:13:54 starting animation
+2025-01-06 14:13:54 static rainbow
+2025-01-06 14:14:21 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-01-06 14:14:21 saving to /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf
+2025-01-06 14:14:24 loading /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg3040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 15:19:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 15:19:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 15:19:20 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:28 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 15:19:28 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:28 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:28 checking for and killing existing process
+2025-02-15 15:19:28 parsing active led states
+2025-02-15 15:19:28 configuring LEDs
+2025-02-15 15:19:28 getting spacing and sleep times based on speed
+2025-02-15 15:19:28 starting animation
+2025-02-15 15:19:28 static color shift
+2025-02-15 15:19:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 15:19:40 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:40 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:40 checking for and killing existing process
+2025-02-15 15:19:40 parsing active led states
+2025-02-15 15:19:40 configuring LEDs
+2025-02-15 15:19:40 getting spacing and sleep times based on speed
+2025-02-15 15:19:40 starting animation
+2025-02-15 15:19:40 static color shift
+2025-02-15 15:19:45 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 15:19:45 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:45 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:45 checking for and killing existing process
+2025-02-15 15:19:45 parsing active led states
+2025-02-15 15:19:45 configuring LEDs
+2025-02-15 15:19:45 getting spacing and sleep times based on speed
+2025-02-15 15:19:45 starting animation
+2025-02-15 15:19:45 static color shift
+2025-02-15 15:19:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 15:19:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:19:57 checking for and killing existing process
+2025-02-15 15:19:57 parsing active led states
+2025-02-15 15:19:57 configuring LEDs
+2025-02-15 15:19:57 getting spacing and sleep times based on speed
+2025-02-15 15:19:57 starting animation
+2025-02-15 15:19:57 static color shift
+2025-02-15 15:20:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 15:20:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 15:20:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 21:51:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 21:51:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:01:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:01:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:12:39 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:12:39 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:16:50 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:16:50 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:21:24 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:21:24 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:23:07 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:23:07 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:27:06 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:27:06 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:30:58 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:30:58 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:34:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:34:47 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:37:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:37:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:40:59 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:40:59 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:46:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:46:47 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:53:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:53:20 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 22:58:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 22:58:47 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:03:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:03:18 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:08:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:08:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:12:41 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:12:41 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:19:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:19:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:26:23 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:26:23 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:27:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:27:37 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:31:19 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:31:19 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:37:12 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:37:12 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:45:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:45:02 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:46:58 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:46:58 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:49:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:49:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-15 23:54:16 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-15 23:54:16 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:02:07 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:02:07 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:06:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:06:29 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:12:16 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:12:16 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:15:31 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:15:31 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:18:43 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:18:43 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:22:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:22:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:25:59 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:25:59 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:35:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:35:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:40:34 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:40:34 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:46:44 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:46:44 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 00:56:13 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 00:56:13 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 01:00:19 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 01:00:19 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 01:05:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 01:05:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 01:09:22 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 01:09:22 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 01:15:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 01:15:37 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:14:42 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:14:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:21:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:21:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:25:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:25:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:33:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:33:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:41:42 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:41:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:43:58 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:43:58 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:46:43 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:46:43 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:48:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:48:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:49:39 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:49:39 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:50:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:50:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:56:16 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:56:16 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:58:34 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:58:34 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 03:59:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 03:59:48 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:00:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:00:47 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:02:30 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:02:30 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:05:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:05:02 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:08:11 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:08:11 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:19:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:19:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:25:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:25:48 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:27:22 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:27:22 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:31:11 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:31:11 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:37:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:37:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:43:15 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:43:15 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:46:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:46:49 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:49:59 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:49:59 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:52:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:52:02 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:52:45 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:52:45 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:54:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:54:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:55:42 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:55:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:57:22 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:57:22 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 04:59:27 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 04:59:27 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 05:03:39 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 05:03:39 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 05:05:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 05:05:49 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 05:10:45 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 05:10:45 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-16 05:14:25 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-16 05:14:25 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-18 11:28:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-18 11:28:29 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-18 11:28:32 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-18 11:28:32 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-18 11:28:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-18 11:28:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-18 11:28:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-02-18 11:28:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-02-18 11:28:54 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:27:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:27:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:27:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 10:27:42 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:27:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 10:27:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 10:27:42 checking for and killing existing process
+2025-03-21 10:27:42 parsing active led states
+2025-03-21 10:27:42 configuring LEDs
+2025-03-21 10:27:42 getting spacing and sleep times based on speed
+2025-03-21 10:27:42 starting animation
+2025-03-21 10:27:42 static color shift
+2025-03-21 10:40:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:40:49 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 10:40:49 checking for and killing existing process
+2025-03-21 10:40:49 parsing active led states
+2025-03-21 10:40:49 configuring LEDs
+2025-03-21 10:40:49 getting spacing and sleep times based on speed
+2025-03-21 10:40:49 starting animation
+2025-03-21 10:40:49 static color shift
+2025-03-21 10:42:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:42:18 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 10:42:18 checking for and killing existing process
+2025-03-21 10:42:18 parsing active led states
+2025-03-21 10:42:18 configuring LEDs
+2025-03-21 10:42:18 getting spacing and sleep times based on speed
+2025-03-21 10:42:18 starting animation
+2025-03-21 10:42:18 static color shift
+2025-03-21 10:49:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:49:37 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 10:49:37 checking for and killing existing process
+2025-03-21 10:49:37 parsing active led states
+2025-03-21 10:49:37 configuring LEDs
+2025-03-21 10:49:37 getting spacing and sleep times based on speed
+2025-03-21 10:49:37 starting animation
+2025-03-21 10:49:37 static color shift
+2025-03-21 10:50:42 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:50:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 10:50:42 checking for and killing existing process
+2025-03-21 10:50:42 parsing active led states
+2025-03-21 10:50:42 configuring LEDs
+2025-03-21 10:50:42 getting spacing and sleep times based on speed
+2025-03-21 10:50:42 starting animation
+2025-03-21 10:50:42 static color shift
+2025-03-21 10:59:32 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 10:59:32 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 10:59:32 checking for and killing existing process
+2025-03-21 10:59:32 parsing active led states
+2025-03-21 10:59:32 configuring LEDs
+2025-03-21 10:59:32 getting spacing and sleep times based on speed
+2025-03-21 10:59:32 starting animation
+2025-03-21 10:59:32 static color shift
+2025-03-21 11:00:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:00:49 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:00:49 checking for and killing existing process
+2025-03-21 11:00:49 parsing active led states
+2025-03-21 11:00:49 configuring LEDs
+2025-03-21 11:00:49 getting spacing and sleep times based on speed
+2025-03-21 11:00:49 starting animation
+2025-03-21 11:00:49 static color shift
+2025-03-21 11:04:56 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:04:56 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:04:56 checking for and killing existing process
+2025-03-21 11:04:56 parsing active led states
+2025-03-21 11:04:56 configuring LEDs
+2025-03-21 11:04:56 getting spacing and sleep times based on speed
+2025-03-21 11:04:56 starting animation
+2025-03-21 11:04:56 static color shift
+2025-03-21 11:06:05 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:06:05 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:06:05 checking for and killing existing process
+2025-03-21 11:06:05 parsing active led states
+2025-03-21 11:06:05 configuring LEDs
+2025-03-21 11:06:05 getting spacing and sleep times based on speed
+2025-03-21 11:06:05 starting animation
+2025-03-21 11:06:05 static color shift
+2025-03-21 11:09:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:09:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:09:52 checking for and killing existing process
+2025-03-21 11:09:52 parsing active led states
+2025-03-21 11:09:52 configuring LEDs
+2025-03-21 11:09:53 getting spacing and sleep times based on speed
+2025-03-21 11:09:53 starting animation
+2025-03-21 11:09:53 static color shift
+2025-03-21 11:11:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:11:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:11:57 checking for and killing existing process
+2025-03-21 11:11:57 parsing active led states
+2025-03-21 11:11:57 configuring LEDs
+2025-03-21 11:11:57 getting spacing and sleep times based on speed
+2025-03-21 11:11:57 starting animation
+2025-03-21 11:11:57 static color shift
+2025-03-21 11:13:22 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:13:23 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:13:23 checking for and killing existing process
+2025-03-21 11:13:23 parsing active led states
+2025-03-21 11:13:23 configuring LEDs
+2025-03-21 11:13:23 getting spacing and sleep times based on speed
+2025-03-21 11:13:23 starting animation
+2025-03-21 11:13:23 static color shift
+2025-03-21 11:27:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:27:49 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:27:49 checking for and killing existing process
+2025-03-21 11:27:49 parsing active led states
+2025-03-21 11:27:49 configuring LEDs
+2025-03-21 11:27:49 getting spacing and sleep times based on speed
+2025-03-21 11:27:49 starting animation
+2025-03-21 11:27:49 static color shift
+2025-03-21 11:29:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:29:02 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:29:02 checking for and killing existing process
+2025-03-21 11:29:02 parsing active led states
+2025-03-21 11:29:02 configuring LEDs
+2025-03-21 11:29:02 getting spacing and sleep times based on speed
+2025-03-21 11:29:02 starting animation
+2025-03-21 11:29:02 static color shift
+2025-03-21 11:30:05 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:30:05 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:30:05 checking for and killing existing process
+2025-03-21 11:30:05 parsing active led states
+2025-03-21 11:30:05 configuring LEDs
+2025-03-21 11:30:05 getting spacing and sleep times based on speed
+2025-03-21 11:30:05 starting animation
+2025-03-21 11:30:05 static color shift
+2025-03-21 11:36:42 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:36:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:36:42 checking for and killing existing process
+2025-03-21 11:36:42 parsing active led states
+2025-03-21 11:36:42 configuring LEDs
+2025-03-21 11:36:42 getting spacing and sleep times based on speed
+2025-03-21 11:36:42 starting animation
+2025-03-21 11:36:42 static color shift
+2025-03-21 11:37:50 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:37:50 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:37:50 checking for and killing existing process
+2025-03-21 11:37:50 parsing active led states
+2025-03-21 11:37:50 configuring LEDs
+2025-03-21 11:37:50 getting spacing and sleep times based on speed
+2025-03-21 11:37:50 starting animation
+2025-03-21 11:37:50 static color shift
+2025-03-21 11:53:50 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 11:53:50 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 11:53:50 checking for and killing existing process
+2025-03-21 11:53:50 parsing active led states
+2025-03-21 11:53:50 configuring LEDs
+2025-03-21 11:53:50 getting spacing and sleep times based on speed
+2025-03-21 11:53:50 starting animation
+2025-03-21 11:53:50 static color shift
+2025-03-21 20:47:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 20:47:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 20:47:36 checking for and killing existing process
+2025-03-21 20:47:36 parsing active led states
+2025-03-21 20:47:36 configuring LEDs
+2025-03-21 20:47:36 getting spacing and sleep times based on speed
+2025-03-21 20:47:36 starting animation
+2025-03-21 20:47:36 static color shift
+2025-03-21 20:58:35 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 20:58:35 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 20:58:35 checking for and killing existing process
+2025-03-21 20:58:35 parsing active led states
+2025-03-21 20:58:35 configuring LEDs
+2025-03-21 20:58:35 getting spacing and sleep times based on speed
+2025-03-21 20:58:35 starting animation
+2025-03-21 20:58:35 static color shift
+2025-03-21 21:09:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:09:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:09:52 checking for and killing existing process
+2025-03-21 21:09:52 parsing active led states
+2025-03-21 21:09:52 configuring LEDs
+2025-03-21 21:09:52 getting spacing and sleep times based on speed
+2025-03-21 21:09:52 starting animation
+2025-03-21 21:09:52 static color shift
+2025-03-21 21:16:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:16:02 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:16:02 checking for and killing existing process
+2025-03-21 21:16:02 parsing active led states
+2025-03-21 21:16:02 configuring LEDs
+2025-03-21 21:16:02 getting spacing and sleep times based on speed
+2025-03-21 21:16:02 starting animation
+2025-03-21 21:16:02 static color shift
+2025-03-21 21:21:22 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:21:22 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:21:22 checking for and killing existing process
+2025-03-21 21:21:22 parsing active led states
+2025-03-21 21:21:22 configuring LEDs
+2025-03-21 21:21:22 getting spacing and sleep times based on speed
+2025-03-21 21:21:22 starting animation
+2025-03-21 21:21:22 static color shift
+2025-03-21 21:28:27 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:28:27 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:28:27 checking for and killing existing process
+2025-03-21 21:28:27 parsing active led states
+2025-03-21 21:28:27 configuring LEDs
+2025-03-21 21:28:27 getting spacing and sleep times based on speed
+2025-03-21 21:28:27 starting animation
+2025-03-21 21:28:27 static color shift
+2025-03-21 21:31:25 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:31:25 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:31:25 checking for and killing existing process
+2025-03-21 21:31:25 parsing active led states
+2025-03-21 21:31:25 configuring LEDs
+2025-03-21 21:31:25 getting spacing and sleep times based on speed
+2025-03-21 21:31:25 starting animation
+2025-03-21 21:31:25 static color shift
+2025-03-21 21:38:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:38:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:38:21 checking for and killing existing process
+2025-03-21 21:38:21 parsing active led states
+2025-03-21 21:38:21 configuring LEDs
+2025-03-21 21:38:21 getting spacing and sleep times based on speed
+2025-03-21 21:38:21 starting animation
+2025-03-21 21:38:21 static color shift
+2025-03-21 21:41:38 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:41:38 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:41:38 checking for and killing existing process
+2025-03-21 21:41:38 parsing active led states
+2025-03-21 21:41:38 configuring LEDs
+2025-03-21 21:41:38 getting spacing and sleep times based on speed
+2025-03-21 21:41:38 starting animation
+2025-03-21 21:41:38 static color shift
+2025-03-21 21:44:51 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:44:51 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:44:51 checking for and killing existing process
+2025-03-21 21:44:51 parsing active led states
+2025-03-21 21:44:51 configuring LEDs
+2025-03-21 21:44:51 getting spacing and sleep times based on speed
+2025-03-21 21:44:51 starting animation
+2025-03-21 21:44:51 static color shift
+2025-03-21 21:47:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:47:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:47:08 checking for and killing existing process
+2025-03-21 21:47:08 parsing active led states
+2025-03-21 21:47:08 configuring LEDs
+2025-03-21 21:47:08 getting spacing and sleep times based on speed
+2025-03-21 21:47:08 starting animation
+2025-03-21 21:47:08 static color shift
+2025-03-21 21:49:41 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:49:41 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:49:41 checking for and killing existing process
+2025-03-21 21:49:41 parsing active led states
+2025-03-21 21:49:41 configuring LEDs
+2025-03-21 21:49:41 getting spacing and sleep times based on speed
+2025-03-21 21:49:41 starting animation
+2025-03-21 21:49:41 static color shift
+2025-03-21 21:52:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:52:20 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:52:20 checking for and killing existing process
+2025-03-21 21:52:20 parsing active led states
+2025-03-21 21:52:20 configuring LEDs
+2025-03-21 21:52:20 getting spacing and sleep times based on speed
+2025-03-21 21:52:20 starting animation
+2025-03-21 21:52:20 static color shift
+2025-03-21 21:55:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 21:55:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 21:55:57 checking for and killing existing process
+2025-03-21 21:55:57 parsing active led states
+2025-03-21 21:55:57 configuring LEDs
+2025-03-21 21:55:57 getting spacing and sleep times based on speed
+2025-03-21 21:55:57 starting animation
+2025-03-21 21:55:57 static color shift
+2025-03-21 22:00:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:00:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:00:26 checking for and killing existing process
+2025-03-21 22:00:26 parsing active led states
+2025-03-21 22:00:26 configuring LEDs
+2025-03-21 22:00:26 getting spacing and sleep times based on speed
+2025-03-21 22:00:26 starting animation
+2025-03-21 22:00:26 static color shift
+2025-03-21 22:04:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:04:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:04:21 checking for and killing existing process
+2025-03-21 22:04:21 parsing active led states
+2025-03-21 22:04:21 configuring LEDs
+2025-03-21 22:04:21 getting spacing and sleep times based on speed
+2025-03-21 22:04:21 starting animation
+2025-03-21 22:04:21 static color shift
+2025-03-21 22:08:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:08:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:08:57 checking for and killing existing process
+2025-03-21 22:08:57 parsing active led states
+2025-03-21 22:08:57 configuring LEDs
+2025-03-21 22:08:57 getting spacing and sleep times based on speed
+2025-03-21 22:08:57 starting animation
+2025-03-21 22:08:57 static color shift
+2025-03-21 22:11:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:11:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:11:03 checking for and killing existing process
+2025-03-21 22:11:03 parsing active led states
+2025-03-21 22:11:03 configuring LEDs
+2025-03-21 22:11:03 getting spacing and sleep times based on speed
+2025-03-21 22:11:03 starting animation
+2025-03-21 22:11:03 static color shift
+2025-03-21 22:15:17 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:15:17 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:15:17 checking for and killing existing process
+2025-03-21 22:15:17 parsing active led states
+2025-03-21 22:15:17 configuring LEDs
+2025-03-21 22:15:17 getting spacing and sleep times based on speed
+2025-03-21 22:15:17 starting animation
+2025-03-21 22:15:17 static color shift
+2025-03-21 22:26:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:26:48 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:26:48 checking for and killing existing process
+2025-03-21 22:26:48 parsing active led states
+2025-03-21 22:26:48 configuring LEDs
+2025-03-21 22:26:48 getting spacing and sleep times based on speed
+2025-03-21 22:26:48 starting animation
+2025-03-21 22:26:48 static color shift
+2025-03-21 22:34:15 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:34:15 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:34:15 checking for and killing existing process
+2025-03-21 22:34:15 parsing active led states
+2025-03-21 22:34:15 configuring LEDs
+2025-03-21 22:34:15 getting spacing and sleep times based on speed
+2025-03-21 22:34:15 starting animation
+2025-03-21 22:34:15 static color shift
+2025-03-21 22:42:45 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:42:45 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:42:45 checking for and killing existing process
+2025-03-21 22:42:45 parsing active led states
+2025-03-21 22:42:45 configuring LEDs
+2025-03-21 22:42:45 getting spacing and sleep times based on speed
+2025-03-21 22:42:45 starting animation
+2025-03-21 22:42:45 static color shift
+2025-03-21 22:46:59 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:46:59 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:46:59 checking for and killing existing process
+2025-03-21 22:46:59 parsing active led states
+2025-03-21 22:46:59 configuring LEDs
+2025-03-21 22:46:59 getting spacing and sleep times based on speed
+2025-03-21 22:46:59 starting animation
+2025-03-21 22:46:59 static color shift
+2025-03-21 22:49:54 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:49:54 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:49:54 checking for and killing existing process
+2025-03-21 22:49:54 parsing active led states
+2025-03-21 22:49:54 configuring LEDs
+2025-03-21 22:49:54 getting spacing and sleep times based on speed
+2025-03-21 22:49:54 starting animation
+2025-03-21 22:49:54 static color shift
+2025-03-21 22:53:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:53:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:53:08 checking for and killing existing process
+2025-03-21 22:53:08 parsing active led states
+2025-03-21 22:53:08 configuring LEDs
+2025-03-21 22:53:08 getting spacing and sleep times based on speed
+2025-03-21 22:53:08 starting animation
+2025-03-21 22:53:08 static color shift
+2025-03-21 22:56:51 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 22:56:51 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 22:56:51 checking for and killing existing process
+2025-03-21 22:56:51 parsing active led states
+2025-03-21 22:56:51 configuring LEDs
+2025-03-21 22:56:51 getting spacing and sleep times based on speed
+2025-03-21 22:56:51 starting animation
+2025-03-21 22:56:51 static color shift
+2025-03-21 23:00:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:00:37 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:00:37 checking for and killing existing process
+2025-03-21 23:00:37 parsing active led states
+2025-03-21 23:00:37 configuring LEDs
+2025-03-21 23:00:37 getting spacing and sleep times based on speed
+2025-03-21 23:00:37 starting animation
+2025-03-21 23:00:37 static color shift
+2025-03-21 23:03:19 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:03:19 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:03:19 checking for and killing existing process
+2025-03-21 23:03:19 parsing active led states
+2025-03-21 23:03:19 configuring LEDs
+2025-03-21 23:03:19 getting spacing and sleep times based on speed
+2025-03-21 23:03:19 starting animation
+2025-03-21 23:03:19 static color shift
+2025-03-21 23:06:22 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:06:22 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:06:22 checking for and killing existing process
+2025-03-21 23:06:22 parsing active led states
+2025-03-21 23:06:22 configuring LEDs
+2025-03-21 23:06:22 getting spacing and sleep times based on speed
+2025-03-21 23:06:22 starting animation
+2025-03-21 23:06:22 static color shift
+2025-03-21 23:13:43 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:13:43 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:13:43 checking for and killing existing process
+2025-03-21 23:13:43 parsing active led states
+2025-03-21 23:13:43 configuring LEDs
+2025-03-21 23:13:43 getting spacing and sleep times based on speed
+2025-03-21 23:13:43 starting animation
+2025-03-21 23:13:43 static color shift
+2025-03-21 23:19:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:19:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:19:57 checking for and killing existing process
+2025-03-21 23:19:57 parsing active led states
+2025-03-21 23:19:57 configuring LEDs
+2025-03-21 23:19:57 getting spacing and sleep times based on speed
+2025-03-21 23:19:57 starting animation
+2025-03-21 23:19:57 static color shift
+2025-03-21 23:25:39 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:25:39 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:25:39 checking for and killing existing process
+2025-03-21 23:25:39 parsing active led states
+2025-03-21 23:25:39 configuring LEDs
+2025-03-21 23:25:39 getting spacing and sleep times based on speed
+2025-03-21 23:25:39 starting animation
+2025-03-21 23:25:39 static color shift
+2025-03-21 23:30:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:30:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:30:21 checking for and killing existing process
+2025-03-21 23:30:21 parsing active led states
+2025-03-21 23:30:21 configuring LEDs
+2025-03-21 23:30:21 getting spacing and sleep times based on speed
+2025-03-21 23:30:21 starting animation
+2025-03-21 23:30:21 static color shift
+2025-03-21 23:45:35 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:45:35 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:45:35 checking for and killing existing process
+2025-03-21 23:45:35 parsing active led states
+2025-03-21 23:45:35 configuring LEDs
+2025-03-21 23:45:35 getting spacing and sleep times based on speed
+2025-03-21 23:45:35 starting animation
+2025-03-21 23:45:35 static color shift
+2025-03-21 23:54:17 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-21 23:54:17 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-21 23:54:17 checking for and killing existing process
+2025-03-21 23:54:17 parsing active led states
+2025-03-21 23:54:17 configuring LEDs
+2025-03-21 23:54:17 getting spacing and sleep times based on speed
+2025-03-21 23:54:17 starting animation
+2025-03-21 23:54:17 static color shift
+2025-03-22 03:59:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 03:59:53 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 03:59:53 checking for and killing existing process
+2025-03-22 03:59:53 parsing active led states
+2025-03-22 03:59:53 configuring LEDs
+2025-03-22 03:59:53 getting spacing and sleep times based on speed
+2025-03-22 03:59:53 starting animation
+2025-03-22 03:59:53 static color shift
+2025-03-22 04:07:50 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:07:50 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:07:50 checking for and killing existing process
+2025-03-22 04:07:50 parsing active led states
+2025-03-22 04:07:50 configuring LEDs
+2025-03-22 04:07:50 getting spacing and sleep times based on speed
+2025-03-22 04:07:50 starting animation
+2025-03-22 04:07:50 static color shift
+2025-03-22 04:14:44 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:14:44 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:14:44 checking for and killing existing process
+2025-03-22 04:14:44 parsing active led states
+2025-03-22 04:14:44 configuring LEDs
+2025-03-22 04:14:44 getting spacing and sleep times based on speed
+2025-03-22 04:14:44 starting animation
+2025-03-22 04:14:44 static color shift
+2025-03-22 04:18:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:18:18 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:18:18 checking for and killing existing process
+2025-03-22 04:18:18 parsing active led states
+2025-03-22 04:18:18 configuring LEDs
+2025-03-22 04:18:18 getting spacing and sleep times based on speed
+2025-03-22 04:18:18 starting animation
+2025-03-22 04:18:18 static color shift
+2025-03-22 04:23:19 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:23:19 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:23:19 checking for and killing existing process
+2025-03-22 04:23:19 parsing active led states
+2025-03-22 04:23:19 configuring LEDs
+2025-03-22 04:23:19 getting spacing and sleep times based on speed
+2025-03-22 04:23:19 starting animation
+2025-03-22 04:23:19 static color shift
+2025-03-22 04:26:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:26:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:26:08 checking for and killing existing process
+2025-03-22 04:26:08 parsing active led states
+2025-03-22 04:26:08 configuring LEDs
+2025-03-22 04:26:08 getting spacing and sleep times based on speed
+2025-03-22 04:26:08 starting animation
+2025-03-22 04:26:08 static color shift
+2025-03-22 04:27:09 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:27:09 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:27:09 checking for and killing existing process
+2025-03-22 04:27:09 parsing active led states
+2025-03-22 04:27:09 configuring LEDs
+2025-03-22 04:27:09 getting spacing and sleep times based on speed
+2025-03-22 04:27:09 starting animation
+2025-03-22 04:27:09 static color shift
+2025-03-22 04:27:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:27:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:27:57 checking for and killing existing process
+2025-03-22 04:27:57 parsing active led states
+2025-03-22 04:27:57 configuring LEDs
+2025-03-22 04:27:57 getting spacing and sleep times based on speed
+2025-03-22 04:27:57 starting animation
+2025-03-22 04:27:57 static color shift
+2025-03-22 04:32:09 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:32:09 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:32:09 checking for and killing existing process
+2025-03-22 04:32:09 parsing active led states
+2025-03-22 04:32:09 configuring LEDs
+2025-03-22 04:32:09 getting spacing and sleep times based on speed
+2025-03-22 04:32:09 starting animation
+2025-03-22 04:32:09 static color shift
+2025-03-22 04:34:10 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:34:10 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:34:10 checking for and killing existing process
+2025-03-22 04:34:11 parsing active led states
+2025-03-22 04:34:11 configuring LEDs
+2025-03-22 04:34:11 getting spacing and sleep times based on speed
+2025-03-22 04:34:11 starting animation
+2025-03-22 04:34:11 static color shift
+2025-03-22 04:36:23 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:36:23 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:36:23 checking for and killing existing process
+2025-03-22 04:36:23 parsing active led states
+2025-03-22 04:36:23 configuring LEDs
+2025-03-22 04:36:23 getting spacing and sleep times based on speed
+2025-03-22 04:36:23 starting animation
+2025-03-22 04:36:23 static color shift
+2025-03-22 04:37:14 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:37:14 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:37:14 checking for and killing existing process
+2025-03-22 04:37:14 parsing active led states
+2025-03-22 04:37:14 configuring LEDs
+2025-03-22 04:37:14 getting spacing and sleep times based on speed
+2025-03-22 04:37:14 starting animation
+2025-03-22 04:37:14 static color shift
+2025-03-22 04:38:05 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:38:05 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:38:05 checking for and killing existing process
+2025-03-22 04:38:05 parsing active led states
+2025-03-22 04:38:05 configuring LEDs
+2025-03-22 04:38:05 getting spacing and sleep times based on speed
+2025-03-22 04:38:05 starting animation
+2025-03-22 04:38:05 static color shift
+2025-03-22 04:40:17 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:40:17 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:40:17 checking for and killing existing process
+2025-03-22 04:40:17 parsing active led states
+2025-03-22 04:40:17 configuring LEDs
+2025-03-22 04:40:17 getting spacing and sleep times based on speed
+2025-03-22 04:40:17 starting animation
+2025-03-22 04:40:17 static color shift
+2025-03-22 04:42:46 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:42:46 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:42:46 checking for and killing existing process
+2025-03-22 04:42:46 parsing active led states
+2025-03-22 04:42:46 configuring LEDs
+2025-03-22 04:42:46 getting spacing and sleep times based on speed
+2025-03-22 04:42:46 starting animation
+2025-03-22 04:42:46 static color shift
+2025-03-22 04:49:28 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:49:28 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:49:28 checking for and killing existing process
+2025-03-22 04:49:28 parsing active led states
+2025-03-22 04:49:28 configuring LEDs
+2025-03-22 04:49:28 getting spacing and sleep times based on speed
+2025-03-22 04:49:28 starting animation
+2025-03-22 04:49:28 static color shift
+2025-03-22 04:52:25 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:52:25 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:52:25 checking for and killing existing process
+2025-03-22 04:52:25 parsing active led states
+2025-03-22 04:52:25 configuring LEDs
+2025-03-22 04:52:25 getting spacing and sleep times based on speed
+2025-03-22 04:52:25 starting animation
+2025-03-22 04:52:25 static color shift
+2025-03-22 04:53:28 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 04:53:28 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 04:53:28 checking for and killing existing process
+2025-03-22 04:53:28 parsing active led states
+2025-03-22 04:53:28 configuring LEDs
+2025-03-22 04:53:28 getting spacing and sleep times based on speed
+2025-03-22 04:53:28 starting animation
+2025-03-22 04:53:28 static color shift
+2025-03-22 05:01:58 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 05:01:58 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 05:01:58 checking for and killing existing process
+2025-03-22 05:01:58 parsing active led states
+2025-03-22 05:01:58 configuring LEDs
+2025-03-22 05:01:58 getting spacing and sleep times based on speed
+2025-03-22 05:01:58 starting animation
+2025-03-22 05:01:58 static color shift
+2025-03-22 05:12:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 05:12:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 05:12:21 checking for and killing existing process
+2025-03-22 05:12:21 parsing active led states
+2025-03-22 05:12:21 configuring LEDs
+2025-03-22 05:12:21 getting spacing and sleep times based on speed
+2025-03-22 05:12:21 starting animation
+2025-03-22 05:12:21 static color shift
+2025-03-22 08:50:58 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:50:58 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:50:58 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:50:58 checking for and killing existing process
+2025-03-22 08:50:58 parsing active led states
+2025-03-22 08:50:58 configuring LEDs
+2025-03-22 08:50:58 getting spacing and sleep times based on speed
+2025-03-22 08:50:58 starting animation
+2025-03-22 08:50:58 static color shift
+2025-03-22 08:52:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:52:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:52:06 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:52:06 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:52:06 checking for and killing existing process
+2025-03-22 08:52:06 parsing active led states
+2025-03-22 08:52:06 configuring LEDs
+2025-03-22 08:52:06 getting spacing and sleep times based on speed
+2025-03-22 08:52:06 starting animation
+2025-03-22 08:52:06 static color shift
+2025-03-22 08:52:11 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:52:11 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:52:11 checking for and killing existing process
+2025-03-22 08:52:12 parsing active led states
+2025-03-22 08:52:12 configuring LEDs
+2025-03-22 08:52:12 getting spacing and sleep times based on speed
+2025-03-22 08:52:12 starting animation
+2025-03-22 08:52:12 static color shift
+2025-03-22 08:52:44 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:52:44 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:52:44 checking for and killing existing process
+2025-03-22 08:52:44 parsing active led states
+2025-03-22 08:52:44 configuring LEDs
+2025-03-22 08:52:44 getting spacing and sleep times based on speed
+2025-03-22 08:52:44 starting animation
+2025-03-22 08:52:44 static color shift
+2025-03-22 08:53:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:53:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:53:26 checking for and killing existing process
+2025-03-22 08:53:26 parsing active led states
+2025-03-22 08:53:26 configuring LEDs
+2025-03-22 08:53:26 getting spacing and sleep times based on speed
+2025-03-22 08:53:26 starting animation
+2025-03-22 08:53:26 static color shift
+2025-03-22 08:54:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:54:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:54:36 checking for and killing existing process
+2025-03-22 08:54:36 parsing active led states
+2025-03-22 08:54:36 configuring LEDs
+2025-03-22 08:54:36 getting spacing and sleep times based on speed
+2025-03-22 08:54:36 starting animation
+2025-03-22 08:54:36 static color shift
+2025-03-22 08:56:25 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:56:25 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:56:25 checking for and killing existing process
+2025-03-22 08:56:25 parsing active led states
+2025-03-22 08:56:25 configuring LEDs
+2025-03-22 08:56:25 getting spacing and sleep times based on speed
+2025-03-22 08:56:25 starting animation
+2025-03-22 08:56:25 static color shift
+2025-03-22 08:57:45 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:57:45 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:57:45 checking for and killing existing process
+2025-03-22 08:57:45 parsing active led states
+2025-03-22 08:57:45 configuring LEDs
+2025-03-22 08:57:45 getting spacing and sleep times based on speed
+2025-03-22 08:57:45 starting animation
+2025-03-22 08:57:45 static color shift
+2025-03-22 08:58:35 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:58:35 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:58:35 checking for and killing existing process
+2025-03-22 08:58:35 parsing active led states
+2025-03-22 08:58:35 configuring LEDs
+2025-03-22 08:58:35 getting spacing and sleep times based on speed
+2025-03-22 08:58:35 starting animation
+2025-03-22 08:58:35 static color shift
+2025-03-22 08:59:12 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 08:59:12 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 08:59:12 checking for and killing existing process
+2025-03-22 08:59:12 parsing active led states
+2025-03-22 08:59:12 configuring LEDs
+2025-03-22 08:59:12 getting spacing and sleep times based on speed
+2025-03-22 08:59:12 starting animation
+2025-03-22 08:59:12 static color shift
+2025-03-22 09:00:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:00:00 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:00:00 checking for and killing existing process
+2025-03-22 09:00:01 parsing active led states
+2025-03-22 09:00:01 configuring LEDs
+2025-03-22 09:00:01 getting spacing and sleep times based on speed
+2025-03-22 09:00:01 starting animation
+2025-03-22 09:00:01 static color shift
+2025-03-22 09:00:41 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:00:41 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:00:41 checking for and killing existing process
+2025-03-22 09:00:41 parsing active led states
+2025-03-22 09:00:41 configuring LEDs
+2025-03-22 09:00:41 getting spacing and sleep times based on speed
+2025-03-22 09:00:41 starting animation
+2025-03-22 09:00:41 static color shift
+2025-03-22 09:01:19 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:01:19 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:01:19 checking for and killing existing process
+2025-03-22 09:01:19 parsing active led states
+2025-03-22 09:01:19 configuring LEDs
+2025-03-22 09:01:19 getting spacing and sleep times based on speed
+2025-03-22 09:01:19 starting animation
+2025-03-22 09:01:19 static color shift
+2025-03-22 09:06:10 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:06:10 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:06:10 checking for and killing existing process
+2025-03-22 09:06:10 parsing active led states
+2025-03-22 09:06:10 configuring LEDs
+2025-03-22 09:06:10 getting spacing and sleep times based on speed
+2025-03-22 09:06:10 starting animation
+2025-03-22 09:06:10 static color shift
+2025-03-22 09:12:56 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:12:56 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:12:56 checking for and killing existing process
+2025-03-22 09:12:56 parsing active led states
+2025-03-22 09:12:56 configuring LEDs
+2025-03-22 09:12:56 getting spacing and sleep times based on speed
+2025-03-22 09:12:56 starting animation
+2025-03-22 09:12:56 static color shift
+2025-03-22 09:14:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:14:49 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:14:49 checking for and killing existing process
+2025-03-22 09:14:49 parsing active led states
+2025-03-22 09:14:49 configuring LEDs
+2025-03-22 09:14:49 getting spacing and sleep times based on speed
+2025-03-22 09:14:49 starting animation
+2025-03-22 09:14:49 static color shift
+2025-03-22 09:22:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:22:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:22:33 checking for and killing existing process
+2025-03-22 09:22:33 parsing active led states
+2025-03-22 09:22:33 configuring LEDs
+2025-03-22 09:22:33 getting spacing and sleep times based on speed
+2025-03-22 09:22:33 starting animation
+2025-03-22 09:22:33 static color shift
+2025-03-22 09:31:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:31:53 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:31:53 checking for and killing existing process
+2025-03-22 09:31:53 parsing active led states
+2025-03-22 09:31:53 configuring LEDs
+2025-03-22 09:31:53 getting spacing and sleep times based on speed
+2025-03-22 09:31:53 starting animation
+2025-03-22 09:31:53 static color shift
+2025-03-22 09:37:38 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:37:38 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:37:38 checking for and killing existing process
+2025-03-22 09:37:38 parsing active led states
+2025-03-22 09:37:38 configuring LEDs
+2025-03-22 09:37:38 getting spacing and sleep times based on speed
+2025-03-22 09:37:38 starting animation
+2025-03-22 09:37:38 static color shift
+2025-03-22 09:42:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:42:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:42:21 checking for and killing existing process
+2025-03-22 09:42:21 parsing active led states
+2025-03-22 09:42:21 configuring LEDs
+2025-03-22 09:42:21 getting spacing and sleep times based on speed
+2025-03-22 09:42:21 starting animation
+2025-03-22 09:42:21 static color shift
+2025-03-22 09:43:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 09:43:18 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 09:43:18 checking for and killing existing process
+2025-03-22 09:43:18 parsing active led states
+2025-03-22 09:43:18 configuring LEDs
+2025-03-22 09:43:18 getting spacing and sleep times based on speed
+2025-03-22 09:43:18 starting animation
+2025-03-22 09:43:18 static color shift
+2025-03-22 10:46:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 10:46:37 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 10:46:37 checking for and killing existing process
+2025-03-22 10:46:37 parsing active led states
+2025-03-22 10:46:37 configuring LEDs
+2025-03-22 10:46:37 getting spacing and sleep times based on speed
+2025-03-22 10:46:37 starting animation
+2025-03-22 10:46:37 static color shift
+2025-03-22 10:53:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 10:53:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 10:53:21 checking for and killing existing process
+2025-03-22 10:53:21 parsing active led states
+2025-03-22 10:53:21 configuring LEDs
+2025-03-22 10:53:21 getting spacing and sleep times based on speed
+2025-03-22 10:53:21 starting animation
+2025-03-22 10:53:21 static color shift
+2025-03-22 11:03:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 11:03:29 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 11:03:29 checking for and killing existing process
+2025-03-22 11:03:29 parsing active led states
+2025-03-22 11:03:29 configuring LEDs
+2025-03-22 11:03:29 getting spacing and sleep times based on speed
+2025-03-22 11:03:29 starting animation
+2025-03-22 11:03:29 static color shift
+2025-03-22 12:20:39 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 12:20:39 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 12:20:39 checking for and killing existing process
+2025-03-22 12:20:39 parsing active led states
+2025-03-22 12:20:39 configuring LEDs
+2025-03-22 12:20:39 getting spacing and sleep times based on speed
+2025-03-22 12:20:39 starting animation
+2025-03-22 12:20:39 static color shift
+2025-03-22 12:27:12 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 12:27:12 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 12:27:12 checking for and killing existing process
+2025-03-22 12:27:12 parsing active led states
+2025-03-22 12:27:12 configuring LEDs
+2025-03-22 12:27:12 getting spacing and sleep times based on speed
+2025-03-22 12:27:12 starting animation
+2025-03-22 12:27:12 static color shift
+2025-03-22 12:32:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 12:32:47 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 12:32:48 checking for and killing existing process
+2025-03-22 12:32:48 parsing active led states
+2025-03-22 12:32:48 configuring LEDs
+2025-03-22 12:32:48 getting spacing and sleep times based on speed
+2025-03-22 12:32:48 starting animation
+2025-03-22 12:32:48 static color shift
+2025-03-22 12:41:28 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 12:41:28 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 12:41:28 checking for and killing existing process
+2025-03-22 12:41:28 parsing active led states
+2025-03-22 12:41:28 configuring LEDs
+2025-03-22 12:41:28 getting spacing and sleep times based on speed
+2025-03-22 12:41:28 starting animation
+2025-03-22 12:41:28 static color shift
+2025-03-22 12:46:06 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 12:46:06 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 12:46:06 checking for and killing existing process
+2025-03-22 12:46:06 parsing active led states
+2025-03-22 12:46:06 configuring LEDs
+2025-03-22 12:46:06 getting spacing and sleep times based on speed
+2025-03-22 12:46:06 starting animation
+2025-03-22 12:46:06 static color shift
+2025-03-22 12:48:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 12:48:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 12:48:36 checking for and killing existing process
+2025-03-22 12:48:36 parsing active led states
+2025-03-22 12:48:36 configuring LEDs
+2025-03-22 12:48:36 getting spacing and sleep times based on speed
+2025-03-22 12:48:36 starting animation
+2025-03-22 12:48:36 static color shift
+2025-03-22 12:49:27 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 12:49:27 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-22 12:54:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 12:57:12 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 13:17:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 13:18:06 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 13:24:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-22 13:28:13 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 00:40:04 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 00:41:11 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 00:43:32 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 00:46:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 00:49:01 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 00:52:35 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 05:22:55 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 05:58:06 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 06:00:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 06:46:56 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 06:53:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 07:07:10 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 07:09:46 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 07:13:13 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 07:24:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 08:26:06 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 08:27:59 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 08:36:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 08:50:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 09:04:27 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 09:09:06 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 09:30:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 09:34:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 09:48:17 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 09:54:05 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:03:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:10:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:16:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:21:05 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:22:30 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:27:55 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:35:01 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:41:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:47:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:50:50 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 10:52:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 11:13:11 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 11:15:32 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 11:27:05 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:12:22 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:15:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:16:32 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:18:15 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:20:17 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:22:12 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:32:50 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:50:58 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 12:59:10 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 13:07:23 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 13:17:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 13:20:31 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 13:22:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 13:34:12 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 14:10:25 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 14:22:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 14:33:31 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 14:59:07 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 20:49:24 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 21:06:19 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 21:25:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 21:40:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 21:41:30 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 21:50:24 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 21:57:13 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:02:15 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:04:01 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:04:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:12:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:27:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:28:39 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:28:39 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:28:39 checking for and killing existing process
+2025-03-23 22:28:40 parsing active led states
+2025-03-23 22:28:40 configuring LEDs
+2025-03-23 22:28:40 getting spacing and sleep times based on speed
+2025-03-23 22:28:40 starting animation
+2025-03-23 22:28:40 static color shift
+2025-03-23 22:33:01 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:33:01 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:33:01 checking for and killing existing process
+2025-03-23 22:33:01 parsing active led states
+2025-03-23 22:33:02 configuring LEDs
+2025-03-23 22:33:02 getting spacing and sleep times based on speed
+2025-03-23 22:33:02 starting animation
+2025-03-23 22:33:02 static color shift
+2025-03-23 22:33:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:33:24 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:33:24 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:33:24 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:33:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:33:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:33:48 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:33:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:00 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:34:05 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:05 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:34:10 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:10 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:34:15 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:15 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:34:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:34:30 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:30 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:34:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:34:41 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:44 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:47 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:34:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:34:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:35:01 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:35:01 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:40:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:40:37 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:45:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:00 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:45:22 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:22 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:45:24 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:24 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:45:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:29 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:45:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:34 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:45:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:40 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:45:46 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:45:59 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:45:59 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:46:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:46:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:47:27 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:47:27 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:48:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:48:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:48:41 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:48:43 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:48:45 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:48:46 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:48:46 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:48:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:48:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:48:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:48:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:50:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:50:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:50:54 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:50:55 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:50:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:50:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:51:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:51:04 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:51:06 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:51:07 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:51:07 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:51:15 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:51:15 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 22:51:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 22:51:18 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:04:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:04:40 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:04:55 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:04:59 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:05:01 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:05:01 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:05:01 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:05:11 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:05:11 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:08:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:08:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:07:30 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:07:34 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:07:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:07:36 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:07:36 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:07:42 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:07:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:07:45 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:07:45 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:19:45 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:19:45 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:22:43 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:27:34 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:40 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:27:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:49 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:27:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:27:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:27:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:29:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:29:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:29:29 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:36:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:36:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:36:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:40:14 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:40:14 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:40:14 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:40:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:40:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:40:31 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:40:32 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:40:32 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:40:42 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:40:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:40:42 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:40:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:40:53 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:40:53 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:40:53 checking for and killing existing process
+2025-03-23 23:40:53 parsing active led states
+2025-03-23 23:40:53 configuring LEDs
+2025-03-23 23:40:53 getting spacing and sleep times based on speed
+2025-03-23 23:40:53 starting animation
+2025-03-23 23:40:53 static color shift
+2025-03-23 23:43:34 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:43:34 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:43:34 checking for and killing existing process
+2025-03-23 23:43:34 parsing active led states
+2025-03-23 23:43:34 configuring LEDs
+2025-03-23 23:43:34 getting spacing and sleep times based on speed
+2025-03-23 23:43:34 starting animation
+2025-03-23 23:43:34 static color shift
+2025-03-23 23:43:44 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:43:44 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:43:44 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:44:44 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:44:44 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:44:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:44:47 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:44:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:44:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:23 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:45:23 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:23 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:28 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:45:31 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:45:31 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:45:31 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:45:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:55 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:45:55 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:55 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:57 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:45:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:45:57 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:46:02 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:46:02 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:46:02 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:46:12 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:46:12 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:46:44 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:46:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:46:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:46:48 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:50:19 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:50:19 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:50:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:50:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:50:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:50:38 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:50:38 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:50:38 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:51:07 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:51:11 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:51:11 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:51:11 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:54:38 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:54:38 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:54:46 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:54:46 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:54:46 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:54:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:54:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:55:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:55:20 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:57:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:57:40 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:57:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:57:47 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:57:55 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:57:55 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:57:58 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:00 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:09 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:09 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:09 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:25 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:25 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:25 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:29 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:29 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:29 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:46 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:48 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:48 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:52 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:58:52 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:58:53 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:59:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:00 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:59:00 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:59:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:59:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:59:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:24 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:24 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:24 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:59:28 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:28 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:59:28 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-23 23:59:34 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:34 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:34 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-23 23:59:34 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:01:09 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:01:09 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:01:09 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:01:12 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:01:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:01:18 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:01:18 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:01:25 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:01:25 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:01:37 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:01:37 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:02:03 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:02:03 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:02:14 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:02:14 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:02:25 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:02:25 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:09:43 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:10:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:10:43 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:10:43 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:10:43 checking for and killing existing process
+2025-03-24 00:10:43 parsing active led states
+2025-03-24 00:10:43 configuring LEDs
+2025-03-24 00:10:43 getting spacing and sleep times based on speed
+2025-03-24 00:10:43 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:10:43 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:10:47 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:10:48 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:10:48 checking for and killing existing process
+2025-03-24 00:10:48 parsing active led states
+2025-03-24 00:10:48 configuring LEDs
+2025-03-24 00:10:48 getting spacing and sleep times based on speed
+2025-03-24 00:11:28 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:11:28 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:14:09 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:20:58 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:21:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:21:00 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:21:00 checking for and killing existing process
+2025-03-24 00:21:00 parsing active led states
+2025-03-24 00:21:00 configuring LEDs
+2025-03-24 00:21:00 getting spacing and sleep times based on speed
+2025-03-24 00:21:00 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:21:00 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:21:05 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:21:05 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:21:05 checking for and killing existing process
+2025-03-24 00:21:05 parsing active led states
+2025-03-24 00:21:05 configuring LEDs
+2025-03-24 00:21:05 getting spacing and sleep times based on speed
+2025-03-24 00:22:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:22:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:22:08 checking for and killing existing process
+2025-03-24 00:22:08 parsing active led states
+2025-03-24 00:22:08 configuring LEDs
+2025-03-24 00:22:08 getting spacing and sleep times based on speed
+2025-03-24 00:22:50 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:22:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:22:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:22:53 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:08 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:08 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:14 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:14 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:14 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:21 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:21 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:35 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:35 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:35 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:49 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:50 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:23:53 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:23:53 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:24:04 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:24:04 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:24:14 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:24:14 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:24:20 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:24:20 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:24:26 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:24:26 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:24:33 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:24:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:24:33 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:24:39 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:24:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:24:40 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf
+2025-03-24 00:24:40 saving to /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf
+2025-03-24 00:24:46 loading /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.conf and /mnt/SDCARD/Tools/tg5040/LEDs/scripts.disabled/config/led.defaults.conf

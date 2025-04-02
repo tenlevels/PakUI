@@ -1,0 +1,103 @@
+# === Display settings ===
+FONT_SIZE=30
+TEXT_COLOR="255,255,255"
+MAX_IMAGE_HEIGHT=400
+MAX_IMAGE_WIDTH=300
+
+# === Display Options ===
+# Set to "1" to show images during scraping, "0" for text only (faster)
+SHOW_IMAGES_WHILE_SCRAPING=1
+
+# === Region Priority Settings ===
+REGION_PRIORITY_1="USA"
+REGION_PRIORITY_2="World"
+REGION_PRIORITY_3="Europe"
+REGION_PRIORITY_4="Japan"
+
+# === Output Directory Settings ===
+OUTPUT_SUFFIX=".res"
+
+# === Roms Directory Settings ===
+ROMS_DIR="/mnt/SDCARD/Roms"
+
+# === Fallback Family Group Settings ===
+# Format: FALLBACK_GROUP_<PRIMARY_SYSTEM>="FALLBACK1,FALLBACK2,..."
+FALLBACK_GROUP_MD="THIRTYTWOX,SEGACD"
+FALLBACK_GROUP_PCE="PCECD"
+FALLBACK_GROUP_GBC="GB"
+FALLBACK_GROUP_GB="GBC"
+FALLBACK_GROUP_WSC="WS"
+FALLBACK_GROUP_WS="WSC"
+
+# === Image Source Settings ===
+# IMAGE_MODE options:
+#    BOXART         = Use Boxart images (from Named_Boxarts) with full fallback and gamesdb support.
+#    SNAPS          = Use Snap images (from Named_Snaps) only.
+#    SNAPS_W_LOGO   = Use Snap images and overlay a logo (from Named_Logos) on top.
+#    SNAPS_CIRCLE   = Use Snap images and crop them into a perfect circle.
+IMAGE_MODE="BOXART"
+
+# === Systems List ===
+# Format: "ROM_DIR_PATTERN|GITHUB_REPO|DB_FILENAME|FILE_EXTENSIONS"
+SYSTEMS="
+(AMIGA)|Commodore_-_Amiga|AMIGA_games.txt|adf,zip,7z
+(ARCADE)|MAME|ARCADE_games.txt|zip,7z
+(ARDUBOY)|Arduboy_Inc_-_Arduboy|ARDUBOY_games.txt|hex,zip,7z
+(ATARI)|Atari_-_2600|ATARI_games.txt|a26,zip,7z
+(CHAI)|ChaiLove|CHAI_games.txt|chai,zip,7z
+(COLECO)|Coleco_-_ColecoVision|COLECO_games.txt|rom,zip,7z
+(COMMODORE)|Commodore_-_64|COMMODORE_games.txt|d64,zip,7z
+(CPC)|Amstrad_-_CPC|CPC_games.txt|dsk,zip,7z
+(DC)|Sega_-_Dreamcast|DC_games.txt|cdi,zip,7z
+(DOOM)|DOOM|DOOM_games.txt|wad,zip,7z
+(DOS)|DOS|DOS_games.txt|exe,zip,7z
+(FAIRCHILD)|Fairchild_-_Channel_F|FAIRCHILD_games.txt|fcs,zip,7z
+(FBN)|FBNeo_-_Arcade_Games|FBN_games.txt|zip,7z
+(FC)|Nintendo_-_Nintendo_Entertainment_System|FC_games.txt|nes,zip,7z
+(FDS)|Nintendo_-_Family_Computer_Disk_System|FDS_games.txt|fds,zip,7z
+(FIFTYTWOHUNDRED)|Atari_-_5200|FIFTYTWOHUNDRED_games.txt|a52,zip,7z
+(GB)|Nintendo_-_Game_Boy|GB_games.txt|gb,zip,7z
+(GBA)|Nintendo_-_Game_Boy_Advance|GBA_games.txt|gba,zip,7z
+(GBC)|Nintendo_-_Game_Boy_Color|GBC_games.txt|gbc,zip,7z
+(GG)|Sega_-_Game_Gear|GG_games.txt|gg,zip,7z
+(INTELLIVISION)|Mattel_-_Intellivision|INTELLIVISION_games.txt|int,zip,7z
+(LYNX)|Atari_-_Lynx|LYNX_games.txt|lnx,zip,7z
+(MD)|Sega_-_Mega_Drive_-_Genesis|MD_games.txt|md,zip,7z,32x,chd,CHD
+(SMS)|Sega_-_Master_System_-_Mark_III|MS_games.txt|sms,zip,7z
+(MSUMD)|Sega_-_MSU-MD|MSUMD_games.txt|md,zip,7z
+(MSX)|Microsoft_-_MSX|MSX_games.txt|msx,zip,7z
+(N64)|Nintendo_-_Nintendo_64|N64_games.txt|n64,zip,7z
+(NDS)|Nintendo_-_Nintendo_DS|NDS_games.txt|nds,zip,7z
+(NEOCD)|SNK_-_Neo_Geo_CD|NEOCD_games.txt|cd,zip,7z
+(NEOGEO)|SNK_-_Neo_Geo|NEOGEO_games.txt|zip,7z
+(NGP)|SNK_-_Neo_Geo_Pocket|NGP_games.txt|ngp,zip,7z,ngpc
+(NGPC)|SNK_-_Neo_Geo_Pocket_Color|NGPC_games.txt|ngpc,zip,7z,ngp
+(ODYSSEY)|Magnavox_-_Odyssey2|ODYSSEY_games.txt|odyssey,zip,7z
+(PCE)|NEC_-_PC_Engine_-_TurboGrafx_16|PCE_games.txt|pce,zip,7z
+(PCECD)|NEC_-_PC_Engine_CD_-_TurboGrafx-CD|PCECD_games.txt|pce,zip,7z,chd,CHD
+(PKM)|Nintendo_-_Pokemon_Mini|POKE_games.txt|poke,zip,7z
+(PS)|Sony_-_PlayStation|PS_games.txt|bin,cue,zip,7z,m3u,chd,pbp,PBP,CHD
+(PSP)|Sony_-_PlayStation_Portable|PSP_games.txt|iso,zip,7z
+(QUAKE)|Quake|QUAKE_games.txt|pak,zip,7z
+(SATELLAVIEW)|Nintendo_-_Satellaview|SATELLAVIEW_games.txt|sbt,zip,7z
+(SCUMMVM)|ScummVM|SCUMMVM_games.txt|zip,7z
+(SEGACD)|Sega_-_Mega-CD_-_Sega_CD|SEGACD_games.txt|bin,zip,7z,chd,CHD
+(SEGASGONE)|Sega_-_SG-1000|SEGASGONE_games.txt|zip,7z
+(SEVENTYEIGHTHUNDRED)|Atari_-_7800|SEVENTYEIGHTHUNDRED_games.txt|a78,zip,7z
+(SFC)|Nintendo_-_Super_Nintendo_Entertainment_System|SFC_games.txt|sfc,smc,zip,7z
+(SGB)|Nintendo_-_Game_Boy|SGB_games.txt|sgb,zip,7z
+(SGFX)|NEC_-_PC_Engine_SuperGrafx|SGFX_games.txt|zip,7z
+(SUFAMI)|Nintendo_-_Sufami_Turbo|SUFAMI_games.txt|sufami,zip,7z
+(SUPERVISION)|Watara_-_Supervision|SUPERVISION_games.txt|sup,zip,7z
+(THIRTYTWOX)|Sega_-_32X|THIRTYTWOX_games.txt|32x,zip,7z
+(TIC)|TIC-80|TIC_games.txt|tic,zip,7z
+(VB)|Nintendo_-_Virtual_Boy|VB_games.txt|vb,zip,7z
+(VECTREX)|GCE_-_Vectrex|VECTREX_games.txt|vec,zip,7z
+(VIC20)|Commodore_-_VIC-20|VIC20_games.txt|vic,zip,7z
+(VIDEOPAC)|Philips_-_Videopac|VIDEOPAC_games.txt|videopac,zip,7z
+(WOLF)|Wolfenstein_3D|WOLF_games.txt|wolf,zip,7z
+(WS)|Bandai_-_WonderSwan|WS_games.txt|ws,zip,7z,wsc
+(WSC)|Bandai_-_WonderSwan_Color|WSC_games.txt|wsc,zip,7z,ws
+(X68000)|Sharp_-_X68000|X68000_games.txt|x68,zip,7z
+(ZXS)|Sinclair_-_ZX_Spectrum|ZXS_games.txt|zxs,zip,7z
+"

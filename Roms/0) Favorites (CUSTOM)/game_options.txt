@@ -1,0 +1,4 @@
+Add Game|Add Game
+Delete Game|Delete Game
+Rename Game|Rename Game
+Sort Games|Sort Games

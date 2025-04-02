@@ -1,0 +1,8 @@
+MinUI|minui
+BitPal|bitpal
+Game Switcher|gameswitcher
+Custom Collection|custom
+PICO-8 Splore|pico8splore
+Random Game|random
+Game|game
+Tool|tool

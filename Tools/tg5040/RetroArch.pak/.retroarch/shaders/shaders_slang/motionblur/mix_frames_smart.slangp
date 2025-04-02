@@ -1,0 +1,4 @@
+shaders = "1"
+
+shader0 = "shaders/mix_frames_smart.slang"
+filter_linear0 = "false"

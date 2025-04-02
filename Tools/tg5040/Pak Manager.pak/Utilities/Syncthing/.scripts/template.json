@@ -1,0 +1,60 @@
+{
+    "id": "FOLDER_ID",
+    "label": "FOLDER_LABEL",
+    "filesystemType": "basic",
+    "path": "FOLDER_PATH",
+    "type": "sendreceive",
+    "devices": [
+      {
+        "deviceID": "DEVICE_ID",
+        "introducedBy": "",
+        "encryptionPassword": ""
+      }
+    ],
+    "rescanIntervalS": 3600,
+    "fsWatcherEnabled": true,
+    "fsWatcherDelayS": 10,
+    "ignorePerms": false,
+    "autoNormalize": true,
+    "minDiskFree": {
+      "value": 1,
+      "unit": "%"
+    },
+    "versioning": {
+      "type": "",
+      "params": {},
+      "cleanupIntervalS": 3600,
+      "fsPath": "",
+      "fsType": "basic"
+    },
+    "copiers": 0,
+    "pullerMaxPendingKiB": 0,
+    "hashers": 0,
+    "order": "random",
+    "ignoreDelete": false,
+    "scanProgressIntervalS": 0,
+    "pullerPauseS": 0,
+    "maxConflicts": 10,
+    "disableSparseFiles": false,
+    "disableTempIndexes": false,
+    "paused": false,
+    "weakHashThresholdPct": 25,
+    "markerName": ".stfolder",
+    "copyOwnershipFromParent": false,
+    "modTimeWindowS": 0,
+    "maxConcurrentWrites": 2,
+    "disableFsync": false,
+    "blockPullOrder": "standard",
+    "copyRangeMethod": "standard",
+    "caseSensitiveFS": false,
+    "junctionsAsDirs": false,
+    "syncOwnership": false,
+    "sendOwnership": false,
+    "syncXattrs": false,
+    "sendXattrs": false,
+    "xattrFilter": {
+      "entries": [],
+      "maxSingleEntrySize": 1024,
+      "maxTotalSize": 4096
+    }
+}

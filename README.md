@@ -411,6 +411,8 @@ A tool for synchronizing files between your device and other computers.
 - Access via web interface
 - WiFi connection monitoring
 - Easy enable/disable toggle
+  **LOGIN** - minui
+  **PASS** - minuipassword
 
 ---
 

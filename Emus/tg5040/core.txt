@@ -1,0 +1,341 @@
+# Amiga (AMIGA)
+[AMIGA]
+launcher=minarch
+core1=puae_libretro.so
+core2=puae2021_libretro.so
+core3=uae4arm_libretro.so
+gameswitcher=ON
+
+# Atari 2600 (ATARI)
+[ATARI]
+launcher=minarch
+core1=stella2014_libretro.so
+core2=stella_libretro.so
+core3=hatari_libretro.so
+gameswitcher=ON
+
+# ColecoVision (COLECO)
+[COLECO]
+launcher=minarch
+core1=gearcoleco_libretro.so
+core2=bluemsx_libretro.so
+gameswitcher=ON
+
+# Commodore 64 (COMMODORE)
+[COMMODORE]
+launcher=minarch
+core1=vice_x64_libretro.so
+core2=vice_x64sc_libretro.so
+gameswitcher=ON
+
+# Amstrad CPC (CPC)
+[CPC]
+launcher=minarch
+core1=cap32_libretro.so
+core2=crocods_libretro.so
+gameswitcher=ON
+
+# DOOM (DOOM)
+[DOOM]
+launcher=minarch
+core1=prboom_libretro.so
+gameswitcher=ON
+
+# MS-DOS (DOS)
+[DOS]
+launcher=minarch
+core1=dosbox_pure_libretro.so
+core2=dosbox_svn_libretro.so
+core3=dosbox_libretro.so
+gameswitcher=ON
+
+# EasyRPG (EASYRPG)
+[EASYRPG]
+launcher=minarch
+core1=easyrpg_libretro.so
+gameswitcher=ON
+
+# Arcade (FBN)
+[FBN]
+launcher=minarch
+core1=fbn_minui_libretro.so
+core2=fbneo_libretro.so
+core3=fbalpha2012_libretro.so
+core4=fbalpha_libretro.so
+core5=km_mame2003_xtreme_amped_libretro.so
+core6=mame2003_plus_libretro.so
+core7=mame2010_libretro.so
+core8=mame2000_libretro.so
+core9=mame_libretro.so
+gameswitcher=ON
+
+# Nintendo Entertainment System (FC)
+[FC]
+launcher=minarch
+core1=fceumm_libretro.so
+core2=quicknes_libretro.so
+core3=nestopia_libretro.so
+core4=mesen_libretro.so
+core5=bnes_libretro.so
+core6=fceunext_libretro.so
+gameswitcher=ON
+
+# Famicom Disk System (FDS)
+[FDS]
+launcher=minarch
+core1=fceumm_libretro.so
+core2=nestopia_libretro.so
+core3=mesen_libretro.so
+core4=fceunext_libretro.so
+gameswitcher=ON
+
+# Atari 5200 (FIFTYTWOHUNDRED)
+[FIFTYTWOHUNDRED]
+launcher=minarch
+core1=a5200_libretro.so
+core2=atari800_libretro.so
+gameswitcher=ON
+
+# Game Boy (GB)
+[GB]
+launcher=minarch
+core1=gambatte_libretro.so
+core2=mgba_libretro.so
+core3=tgbdual_libretro.so
+core4=sameboy_libretro.so
+core5=gearboy_libretro.so
+core6=DoubleCherryGB_libretro.so
+gameswitcher=ON
+
+# Game Boy Advance (GBA)
+[GBA]
+launcher=minarch
+core1=gpsp_libretro.so
+core2=mgba_libretro.so
+core3=vba_next_libretro.so
+core4=vbam_libretro.so
+core5=meteor_libretro.so
+gameswitcher=ON
+
+# Game Boy Color (GBC)
+[GBC]
+launcher=minarch
+core1=gambatte_libretro.so
+core2=mgba_libretro.so
+core3=tgbdual_libretro.so
+core4=sameboy_libretro.so
+core5=gearboy_libretro.so
+core6=DoubleCherryGB_libretro.so
+gameswitcher=ON
+
+# Sega Game Gear (GG)
+[GG]
+launcher=minarch
+core1=picodrive_libretro.so
+core2=genesis_plus_gx_libretro.so
+core3=gearsystem_libretro.so
+core4=genesis_plus_gx_wide_libretro.so
+gameswitcher=ON
+
+# Game & Watch (GW)
+[GW]
+launcher=minarch
+core1=gw_libretro.so
+gameswitcher=ON
+
+# Intellivision (INTELLIVISION)
+[INTELLIVISION]
+launcher=minarch
+core1=freeintv_libretro.so
+gameswitcher=ON
+
+# Atari Lynx (LYNX)
+[LYNX]
+launcher=minarch
+core1=handy_libretro.so
+core2=mednafen_lynx_libretro.so
+gameswitcher=ON
+
+# Sega Genesis (MD)
+[MD]
+launcher=minarch
+core1=picodrive_libretro.so
+core2=genesis_plus_gx_libretro.so
+core3=genesis_plus_gx_wide_libretro.so
+gameswitcher=ON
+
+# Mega Duck (MEGADUCK)
+[MEGADUCK]
+launcher=minarch
+core1=sameduck_libretro.so
+gameswitcher=ON
+
+# Media Player (MPV)
+[MPV]
+launcher=minarch
+core1=mpv_libretro.so
+gameswitcher=ON
+
+# Microsoft MSX (MSX)
+[MSX]
+launcher=minarch
+core1=bluemsx_libretro.so
+core2=fmsx_libretro.so
+gameswitcher=ON
+
+# Neo Geo CD (NEOCD)
+[NEOCD]
+launcher=minarch
+core1=neocd_libretro.so
+core2=fbneo_libretro.so
+core3=geolith_libretro.so
+gameswitcher=ON
+
+# Neo-Geo (NEOGEO)
+[NEOGEO]
+launcher=minarch
+core1=fbneo_libretro.so
+core2=fbalpha2012_neogeo_libretro.so
+core3=geolith_libretro.so
+core4=fbalpha2012_libretro.so
+core5=fbalpha_libretro.so
+gameswitcher=ON
+
+# Neo Geo Pocket Color (NGPC)
+[NGPC]
+launcher=minarch
+core1=race_libretro.so
+core2=mednafen_ngp_libretro.so
+gameswitcher=ON
+
+# Odyssey 2 (ODYSSEY)
+[ODYSSEY]
+launcher=minarch
+core1=o2em_libretro.so
+gameswitcher=ON
+
+# TurboGrafx-16 (PCE)
+[PCE]
+launcher=minarch
+core1=mednafen_pce_fast_libretro.so
+core2=mednafen_supergrafx_libretro.so
+gameswitcher=ON
+
+# TurboGrafx-CD (PCECD)
+[PCECD]
+launcher=minarch
+core1=mednafen_pce_fast_libretro.so
+gameswitcher=ON
+
+# Pokemon mini (PKM)
+[PKM]
+launcher=minarch
+core1=pokemini_libretro.so
+gameswitcher=ON
+
+# Sony PlayStation (PS)
+[PS]
+launcher=minarch
+core1=pcsx_rearmed_libretro.so
+core2=swanstation_libretro.so
+core3=duckstation_libretro.so
+gameswitcher=ON
+
+# Quake (QUAKE)
+[QUAKE]
+launcher=minarch
+core1=tyrquake_libretro.so
+core2=prboom_libretro.so
+gameswitcher=ON
+
+# ScummVM (SCUMMVM)
+[SCUMMVM]
+launcher=minarch
+core1=scummvm_libretro.so
+core2=scummvm_libretro-2.9.so
+gameswitcher=ON
+
+# Sega CD (SEGACD)
+[SEGACD]
+launcher=minarch
+core1=picodrive_libretro.so
+core2=genesis_plus_gx_libretro.so
+gameswitcher=ON
+
+# Super Nintendo Entertainment System (SFC)
+[SFC]
+launcher=minarch
+core1=snes9x2005_plus_libretro.so
+core2=mednafen_supafaust_libretro.so
+core3=chimerasnes_libretro.so
+core4=snes9x_libretro.so
+core5=snes9x2005_libretro.so
+core6=snes9x2010_libretro.so
+core7=snes9x2002_libretro.so
+gameswitcher=ON
+
+# Super Game Boy (SGB)
+[SGB]
+launcher=minarch
+core1=mgba_libretro.so
+core2=sameboy_libretro.so
+core3=gambatte_libretro.so
+gameswitcher=ON
+
+# Super Grafx (SGFX)
+[SGFX]
+launcher=minarch
+core1=mednafen_supergrafx_libretro.so
+core2=mednafen_pce_fast_libretro.so
+gameswitcher=ON
+
+# Sega Master System (SMS)
+[SMS]
+launcher=minarch
+core1=picodrive_libretro.so
+core2=genesis_plus_gx_libretro.so
+core3=gearsystem_libretro.so
+core4=genesis_plus_gx_wide_libretro.so
+gameswitcher=ON
+
+# Watara Supervision (SUPERVISION)
+[SUPERVISION]
+launcher=minarch
+core1=potator_libretro.so
+gameswitcher=ON
+
+# Sega 32X (THIRTYWOX)
+[THIRTYWOX]
+launcher=minarch
+core1=picodrive_libretro.so
+gameswitcher=ON
+
+# TIC-80 (TIC)
+[TIC]
+launcher=minarch
+core1=tic80_libretro.so
+gameswitcher=ON
+
+# Virtual Boy (VB)
+[VB]
+launcher=minarch
+core1=mednafen_vb_libretro.so
+gameswitcher=ON
+
+# Vic20 (VIC20)
+[VIC20]
+launcher=minarch
+core1=vice_xvic_libretro.so
+gameswitcher=ON
+
+# Wonder Swan Color (WSC)
+[WSC]
+launcher=minarch
+core1=mednafen_wswan_libretro.so
+core2=beetle_wswan_libretro.so
+gameswitcher=ON
+
+# X68000 (X68000)
+[X68000]
+launcher=minarch
+core1=px68k_libretro.so

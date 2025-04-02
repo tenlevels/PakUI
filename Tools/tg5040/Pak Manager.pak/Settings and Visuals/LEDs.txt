@@ -1,0 +1,2 @@
+Control the LEDs on your device
+Favorite: multicolor purple-cyan

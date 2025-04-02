@@ -1,0 +1,4 @@
+Add|Add
+Delete|Delete
+Rename|Rename
+Sort|Sort

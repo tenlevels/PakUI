@@ -1,0 +1,2 @@
+Choose launcher, core and toggle GS.
+For each system and per-game.

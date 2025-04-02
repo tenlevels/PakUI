@@ -1,0 +1,7 @@
+{
+  "label": "",
+  "icontop": "",
+  "icon": "minui.png",
+  "launch": "launch.sh",
+  "description": "Switch to MinUI"
+}

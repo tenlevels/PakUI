@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# installer for trimuismart and tg5040
+
+SDCARD_PATH=/mnt/SDCARD
+cd "$SDCARD_PATH/trimui/app"
+
+# smart pro/brick
+if [ -f /usr/trimui/bin/runtrimui.sh ] && [ ! -f /usr/trimui/bin/runtrimui-original.sh ]; then
+	mv /usr/trimui/bin/runtrimui.sh /usr/trimui/bin/runtrimui-original.sh
+	cp ./runtrimui.sh /usr/trimui/bin/
+# smart
+elif [ ! -f /etc/main.original ]; then
+	cp /etc/main /etc/main.original
+	cp ./main.sh /etc/main
+fi
+
+# .tmp_update/updater does the actual installation (and later, updating)
+cp -rf .tmp_update $SDCARD_PATH/
+rm -rf "$SDCARD_PATH/trimui"
+sync
+$SDCARD_PATH/.tmp_update/updater
+
+poweroff # under no circumstances should stock be allowed to touch this card

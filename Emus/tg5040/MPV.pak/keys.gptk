@@ -1,0 +1,22 @@
+# Menu buttons
+start = space
+select = space
+guide = q
+
+# Face buttons
+a = .
+b = space
+x = j
+y = v
+
+# D-pad
+up = up
+down = down
+left = left
+right = right
+
+# Shoulder buttons
+l1 = b
+l2 = S
+r1 = n
+r2 = f

@@ -1,0 +1,2 @@
+Turn on and off WiFi
+auto connect to saves networks

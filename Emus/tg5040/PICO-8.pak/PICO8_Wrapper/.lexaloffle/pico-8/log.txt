@@ -1,0 +1,105 @@
+[000000] codo_init
+[000002]   platform: Linux
+[000007]   Found config.txt
+[000008]   
+[000010]     01 window_size 0 0 // window width, height
+[000011]     02 screen_size 0 0 // screen width, height (stretched to window) 
+[000012]     03 show_fps 0 // Draw frames per second in the corner
+[000013]     04 windowed 0 // 1 to start up in windowed mode
+[000014]     05 window_position -1 -1 // x and y position of window (-1, -1 to let the window manager decide)
+[000016]     new window position: -1, -1
+[000017]     06 frameless 0 // 1 to use a window with no frame
+[000020]     07 fullscreen_method 2 // 0 maximized window (linux)  1 borderless desktop-sized window  2 hardware fullscreen (warning: erratic behaviour under some drivers)
+[000022]     08 blit_method 0  // 0 auto  1 software (slower but sometimes more reliable)  2 hardware (can do filtered scaling) 
+[000023]     09 foreground_sleep_ms 1 // number of milliseconds to sleep each frame. Try 10 to conserve battery power
+[000028]     10 background_sleep_ms 10 // number of milliseconds to sleep each frame when running in the background
+[000029]     11 sessions 239 // number of times program has been run
+[000030]     12 rmb_key 0 // 0 for none  226 for LALT
+[000031]     13 desktop_path 
+[000033]     14 read_controllers_in_background 0
+[000034]     15 sound_volume 256 // 0..256
+[000035]     16 music_volume 256 // 0..256
+[000036]     17 mix_buffer_size 1024
+[000037]     18 map_scancodes 
+[000038]     19 use_wget 1 // (Linux) 1 to use wget for downloads instead of libcurl (must be installed)
+[000040]     20 version 0.2.6b
+[000041]     21 volume 256
+[000045]     22 root_path /mnt/SDCARD/Roms/Pico-8 (PICO-8)/
+[000047]     23 cdata_path /mnt/SDCARD/Emus/tg5040/PICO-8.pak/PICO8_Wrapper/.lexaloffle/pico-8/cdata/
+[000048]     24 joystick_index 0
+[000049]     25 merge_joysticks 0
+[000050]     26 button_keys 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[000052]     27 live_notes 0
+[000053]     28 cursor_snap 0
+[000054]     29 gui_theme 0
+[000055]     30 screenshot_scale 3
+[000057]     31 gif_scale 3
+[000058]     32 gif_len 16
+[000059]     33 gif_reset_mode 0
+[000064]     34 host_framerate_control 1
+[000065]     35 splore_filter 0
+[000066]     36 tab_width 1
+[000067]     37 draw_tabs 0
+[000069]     38 record_activity_log 1
+[000070]     39 allow_function_keys 1
+[000071]     40 check_for_cart_updates 1
+[000072]     41 enable_gpio 1
+[000073]     42 auto_hide_mouse_cursor 5
+[000074]     43 aggressive_backups 0
+[000075]     44 periodic_backups 20
+[000076]     45 transform_screen 0
+[000081]     46 gfx_grid_lines 0
+[000082]     47 capture_timestamps 0
+[000084]   
+[000085]   codo_system_init
+[000384]   Compiled against SDL version: 2.0.14
+[000385]   Linked against SDL version:   2.26.1
+[000386]   Current video driver: mali
+[000387]   codo_reset_timer
+[000389]   codo_gui_init
+[000390]   codo_keys_init
+[000391]   codo_text_init
+[000393]   codo_video_init
+[000398]   codo_mouse_init
+[000399]   codo_joystick_init
+[000408]   Reading controller mappings: /mnt/SDCARD/Emus/tg5040/PICO-8.pak/PICO8_Wrapper/.lexaloffle/pico-8/sdl_controllers.txt
+[000410]   searching for joysticks
+[000411]     found 1 joysticks
+[000413]     connecting joystick 0
+[000415]     Controller 0: X360 Controller
+[000416]      Number of Axes: 6
+[000417]      Number of Buttons: 15
+[000419]      Number of Balls: 0
+[000420]      Mapping: 030003f05e0400008e02000014010000,X360 Controller,a:b0,b:b1,back:b6,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b8,leftshoulder:b4,leftstick:b9,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b10,righttrigger:a5,rightx:a3,righty:a4,start:b7,x:b2,y:b3,platform:Linux
+[000424]   ok
+[000425] ok
+[000605] codo_load_pod: /mnt/SDCARD/Emus/tg5040/PICO-8.pak/PICO8_Wrapper/bin/pico8.dat ok 
+[000632] codo_set_screen 128 128 8 100
+[000634]  window size: 640 540
+[000635] setting fullscreen window size to 1024 768
+[000765]   setting filter to nearest (screen_mode 1  back page width: 128)
+  renderer opengles2:
+   flags: 0x0000000E ( |  | )
+   texture formats (8): ARGB8888, ABGR8888, RGB888, BGR888, YV12, IYUV, 0x3231564e, 0x3132564e
+   max texture size: 8192x8192
+[000778]  desktop size: 1024 768
+[000780] ok
+[000789] codo_sound_init mix_buffer_size: 1024
+[000790] codo_sound_init
+[000792] SDL_INIT_AUDIO ok
+[000938] SDL_OpenAudio ok
+[000940]  freq:22050
+ channels:1
+[000941] Built-in audio drivers: 0 alsa 1 dsp 2 disk 3 dummy
+[000949] Current audio driver: alsa
+[000951] connecting joystick 0
+[000953] Controller 0: X360 Controller
+[000954]  Number of Axes: 6
+[000959]  Number of Buttons: 15
+[000960]  Number of Balls: 0
+[000962]  Mapping: 030003f05e0400008e02000014010000,X360 Controller,a:b0,b:b1,back:b6,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,dpup:h0.1,guide:b8,leftshoulder:b4,leftstick:b9,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b5,rightstick:b10,righttrigger:a5,rightx:a3,righty:a4,start:b7,x:b2,y:b3,platform:Linux
+[003312] splore_init
+[003314] could not load favourites file: /mnt/SDCARD/Emus/tg5040/PICO-8.pak/PICO8_Wrapper/.lexaloffle/pico-8/favourites.txt
+[041488] prepare_loaded_cart: looking for sandboxed cart patch: /mnt/SDCARD/Emus/tg5040/PICO-8.pak/PICO8_Wrapper/.lexaloffle/pico-8/cstore/__04bebf9d9e60b701a9179ac21375e2fabf228e1c.p8
+[041490]   not found
+[042160] run_cart current_filename: /mnt/SDCARD/Emus/tg5040/PICO-8.pak/PICO8_Wrapper/.lexaloffle/pico-8/bbs/carts/exterra-1.p8.png running_filename:  running_cart_lid: exterra-1

@@ -1,0 +1,5 @@
+Add Game|Add Game
+Change Password|Change Password
+Exit Kid Mode|Exit Kid Mode
+Rename Collection|Rename Collection
+Sort Games|Sort Games

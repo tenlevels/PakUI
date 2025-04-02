@@ -1,0 +1,1 @@
+Create map.txt file from xml file

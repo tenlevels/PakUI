@@ -1,0 +1,22 @@
+{
+	"lang":	"English",
+	"0":	"OPEN",
+	"1":	"BACK",
+	"2":	"MENU",
+	"3":	"Moonlight",
+	"4":	"Loading",
+	"5":	"Setting",
+	"6":	"OK",
+	"7":	"Input IP Address",
+	"8":	"Resolution",
+	"9":	"Frame Rate",
+	"10":	"Bitrate"
+    "11":   "Paring to %s",
+    "12":   "Please enter the following PIN\non the target PC: %s",
+    "13":   "Pair Failed : %s",
+    "14":   "Desktop",
+    "15":   "Steam",
+    "16":   "Listing Apps",
+    "17":   "List Apps Failed",
+    "18":   "Change IP Address"	
+}

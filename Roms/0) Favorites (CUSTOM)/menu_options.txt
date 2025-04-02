@@ -1,0 +1,4 @@
+Add Game|Add Game
+Remove Favorites|Remove Favorites
+Rename Favorites|Rename Favorites
+Sort Games|Sort Games

@@ -1,0 +1,18 @@
+{
+  "pen":0,
+  "theme":7,
+  "mode":1,
+  "alpha":7,
+  "position":3,
+  "border":0,
+  "overlay":1,
+  "lang":"english",
+  "menu_c0":"0xffffff",
+  "menu_c1":"0x404040",
+  "menu_c2":"0x004000",
+  "states":"",
+  "menu_bg":0,
+  "menu_cursor":1,
+  "pixel_filter":1,
+  "display_rotate":90
+}

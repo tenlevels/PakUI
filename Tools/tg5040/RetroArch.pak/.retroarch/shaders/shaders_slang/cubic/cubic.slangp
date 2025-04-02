@@ -1,0 +1,3 @@
+shaders = 1
+shader0 = shaders/cubic.slang
+filter_linear0 = false 

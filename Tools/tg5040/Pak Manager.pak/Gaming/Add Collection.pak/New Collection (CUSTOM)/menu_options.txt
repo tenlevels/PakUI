@@ -1,0 +1,3 @@
+Add|Add
+Rename Collection|Rename Collection
+Sort|Sort

@@ -1,0 +1,2 @@
+Set device to boot to MinUI,
+a custom collection, tool or game

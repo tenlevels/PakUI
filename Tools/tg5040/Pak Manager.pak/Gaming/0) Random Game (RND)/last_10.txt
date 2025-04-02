@@ -1,0 +1,6 @@
+/mnt/SDCARD/Roms/Nintendo Entertainment System (FC)/Romance of the Three Kingdoms.zip
+/mnt/SDCARD/Roms/Game Boy Color (GBC)/Starseed.zip
+/mnt/SDCARD/Roms/Pico-8 (PICO-8)/1) Splore.png
+/mnt/SDCARD/Roms/Nintendo Entertainment System (FC)/Shatterhand.zip
+/mnt/SDCARD/Roms/Game Boy Color (GBC)/Hamtaro - Ham-Hams Unite!.zip
+/mnt/SDCARD/Roms/ScummVM (SCUMMVM)/.gitkeep

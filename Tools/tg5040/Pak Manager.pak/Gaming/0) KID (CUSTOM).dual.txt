@@ -1,0 +1,2 @@
+Create a locked Kid section
+Default password is 1234

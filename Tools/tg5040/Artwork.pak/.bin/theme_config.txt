@@ -1,0 +1,84 @@
+# Theme Configuration File
+# Lists all .res paths and their icons
+# All icons should be in your theme folder (e.g., /icons/YourTheme/)
+
+# ROM System Icons
+[/mnt/SDCARD/Roms/.res]
+(AMIGA).png
+(ARDUBOY).png
+(ATARI).png
+(COLECO).png
+(COMMODORE).png
+(CPC).png
+(CUSTOM).png
+(DC).png
+(DOOM).png
+(DOS).png
+(EASYRPG).png
+(EIGHTHUNDRED).png
+(FAIRCHILD).png
+(FBN).png
+(FC).png
+(FDS).png
+(FIFTYTWOHUNDRED).png
+(GB).png
+(GBA).png
+(GBC).png
+(GG).png
+(GS).png
+(GW).png
+(INTELLIVISION).png
+(LYNX).png
+(MD).png
+(MEGADUCK).png
+(MGBA).png
+(MPV).png
+(MSX).png
+(N64).png
+(NDS).png
+(NEOGEO).png
+(NEOCD).png
+(NEOGEO).png
+(NGPC).png
+(ODYSSEY).png
+(OPENBOR).png
+(PCE).png
+(PICO-8).png
+(PKM).png
+(PS).png
+(PSP).png
+(QUAKE).png
+(RND).png
+(SATURN).png
+(SCUMMVM).png
+(SEGASGONE).png
+(SFC).png
+(SGB).png
+(SGFX).png
+(SMS).png
+(SUPERVISION).png
+(THIRTYTWOX).png
+(TIC).png
+(VB).png
+(VECTREX).png
+(VIC20).png
+(VIDEOPAC).png
+(WOLF).png
+(WSC).png
+(X68000).png
+(ZXS).png
+
+# Tools Icons
+[/mnt/SDCARD/Tools/.res]
+tg5040.png
+
+# Platform Tools Icons
+[/mnt/SDCARD/Tools/tg5040/.res]
+Pak Manager.png
+
+# Function Icons
+[/mnt/SDCARD/.res]
+Recently Played.png
+Collections.png
+
+# End of configuration

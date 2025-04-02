@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# NOTE: becomes .tmp_update/updater
+
+INFO=`cat /proc/cpuinfo 2> /dev/null`
+case $INFO in
+*"sun8i"*)
+	if [ -d /usr/miyoo ]; then
+		PLATFORM="my282" # Miyoo A30
+	else
+		PLATFORM="trimuismart"
+	fi
+	;;
+*"SStar"*)
+	PLATFORM="miyoomini"
+	;;
+*"TG5040"*|*"TG3040"*)
+	PLATFORM="tg5040" # Trimui Smart Pro or Brick
+	;;
+*"0xd03"*)
+	PLATFORM="zero28" # MagicX Mini Zero 28
+	;;
+*"0xd05"*)
+	PLATFORM="my355" # Miyoo Flip
+	;;
+esac
+
+# fallback for tg5040 20240413 recovery firmware
+# TODO: doublecheck interaction with tg3040
+# might need/want to strings /usr/trimui/bin/MainUI during install/update
+# and store platform in a text file
+if [ -z "$PLATFORM" ] && [ -f /usr/trimui/bin/runtrimui.sh ]; then
+	PLATFORM="tg5040"
+fi
+
+/mnt/SDCARD/.tmp_update/$PLATFORM.sh # &> /mnt/SDCARD/boot.txt
+
+# force shutdown so nothing can modify the SD card
+echo s > /proc/sysrq-trigger
+echo u > /proc/sysrq-trigger
+echo o > /proc/sysrq-trigger

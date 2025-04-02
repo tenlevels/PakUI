@@ -1,0 +1,34 @@
+shaders = 5
+
+shader0 = ../../motionblur/shaders/response-time.slang
+filter_linear0 = false
+scale_type0 = source
+scale0 = 1.0
+
+shader1 = ../shaders/mgba/ags001.slang
+filter_linear1 = false
+scale_type1 = source
+scale1 = 4.0
+
+shader2 = ../shaders/color/gba-color.slang
+filter_linear2 = false
+scale_type2 = source
+scale2 = 1.0
+
+shader3 = ../shaders/mgba/ags001-light.slang
+filter_linear3 = false
+scale_type3 = source
+scale3 = 1.0
+
+shader4 = shader-files/gb-pass-5.slang
+filter_linear4 = true
+
+textures = BORDER
+
+BORDER = resources/gba-border-square-4x.png
+BORDER_linear = true
+
+parameters = "SCALE;OUT_X;OUT_Y"
+SCALE = "2.0"
+OUT_X = "6400.0"
+OUT_Y = "3200.0"

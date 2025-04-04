@@ -21,7 +21,7 @@ To get started with PakUI, follow these easy steps:
 
 - **Your SD card should look like this**
   
-   ![PakUI_install_files](https://github.com/user-attachments/assets/307a4bef-f774-49c3-b3e9-171e175d4359)
+![PakUI_install_files](https://github.com/user-attachments/assets/c96839d1-4f47-48a9-9277-57a18900e19b)
 
 
 4. **Add Your Own Files:**  

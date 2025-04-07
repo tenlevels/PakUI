@@ -1,5 +1,6 @@
 ![pakui](https://github.com/user-attachments/assets/06bb87f6-6daa-419c-b5d7-9ec5bb53a45e)
 
+
 ## PakUI
 A collection of paks/tools for MinUI ONLY - PakUI is a full set and most paks talk to one another. You will need the full release on a fresh card and new install. Fresh format card ONLY. Sorry PakUI is not compatible with other MinUI variants or forks.
 
@@ -21,7 +22,7 @@ To get started with PakUI, follow these easy steps:
 
 - **Your SD card should look like this**
   
-![PakUI_install_files](https://github.com/user-attachments/assets/c96839d1-4f47-48a9-9277-57a18900e19b)
+   ![PakUI_install_files](https://github.com/user-attachments/assets/307a4bef-f774-49c3-b3e9-171e175d4359)
 
 
 4. **Add Your Own Files:**  
@@ -37,31 +38,32 @@ It's that simple—enjoy and happy gaming!
 
 1. [Pak Manager](#pak-manager)  
 2. [BitPal](#bitpal)  
-3. [Universal Launcher](#universal-launcher)  
-4. [Game Switcher](#game-switcher)  
-5. [LEDs](#leds)  
-6. [Artwork](#artwork)  
-7. [Random Game](#random-game)  
-8. [USB Storage Mode](#usb-storage-mode)  
-9. [WiFi](#wifi)  
-10. [PICO-8 Native](#pico-8-native)  
-11. [Boxart Scraper](#boxart-scraper)  
-12. [Custom Collection Maker](#custom-collection-maker)  
-13. [Emulator Options](#emulator-options)  
-14. [Emulator Sorter](#emulator-sorter)  
-15. [Recents Manager](#recents-manager)  
-16. [Game Time Tracker](#game-time-tracker)  
-17. [OTA Updater](#ota-updater)  
-18. [Boot To](#boot-to)  
-19. [Screen Capture](#screen-capture)  
-20. [YouTube Downloader](#youtube-downloader)  
-21. [Moonlight](#moonlight)  
-22. [Game Name Mapper](#game-name-mapper)  
-23. [PSX Multi Disc](#psx-multi-disc)  
-24. [Save Converter](#save-converter)  
-25. [System Stats](#system-stats)  
-26. [Syncthing](#syncthing)  
-27. [Switch OS](#switch-os)  
+3. [Deep Sleep Support](#deep-sleep-support)  
+4. [Universal Launcher](#universal-launcher)  
+5. [Game Switcher](#game-switcher)  
+6. [PortMaster](#portmaster)  
+7. [LEDs](#leds)  
+8. [Artwork](#artwork)  
+9. [Random Game](#random-game)  
+10. [USB Storage Mode](#usb-storage-mode)  
+11. [WiFi](#wifi)  
+12. [PICO-8 Native](#pico-8-native)  
+13. [Boxart Scraper](#boxart-scraper)  
+14. [Custom Collection Maker](#custom-collection-maker)  
+15. [Emulator Options](#emulator-options)  
+16. [Emulator Sorter](#emulator-sorter)  
+17. [Recents Manager](#recents-manager)  
+18. [Game Time Tracker](#game-time-tracker)  
+19. [OTA Updater](#ota-updater)  
+20. [Boot To](#boot-to)  
+21. [Screen Capture](#screen-capture)  
+22. [YouTube Downloader](#youtube-downloader)  
+23. [Moonlight](#moonlight)  
+24. [Game Name Mapper](#game-name-mapper)  
+25. [PSX Multi Disc](#psx-multi-disc)  
+26. [Save Options](#save-options)  
+27. [System Stats](#system-stats)  
+28. [Syncthing](#syncthing)
 
 ---
 
@@ -89,6 +91,28 @@ A friendly gaming companion that offers missions and tracks your progress as you
 - Experience points and level progression
 - Gaming recommendations
 - Retro-styled interface with changing moods
+
+---
+
+## Deep Sleep Support
+
+A solution to the notorious "limbo bug" that improves battery life and device usability.
+
+**Features:**
+- Puts your device into a true sleep mode, preserving battery life
+- Screen turns off immediately when sleep is activated
+- LED lights stay on for 2 minutes, then turn off when deep sleep begins
+- Simply press the power button to wake your device
+- Compatible with the MinUI menu and minarch games
+
+**How to Enable Sleep Mode:**
+1. Launch the OTA Updater from your Tools menu
+2. Select "Install SleepModeFork"
+3. Follow the on-screen prompts to complete installation
+
+**Note:** Sleep mode is currently not compatible with Paks or RetroArch. You can always revert to stock MinUI through the OTA Updater if needed.
+
+**Special Thanks:** to Froist for hosting and maintaining the Sleep Mode Fork files that make this feature possible!
 
 ---
 
@@ -120,6 +144,39 @@ A tool that lets you switch between games without returning to the main menu, ma
 - Simple options menu
 - Customizable hotkey shortcuts (L2, R2, F1, F2, or Menu button) for instant access from MinUI
 - Option to disable shortcuts when not needed
+
+---
+
+## PortMaster
+
+A powerful tool that brings hundreds of ports and games to your TrimUI device.
+
+**Features:**
+- Access to hundreds of ports and games, with two main categories:
+  - **Ready To Run Ports:** Many free games you can download and play immediately
+  - **All Ports:** Ports that may require additional game files from the original game
+- Easy interface to browse, download, and manage ports
+- Automatic dependency management
+- Regular updates with new ports
+
+**Getting Started:**
+1. Launch Pak Manager
+2. Go to the Gaming section
+3. Select "PortMaster" to install
+4. Open PortMaster from your Tools menu
+5. Browse, download, and enjoy!
+
+**Troubleshooting Tips:**
+- If Ports or PortMaster has trouble working, go to Options → Runtime Manager → Download All
+- The first time you launch a game with PortMaster, it may take a little longer to start. Please be patient
+- Ports not found in the "Ready To Run Ports" section will require additional files from the original game
+- Do NOT rename your PORTS rom folder. It must stay PORTS for now
+
+**Alternative Solutions If Not Working:**
+- Try a fresh flash of the TrimUI Brick FW (available at: https://github.com/trimui/firmware_brick/releases/tag/v1.0.6-20241215) followed by a complete fresh install of PakUI
+- Some users report success by replacing the included Portmaster folder in Apps with the TrimUI release found at: https://github.com/PortsMaster/PortMaster-GUI/releases
+
+**Thank You:** to Kloptops and the entire PortMaster team for creating such an amazing tool!
 
 ---
 
@@ -192,7 +249,7 @@ Play PICO-8 games with a native app and Splore.
 
 **Features:**
 - Runs PICO-8 cartridges (`.p8` and `.p8.png`) at native speed
-- Launch the Splore browser directly (works with any file containing “splore” in the name)
+- Launch the Splore browser directly (works with any file containing "splore" in the name)
 - Browse, download, and play online games through Splore
 - In-game menu system with useful options:
   - Switch between square and widescreen display modes while playing
@@ -214,6 +271,8 @@ A tool that downloads game cover art for your ROM collection from online databas
 - Resume scraping sessions if interrupted
 - Set region priorities (USA, Europe, Japan, World)
 - Customize image sizes
+- New "Start Fresh" option to delete all images for a system when scraping to change styles
+- Improved name matching for better results
 
 ---
 
@@ -292,6 +351,7 @@ A tool for updating your system software without needing a computer.
 - Download and install updates directly
 - Reinstall the current version if needed
 - Check for PakUI updates
+- Install Sleep Mode Fork directly from the updater
 
 ---
 
@@ -374,17 +434,29 @@ A tool for organizing PlayStation game files and setting up multi-disc games.
 
 ---
 
-## Save Converter
+## Save Options
 
-A tool for converting save files between RetroArch and MinUI formats.
+A tool for managing and converting save files between different formats.
 
 **Features:**
 - Convert RetroArch `.srm` files to MinUI `.sav` format
 - Convert MinUI saves to RetroArch format
+- Toggle between SAV and SRM file formats right from the menu
 - Batch convert all saves at once
 - Select individual saves to convert
 - View conversion results
 - Automatically match saves with ROMs
+
+**How to Install and Use Save Options:**
+1. Launch Pak Manager
+2. Go to the Install section
+3. Select "Save Options" to install the tool
+4. Once installed, go to Tools
+5. Select "Save Options" from the menu
+
+**Where to Place Your Save Files for Conversion:**
+- For RetroArch to MinUI: Place your .srm files in `/mnt/SDCARD/Saves/RETROARCH/`
+- For MinUI to RetroArch: Your .sav files are already in the correct location (typically in subfolders of `/mnt/SDCARD/Saves/`)
 
 ---
 
@@ -417,16 +489,15 @@ A tool for synchronizing files between your device and other computers.
 
 ---
 
-## Switch OS
+## RetroArch Hotkeys
 
-A tool for switching between different operating systems on your device.
+New RetroArch hotkeys are available for improved usability:
+- Menu+Select - Open RetroArch Menu
+- Menu+L1/R1 - Load State/Save State
+- Menu+R2 - Toggle Fast Forward
+- Menu+Left/Right - Previous/Next Save Slot
 
-**Features:**
-- Switch from MinUI to Stock OS
-- Switch from MinUI to Spruce OS
-- Preserve your game files during switching
-- Automatic ROM folder handling
-- Return to MinUI from other operating systems
+*Thanks to GrimWTF for the config file!*
 
 ---
 
@@ -450,6 +521,9 @@ PakUI stands on the shoulders of many talented individuals whose contributions, 
 - **Karim**  
   Developed the NDS pak, adding valuable functionality to the project.
 
+- **Froist**
+  For hosting and maintaining the Sleep Mode Fork files that make this feature possible.
+
 ### Testing & Feedback
 - **Ry, Lonko, and Sun**  
   Offered thorough testing and invaluable feedback that greatly refined the user experience. Thanks Sun for uploading the files!
@@ -469,8 +543,8 @@ PakUI stands on the shoulders of many talented individuals whose contributions, 
 - **Spruce Team**  
   Provided unwavering support and assistance and being great friends!
 
-- **Russ (RetroGameCorps)**  
-  Inspired our passion for retro gaming and ensured we never forgot the importance of snacks and drinks during long sessions. As well as early testing with valuable feedback on how GS should function with shortcut and other UI elements.
-
-### Personal Thanks
-We extend our heartfelt appreciation to our families, whose support and encouragement enable us to pursue our passions and share what we love with this amazing community.
+- **GrimWTF**
+  Provided RetroArch hotkey configuration files.
+  
+- **PortMaster Team**
+  Created the amazing PortMaster that brings hundreds of games to PakUI.

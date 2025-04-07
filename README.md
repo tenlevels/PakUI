@@ -174,7 +174,6 @@ A powerful tool that brings hundreds of ports and games to your TrimUI device.
 
 **Alternative Solutions If Not Working:**
 - Try a fresh flash of the TrimUI Brick FW (available at: https://github.com/trimui/firmware_brick/releases/tag/v1.0.6-20241215) followed by a complete fresh install of PakUI
-- Some users report success by replacing the included Portmaster folder in Apps with the TrimUI release found at: https://github.com/PortsMaster/PortMaster-GUI/releases
 
 **Thank You:** to Kloptops and the entire PortMaster team for creating such an amazing tool!
 

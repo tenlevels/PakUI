@@ -34,6 +34,13 @@ To get started with PakUI, follow these easy steps:
 It's that simple—enjoy and happy gaming!
 
 
+Contact & Support
+Need help? Want to share feedback? You can find the PakUI team on Discord only.
+
+Join the Retro Handhelds server - TrimUI Brick thread
+Join the Retro Game Handhelds server - TrimUI Brick thread
+
+
 ## Table of Contents
 
 1. [Pak Manager](#pak-manager)  

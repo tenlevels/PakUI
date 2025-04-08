@@ -1,0 +1,8 @@
+{
+    "change_channel": false,
+    "release_channel": "stable",
+    "show_experimental": false,
+    "theme": "MinUI",
+    "theme-scheme": null,
+    "version": 2
+}

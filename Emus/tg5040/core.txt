@@ -45,8 +45,6 @@ gameswitcher=ON
 [DOS]
 launcher=minarch
 core1=dosbox_pure_libretro.so
-core2=dosbox_svn_libretro.so
-core3=dosbox_libretro.so
 gameswitcher=ON
 
 # EasyRPG (EASYRPG)
@@ -64,9 +62,6 @@ core3=fbalpha2012_libretro.so
 core4=fbalpha_libretro.so
 core5=km_mame2003_xtreme_amped_libretro.so
 core6=mame2003_plus_libretro.so
-core7=mame2010_libretro.so
-core8=mame2000_libretro.so
-core9=mame_libretro.so
 gameswitcher=ON
 
 # Nintendo Entertainment System (FC)
@@ -77,7 +72,6 @@ core2=quicknes_libretro.so
 core3=nestopia_libretro.so
 core4=mesen_libretro.so
 core5=bnes_libretro.so
-core6=fceunext_libretro.so
 gameswitcher=ON
 
 # Famicom Disk System (FDS)
@@ -86,7 +80,6 @@ launcher=minarch
 core1=fceumm_libretro.so
 core2=nestopia_libretro.so
 core3=mesen_libretro.so
-core4=fceunext_libretro.so
 gameswitcher=ON
 
 # Atari 5200 (FIFTYTWOHUNDRED)
@@ -170,12 +163,6 @@ launcher=minarch
 core1=sameduck_libretro.so
 gameswitcher=ON
 
-# Media Player (MPV)
-[MPV]
-launcher=minarch
-core1=mpv_libretro.so
-gameswitcher=ON
-
 # Microsoft MSX (MSX)
 [MSX]
 launcher=minarch
@@ -187,8 +174,6 @@ gameswitcher=ON
 [NEOCD]
 launcher=minarch
 core1=neocd_libretro.so
-core2=fbneo_libretro.so
-core3=geolith_libretro.so
 gameswitcher=ON
 
 # Neo-Geo (NEOGEO)
@@ -196,9 +181,6 @@ gameswitcher=ON
 launcher=minarch
 core1=fbneo_libretro.so
 core2=fbalpha2012_neogeo_libretro.so
-core3=geolith_libretro.so
-core4=fbalpha2012_libretro.so
-core5=fbalpha_libretro.so
 gameswitcher=ON
 
 # Neo Geo Pocket Color (NGPC)
@@ -270,8 +252,6 @@ core2=mednafen_supafaust_libretro.so
 core3=chimerasnes_libretro.so
 core4=snes9x_libretro.so
 core5=snes9x2005_libretro.so
-core6=snes9x2010_libretro.so
-core7=snes9x2002_libretro.so
 gameswitcher=ON
 
 # Super Game Boy (SGB)
@@ -332,7 +312,6 @@ gameswitcher=ON
 [WSC]
 launcher=minarch
 core1=mednafen_wswan_libretro.so
-core2=beetle_wswan_libretro.so
 gameswitcher=ON
 
 # X68000 (X68000)

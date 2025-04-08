@@ -1,2 +1,0 @@
-Create themes, change bootlogo
-Turn on and off boxart

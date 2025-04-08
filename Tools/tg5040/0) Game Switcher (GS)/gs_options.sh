@@ -10,12 +10,8 @@ DEFAULT_IMAGE="$SCRIPT_DIR/default.zip.0.bmp"
 SELECTED_GAME="$1"
 GAME_ORDER="$2"
 
-##############################################################################
-# Main Options Menu – now with an extra “Set Hotkey” entry.
-##############################################################################
 show_options_menu() {
     local options_menu_idx=0
-
     while true; do
         echo "Restart Game|restart" > "$TEMP_MENU"
         echo "Add Game|add" >> "$TEMP_MENU"
@@ -24,17 +20,14 @@ show_options_menu() {
         echo "Emulator Options|emulator" >> "$TEMP_MENU"
         echo "Set Shortcut Button|set_hotkey" >> "$TEMP_MENU"
         echo "Clear Game Switcher|clear" >> "$TEMP_MENU"
-
         picker_output=$("$SCRIPT_DIR/picker" "$TEMP_MENU" -i $options_menu_idx)
         picker_status=$?
-
         if [ $picker_status -eq 0 ]; then
             options_menu_idx=$(grep -n "^${picker_output%$'\n'}$" "$TEMP_MENU" | cut -d: -f1)
             options_menu_idx=$((options_menu_idx - 1))
         else
             return
         fi
-
         action=$(echo "$picker_output" | cut -d'|' -f2)
         case "$action" in
             "restart")
@@ -68,19 +61,15 @@ show_options_menu() {
     done
 }
 
-##############################################################################
-# set_hotkey - Complete solution with ignore_hotkey.txt handling
-##############################################################################
 set_hotkey() {
     local hotkey_menu="/tmp/hotkey_menu.txt"
-    echo "OFF|OFF" > "$hotkey_menu"  # Added OFF option
-    echo "MENU|MENU" >> "$hotkey_menu"
+    echo "OFF|OFF" > "$hotkey_menu"
+    echo "SELECT|SELECT" >> "$hotkey_menu"
+    echo "START|START" >> "$hotkey_menu"
     echo "L2|L2" >> "$hotkey_menu"
     echo "R2|R2" >> "$hotkey_menu"
     echo "F1|F1" >> "$hotkey_menu"
     echo "F2|F2" >> "$hotkey_menu"
-
-    # Setup auto.sh path
     [ -z "$PLATFORM" ] && \
     if [ -d "/mnt/SDCARD/.userdata/trimui" ]; then
         PLATFORM="trimui"
@@ -89,26 +78,17 @@ set_hotkey() {
     else
         PLATFORM="trimui"
     fi
-    
     local AUTO_DIR="/mnt/SDCARD/.userdata/$PLATFORM"
     local AUTO_PATH="$AUTO_DIR/auto.sh"
     local IGNORE_FILE="$SCRIPT_DIR/ignore_hotkey.txt"
-    
-    # Check if auto.sh exists, create if not
     mkdir -p "$AUTO_DIR"
     [ ! -f "$AUTO_PATH" ] && echo "#!/bin/sh" > "$AUTO_PATH" && chmod +x "$AUTO_PATH"
-
-    # Check current hotkey setting
     local current_hotkey="F2"
     [ -f "$SCRIPT_DIR/hotkey.conf" ] && . "$SCRIPT_DIR/hotkey.conf" && current_hotkey="$HOTKEY"
-
     "$SCRIPT_DIR/show_message" "Current: $current_hotkey|Select shortcut button" -t 2
     new_hotkey=$("$SCRIPT_DIR/picker" "$hotkey_menu")
-
     if [ -n "$new_hotkey" ]; then
         new_choice=$(echo "$new_hotkey" | cut -d'|' -f2)
-        
-        # Different message based on current state and selection
         if [ "$current_hotkey" = "OFF" ] && [ "$new_choice" != "OFF" ]; then
             message_text="Enable shortcut $new_choice|Requires a reboot to take effect.|Reboot now?"
         elif [ "$current_hotkey" != "OFF" ] && [ "$new_choice" = "OFF" ]; then
@@ -116,36 +96,19 @@ set_hotkey() {
         else
             message_text="Change shortcut to $new_choice|Requires a reboot to take effect.|Reboot now?"
         fi
-        
-        # Show the appropriate message
         "$SCRIPT_DIR/show_message" "$message_text" -l -a "Yes" -b "No"
-        
         if [ $? -eq 0 ]; then
-            # Update hotkey.conf first
             echo "HOTKEY=\"$new_choice\"" > "$SCRIPT_DIR/hotkey.conf"
-            
-            # Now handle auto.sh and ignore_hotkey.txt
             if [ "$new_choice" = "OFF" ]; then
-                # Remove any line containing (GS) from auto.sh
                 sed -i '/(GS)/d' "$AUTO_PATH"
-                
-                # Create ignore_hotkey.txt to disable monitoring
                 touch "$IGNORE_FILE"
-                
                 "$SCRIPT_DIR/show_message" "Shortcut disabled|Rebooting..." -t 2
             else
-                # Remove any existing GS entry to avoid duplicates
                 sed -i '/(GS)/d' "$AUTO_PATH"
-                
-                # Add new line to auto.sh with (GS) tag
                 echo "\"$SCRIPT_DIR/gs_monitor.sh\" # Game Switcher (GS)" >> "$AUTO_PATH"
-                
-                # Remove ignore_hotkey.txt if it exists
                 [ -f "$IGNORE_FILE" ] && rm -f "$IGNORE_FILE"
-                
                 "$SCRIPT_DIR/show_message" "Shortcut set to $new_choice|Rebooting..." -t 2
             fi
-            
             reboot
         else
             "$SCRIPT_DIR/show_message" "Shortcut change cancelled" -t 2
@@ -155,14 +118,10 @@ set_hotkey() {
     fi
 }
 
-##############################################################################
-# Determine which launcher is used by a particular game.
-##############################################################################
 get_active_launcher_for_game() {
     local rom_path="$1"
     local rom_platform="$2"
     local game_config
-
     game_config=$(get_game_specific_settings "$rom_path" "$rom_platform")
     if [ $? -eq 0 ] && [ -n "$game_config" ]; then
         local game_launcher
@@ -172,16 +131,12 @@ get_active_launcher_for_game() {
             return
         fi
     fi
-
     local system_launcher
     system_launcher=$(get_emulator_setting "$rom_platform" "launcher")
     [ -z "$system_launcher" ] && system_launcher="retroarch"
     echo "$system_launcher"
 }
 
-##############################################################################
-# Restart game: clear saves/screenshots for the launcher in use.
-##############################################################################
 restart_game() {
     if [ -f "$SELECTED_GAME" ]; then
         ROM_PLATFORM=$(detect_rom_platform "$SELECTED_GAME")
@@ -189,7 +144,6 @@ restart_game() {
         GAME_BASE_NAME="${ROM_NAME%.*}"
         local active_launcher
         active_launcher=$(get_active_launcher_for_game "$SELECTED_GAME" "$ROM_PLATFORM")
-
         if [ "$active_launcher" = "retroarch" ]; then
             rm -f /tmp/resume_slot.txt 2>/dev/null
             rm -f "/mnt/SDCARD/.userdata/shared/.minui/$ROM_PLATFORM/$ROM_NAME.txt" 2>/dev/null
@@ -212,7 +166,6 @@ restart_game() {
             rm -f "/mnt/SDCARD/.userdata/shared/.minui/$ROM_PLATFORM/$ROM_NAME.$SLOT.bmp" 2>/dev/null
             rm -f "/mnt/SDCARD/.userdata/shared/$ROM_PLATFORM-$core_name/$ROM_NAME.st$SLOT" 2>/dev/null
         fi
-
         local temp_game_order="/tmp/gs_temp_restart.txt"
         grep -v "|$SELECTED_GAME|" "$GAME_ORDER" > "$temp_game_order"
         local display_name image_path launcher
@@ -232,7 +185,6 @@ restart_game() {
     fi
 }
 
-##############################################################################
 remove_game() {
     local to_remove="$1"
     if [ -z "$to_remove" ]; then
@@ -254,7 +206,6 @@ remove_game() {
     return 0
 }
 
-##############################################################################
 clear_game_switcher() {
     "$SCRIPT_DIR/show_message" "Clear Game Switcher?|This will remove all games." -l -a "Yes" -b "No"
     if [ $? -ne 0 ]; then
@@ -265,7 +216,6 @@ clear_game_switcher() {
     return 0
 }
 
-##############################################################################
 handle_add_game() {
     local add_menu_idx=0
     while true; do
@@ -337,7 +287,6 @@ handle_add_game() {
     done
 }
 
-##############################################################################
 add_game_via_browser() {
     local rom_path="$1"
     if [ -z "$rom_path" ]; then
@@ -358,7 +307,6 @@ add_game_via_browser() {
     return 0
 }
 
-##############################################################################
 update_game() {
     local rom_path="$1"
     local emu_tag="$2"
@@ -404,7 +352,6 @@ update_game() {
     return 0
 }
 
-##############################################################################
 detect_rom_platform() {
     local rom_path="$1"
     local rom_platform=""
@@ -426,7 +373,6 @@ detect_rom_platform() {
     echo "$rom_platform"
 }
 
-##############################################################################
 find_save_slot() {
     local rom_path="$1"
     local emu_tag="$2"
@@ -454,7 +400,6 @@ find_save_slot() {
     echo "$slot"
 }
 
-##############################################################################
 get_game_specific_settings() {
     local rom_path="$1"
     local emu_tag="$2"
@@ -473,14 +418,12 @@ get_game_specific_settings() {
     return 1
 }
 
-##############################################################################
 get_emulator_setting() {
     section=$1
     key=$2
     sed -n "/^\[$section\]/,/^\[/p" "$EMULATOR_CONFIG" | grep "^$key=" | cut -d'=' -f2
 }
 
-##############################################################################
 get_game_switcher_state() {
     local section="$1"
     local core_setting=""
@@ -504,17 +447,14 @@ get_game_switcher_state() {
     fi
 }
 
-##############################################################################
 toggle_game_switcher_state() {
     local section="$1"
     local new_state="$2"
     local success=0
-
     local in_section=0
     local found=0
     local temp_file="/tmp/gs_temp.txt"
     > "$temp_file"
-
     while IFS= read -r line; do
         case "$line" in
             "[""$section""]")
@@ -546,7 +486,6 @@ toggle_game_switcher_state() {
             ;;
         esac
     done < "$EMULATOR_CONFIG"
-
     if [ $found -eq 0 ]; then
         if ! grep -q "\[$section\]" "$EMULATOR_CONFIG"; then
             echo "" >> "$temp_file"
@@ -565,12 +504,10 @@ toggle_game_switcher_state() {
             mv "$new_temp" "$temp_file"
         fi
     fi
-
     mv "$temp_file" "$EMULATOR_CONFIG"
     if grep -q "gameswitcher=$new_state" "$EMULATOR_CONFIG"; then
         success=1
     fi
-
     if [ $success -eq 1 ]; then
         "$SCRIPT_DIR/show_message" "GameSwitcher set to $new_state" -t 2
     else
@@ -578,25 +515,21 @@ toggle_game_switcher_state() {
     fi
 }
 
-##############################################################################
 update_config() {
     local section="$1" key="$2" value="$3"
     if [ "$key" = "core1" ]; then
         update_core_order "$section" "$value"
         return
     fi
-
     if ! grep -q "\[$section\]" "$EMULATOR_CONFIG"; then
         echo "" >> "$EMULATOR_CONFIG"
         echo "[$section]" >> "$EMULATOR_CONFIG"
         echo "$key=$value" >> "$EMULATOR_CONFIG"
         return
     fi
-
     local temp_file="/tmp/core_temp.txt"
     > "$temp_file"
     local in_section=0 setting_found=0
-
     while IFS= read -r line; do
         case "$line" in
             "[""$section""]")
@@ -621,20 +554,16 @@ update_config() {
             ;;
         esac
     done < "$EMULATOR_CONFIG"
-
     if [ $in_section -eq 1 ] && [ $setting_found -eq 0 ]; then
         echo "$key=$value" >> "$temp_file"
     fi
-
     mv "$temp_file" "$EMULATOR_CONFIG"
 }
 
-##############################################################################
 update_core_order() {
     local section="$1" new_core="$2"
     local temp_file="/tmp/core_temp.txt"
     > "$temp_file"
-
     awk -v section="$section" -v new_core="$new_core" '
     BEGIN { in_section=0; core_count=0; processed=0 }
     /^\[/ {
@@ -652,31 +581,23 @@ update_core_order() {
     }
     { print }
     ' "$EMULATOR_CONFIG" > "$temp_file"
-
     mv "$temp_file" "$EMULATOR_CONFIG"
 }
 
-##############################################################################
 handle_emulator_options() {
     local rom_path="$1"
     local rom_platform="$2"
     local emu_menu_idx=0
-
     create_emulator_options_menu "$rom_path" "$rom_platform"
-
     while true; do
         emu_option=$("$SCRIPT_DIR/picker" "$EMU_MENU" -i $emu_menu_idx)
-
         if [ -z "$emu_option" ]; then
             break
         fi
-
         emu_menu_idx=$(grep -n "^${emu_option%$'\n'}$" "$EMU_MENU" | cut -d: -f1)
         emu_menu_idx=$((emu_menu_idx - 1))
-
         emu_action=$(echo "$emu_option" | cut -d'|' -f2)
         emu_section=$(echo "$emu_option" | cut -d'|' -f3)
-
         case "$emu_action" in
             "launcher")
                 create_launcher_menu "$emu_section"
@@ -708,18 +629,14 @@ handle_emulator_options() {
     done
 }
 
-##############################################################################
 create_emulator_options_menu() {
     local rom_path="$1"
     local rom_platform="$2"
-
     > "$EMU_MENU"
-
     local current_launcher
     current_launcher=$(get_emulator_setting "$rom_platform" "launcher")
     [ -z "$current_launcher" ] && current_launcher="retroarch"
     echo "Launcher: $current_launcher|launcher|$rom_platform" >> "$EMU_MENU"
-
     local current_core
     current_core=$(get_emulator_setting "$rom_platform" "core1")
     if [ -n "$current_core" ]; then
@@ -727,19 +644,16 @@ create_emulator_options_menu() {
     else
         echo "Core: (Not Set)|core|$rom_platform" >> "$EMU_MENU"
     fi
-
     local gs_state
     gs_state=$(get_game_switcher_state "$rom_platform")
     echo "GameSwitcher: $gs_state|gameswitcher|$rom_platform" >> "$EMU_MENU"
 }
 
-##############################################################################
 create_launcher_menu() {
     local section="$1"
     > "$EMU_MENU"
     local current_launcher
     current_launcher=$(get_emulator_setting "$section" "launcher")
-
     if [ "$current_launcher" = "retroarch" ]; then
         echo "Current: RetroArch|retroarch|$section" >> "$EMU_MENU"
         echo "minarch|minarch|$section" >> "$EMU_MENU"
@@ -752,17 +666,15 @@ create_launcher_menu() {
     fi
 }
 
-##############################################################################
 create_core_menu() {
     local section="$1"
     > "$EMU_MENU"
     local current_core
     current_core=$(get_emulator_setting "$section" "core1")
-
     local in_section=0
     while IFS= read -r line; do
         case "$line" in
-            "[""$section""]") in_section=1 ;;
+            "["$section"]") in_section=1 ;;
             "["*) in_section=0 ;;
             core[0-9]*=*)
                 if [ $in_section -eq 1 ]; then
@@ -778,7 +690,6 @@ create_core_menu() {
             ;;
         esac
     done < "$EMULATOR_CONFIG"
-
     if [ ! -s "$EMU_MENU" ]; then
         if [ -n "$current_core" ]; then
             echo "Current: $current_core|$current_core|$section" >> "$EMU_MENU"
@@ -788,7 +699,6 @@ create_core_menu() {
     fi
 }
 
-##############################################################################
 create_gameswitcher_menu() {
     local section="$1"
     local current_state
@@ -803,29 +713,20 @@ create_gameswitcher_menu() {
     fi
 }
 
-##############################################################################
-# -------------------- Game Settings Functions ---------------------------
-##############################################################################
 handle_game_settings() {
     local rom_path="$1"
     local rom_platform="$2"
     local game_menu_idx=0
-
     create_game_settings_menu "$rom_path" "$rom_platform"
-
     while true; do
         game_option=$("$SCRIPT_DIR/picker" "$GAME_SETTINGS_MENU" -i $game_menu_idx)
-
         if [ -z "$game_option" ]; then
             break
         fi
-
         game_menu_idx=$(grep -n "^${game_option%$'\n'}$" "$GAME_SETTINGS_MENU" | cut -d: -f1)
         game_menu_idx=$((game_menu_idx - 1))
-
         game_action=$(echo "$game_option" | cut -d'|' -f2)
         game_rom=$(echo "$game_option" | cut -d'|' -f3)
-
         case "$game_action" in
             "game_launcher")
                 create_game_launcher_menu "$game_rom" "$rom_platform"
@@ -859,7 +760,6 @@ handle_game_settings() {
     done
 }
 
-##############################################################################
 create_game_settings_menu() {
     local rom_path="$1"
     local rom_platform="$2"
@@ -868,33 +768,27 @@ create_game_settings_menu() {
     local rom_name_clean="${rom_name%.*}"
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$rom_platform.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-
     > "$GAME_SETTINGS_MENU"
-
     if [ -f "$game_config" ]; then
         local game_launcher game_core gameswitcher_state
         game_launcher=$(grep "^launcher=" "$game_config" | cut -d'=' -f2)
         game_core=$(grep "^core=" "$game_config" | cut -d'=' -f2)
         gameswitcher_state=$(grep "^gameswitcher=" "$game_config" | cut -d'=' -f2)
-
         if [ -n "$game_launcher" ]; then
             echo "Launcher: $game_launcher|game_launcher|$rom_path" >> "$GAME_SETTINGS_MENU"
         else
             echo "Launcher: (Use system default)|game_launcher|$rom_path" >> "$GAME_SETTINGS_MENU"
         fi
-
         if [ -n "$game_core" ]; then
             echo "Core: $game_core|game_core|$rom_path" >> "$GAME_SETTINGS_MENU"
         else
             echo "Core: (Use system default)|game_core|$rom_path" >> "$GAME_SETTINGS_MENU"
         fi
-
         if [ -n "$gameswitcher_state" ]; then
             echo "GameSwitcher: $gameswitcher_state|game_gameswitcher|$rom_path" >> "$GAME_SETTINGS_MENU"
         else
             echo "GameSwitcher: (Use system default)|game_gameswitcher|$rom_path" >> "$GAME_SETTINGS_MENU"
         fi
-
         echo "Remove Game Settings|remove_game_settings|$rom_path" >> "$GAME_SETTINGS_MENU"
     else
         echo "Launcher: (Use system default)|game_launcher|$rom_path" >> "$GAME_SETTINGS_MENU"
@@ -903,7 +797,6 @@ create_game_settings_menu() {
     fi
 }
 
-##############################################################################
 create_game_launcher_menu() {
     local rom_path="$1"
     local rom_platform="$2"
@@ -912,20 +805,15 @@ create_game_launcher_menu() {
     local rom_name_clean="${rom_name%.*}"
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$rom_platform.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-
     > "$EMU_MENU"
-
     local current_launcher=""
     if [ -f "$game_config" ]; then
         current_launcher=$(grep "^launcher=" "$game_config" | cut -d'=' -f2)
     fi
-
     local system_launcher
     system_launcher=$(get_emulator_setting "$rom_platform" "launcher")
     [ -z "$system_launcher" ] && system_launcher="retroarch"
-
     echo "System Default ($system_launcher)|default|$rom_path" >> "$EMU_MENU"
-
     if [ "$current_launcher" = "retroarch" ]; then
         echo "Current: RetroArch|retroarch|$rom_path" >> "$EMU_MENU"
         echo "minarch|minarch|$rom_path" >> "$EMU_MENU"
@@ -942,7 +830,6 @@ create_game_launcher_menu() {
     fi
 }
 
-##############################################################################
 create_game_core_menu() {
     local rom_path="$1"
     local rom_platform="$2"
@@ -951,20 +838,15 @@ create_game_core_menu() {
     local rom_name_clean="${rom_name%.*}"
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$rom_platform.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-
     > "$EMU_MENU"
-
     local current_core=""
     if [ -f "$game_config" ]; then
         current_core=$(grep "^core=" "$game_config" | cut -d'=' -f2)
     fi
-
     local system_core
     system_core=$(get_emulator_setting "$rom_platform" "core1")
     [ -z "$system_core" ] && system_core="(none)"
-
     echo "System Default ($system_core)|default|$rom_path" >> "$EMU_MENU"
-
     local in_section=0
     while IFS= read -r line; do
         case "$line" in
@@ -984,13 +866,11 @@ create_game_core_menu() {
             ;;
         esac
     done < "$EMULATOR_CONFIG"
-
     if [ -n "$current_core" ] && ! grep -q "|$current_core|" "$EMU_MENU"; then
         echo "Current: $current_core|$current_core|$rom_path" >> "$EMU_MENU"
     fi
 }
 
-##############################################################################
 create_game_gameswitcher_menu() {
     local rom_path="$1"
     local rom_platform="$2"
@@ -999,19 +879,14 @@ create_game_gameswitcher_menu() {
     local rom_name_clean="${rom_name%.*}"
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$rom_platform.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-
     > "$EMU_MENU"
-
     local current_state=""
     if [ -f "$game_config" ]; then
         current_state=$(grep "^gameswitcher=" "$game_config" | cut -d'=' -f2)
     fi
-
     local system_state
     system_state=$(get_game_switcher_state "$rom_platform")
-
     echo "System Default ($system_state)|default|$rom_path" >> "$EMU_MENU"
-
     if [ "$current_state" = "ON" ]; then
         echo "Current: ON|ON|$rom_path" >> "$EMU_MENU"
         echo "OFF|OFF|$rom_path" >> "$EMU_MENU"
@@ -1024,27 +899,22 @@ create_game_gameswitcher_menu() {
     fi
 }
 
-##############################################################################
 update_game_setting() {
     local rom_path="$1"
     local rom_platform="$2"
     local key="$3"
     local value="$4"
-
     local rom_name
     rom_name=$(basename "$rom_path")
     local rom_name_clean="${rom_name%.*}"
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$rom_platform.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-
     if [ ! -d "$game_config_dir" ]; then
         mkdir -p "$game_config_dir"
     fi
-
     if [ ! -f "$game_config" ]; then
         touch "$game_config"
     fi
-
     if [ "$value" = "default" ]; then
         if grep -q "^$key=" "$game_config"; then
             grep -v "^$key=" "$game_config" > "/tmp/game_conf.tmp"
@@ -1052,7 +922,6 @@ update_game_setting() {
         fi
         return
     fi
-
     if grep -q "^$key=" "$game_config"; then
         sed -i "s|^$key=.*|$key=$value|" "$game_config"
     else
@@ -1060,7 +929,6 @@ update_game_setting() {
     fi
 }
 
-##############################################################################
 remove_game_settings() {
     local rom_path="$1"
     local rom_platform="$2"
@@ -1069,7 +937,6 @@ remove_game_settings() {
     local rom_name_clean="${rom_name%.*}"
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$rom_platform.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-
     if [ -f "$game_config" ]; then
         "$SCRIPT_DIR/show_message" "Remove custom settings for this game?" -l -a "Yes" -b "No"
         if [ $? -eq 0 ]; then
@@ -1081,8 +948,5 @@ remove_game_settings() {
     fi
 }
 
-##############################################################################
-# At the end, display the main menu.
-##############################################################################
 show_options_menu
 exit 0

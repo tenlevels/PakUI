@@ -1,77 +1,52 @@
 #!/bin/sh
-# --- Set working directory ---
 SCRIPT_DIR="$(dirname "$0")"
 cd "$SCRIPT_DIR"
-
-# Create the persistent ignore file to disable hotkeys while Game Switcher is active
 touch "$SCRIPT_DIR/ignore_hotkey.txt"
-
-# Set GS active flag so that gs_monitor.sh ignores input events
 touch /tmp/gs_active
-
-# Check if we're coming from gs_monitor script
 if [ -n "$GS_FROM_MONITOR" ] || [ "$1" = "--from-monitor" ]; then
-    # Create a marker file to indicate we came from gs_monitor
     touch "/tmp/gs_from_monitor"
 fi
 
-# --- Functions to suspend and reset MinUI ---
 pause_minui() {
     killall -STOP minui.elf 2>/dev/null
     echo "MinUI suspended."
 }
 
 reset_minui() {
-    # Kill any existing MinUI completely
     killall -KILL minui.elf 2>/dev/null
     echo "MinUI killed."
-    # Relaunch MinUI from the correct path
     /mnt/SDCARD/.system/tg5040/bin/minui.elf &
     echo "MinUI restarted."
 }
 
-# --- Cleanup function on exit ---
 cleanup_on_exit() {
-    # Remove GS active flag and temporary files
     rm -f /tmp/gs_active \
           /tmp/keyboard_output.txt /tmp/picker_output.txt /tmp/search_results.txt \
           /tmp/browser_selection.txt /tmp/browser_history.txt \
           /tmp/gs_options_menu.txt /tmp/add_game_menu.txt /tmp/recent_list.txt \
           /tmp/gameswitchertemp.* /tmp/update_image.*
-
-    # Restore hotkeys by removing the persistent ignore file
     rm -f "$SCRIPT_DIR/ignore_hotkey.txt"
-
-    # Reset MinUI first
-    if [ -f "/tmp/gs_from_monitor" ] && [ ! -f "/tmp/gs_played_game" ]; then
-        killall -KILL minui.elf 2>/dev/null
-        echo "MinUI killed - special handling."
-        /mnt/SDCARD/.system/tg5040/bin/minui.elf &
-        echo "MinUI restarted with delay."
-    else
-        reset_minui
+    
+    FROM_MONITOR=0
+    if [ -f "/tmp/gs_from_monitor" ]; then
+        FROM_MONITOR=1
     fi
-
-    # Add a short pause (100ms) before resuming the monitor
-    sleep 0.1
-
-    # Now resume the monitor process if we suspended it
-    if [ -n "$MONITOR_PID" ]; then
-        if kill -0 "$MONITOR_PID" 2>/dev/null; then
-            kill -CONT "$MONITOR_PID"
-            echo "gs_monitor process (PID: $MONITOR_PID) resumed"
-        else
-            "$SCRIPT_DIR/gs_monitor.sh" &
-            echo "gs_monitor process was missing, restarted"
-        fi
-    fi
-
+    
     rm -f "/tmp/gs_from_monitor" /tmp/gs_played_game
+    
+    killall "$SCRIPT_DIR/gs_monitor.sh" 2>/dev/null
+    "$SCRIPT_DIR/gs_monitor.sh" &
+    
+    if [ $FROM_MONITOR -eq 1 ]; then
+        killall -KILL minui.elf 2>/dev/null
+        echo "MinUI killed - from monitor exit."
+        /mnt/SDCARD/.system/tg5040/bin/minui.elf &
+        echo "MinUI restarted."
+    fi
 }
+
 trap cleanup_on_exit EXIT INT TERM
 
-
-# --- Variable Definitions ---
 GAME_ORDER="$SCRIPT_DIR/game_order.txt"
 LAST_GAME="$SCRIPT_DIR/last_game.txt"
 DEFAULT_IMAGE="$SCRIPT_DIR/default.zip.0.bmp"
@@ -407,8 +382,6 @@ fi
 PREV_STATUS=0
 cleanup_duplicate_entries
 update_all_game_images
-
-# --- Suspend MinUI and let gs_monitor run (without stopping evtest) ---
 pause_minui
 
 while true; do
@@ -423,17 +396,21 @@ while true; do
     else
         main_menu_idx=0
     fi
+    
     killall game_switcher 2>/dev/null
     game_switcher_output=$(./game_switcher "$GAME_ORDER" -i $main_menu_idx -a "PLAY" -b "EXIT" -y "OPTIONS")
     game_switcher_status=$?
     PREV_STATUS=$game_switcher_status
+    
     if [ $game_switcher_status -eq 2 ]; then
         if [ -n "$ORIGINAL_LAST_GAME" ]; then
             echo "$ORIGINAL_LAST_GAME" > "$LAST_GAME"
         fi
+        killall evtest
         cleanup
         exit 0
     fi
+    
     case "$game_switcher_status" in
         0)
             cleanup
@@ -513,4 +490,5 @@ while true; do
             ;;
     esac
 done
+
 cleanup

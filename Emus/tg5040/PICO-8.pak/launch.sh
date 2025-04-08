@@ -1,5 +1,4 @@
 #!/bin/sh
-
 SCREEN_MODE="standard"
 CURRENT_ROM="$1"
 START_TIME=0
@@ -13,17 +12,14 @@ if [ -z "$PICO8_ROMS_FOLDER" ]; then
   ./show_message "PICO-8 ROM folder not found|Check for a folder with (PICO-8) in name" -t 3
   exit 1
 fi
-
 PICO8_RES_FOLDER="$PICO8_ROMS_FOLDER/.res"
 mkdir -p "$PICO8_RES_FOLDER"
-
 export picodir=/mnt/SDCARD/Emus/$PLATFORM/PICO-8.pak/PICO8_Wrapper
 cd "$picodir"
 export PATH=$PATH:$PWD/bin
 export HOME=$picodir
 export PATH=${picodir}:$PATH
 export LD_LIBRARY_PATH="$picodir/lib:/usr/lib:$LD_LIBRARY_PATH"
-
 if [ ! -f "$picodir/bin/pico8_64" ] || [ ! -f "$picodir/bin/pico8.dat" ]; then
   if [ -f "/mnt/SDCARD/Bios/PICO8/pico8_64" ] && [ -f "/mnt/SDCARD/Bios/PICO8/pico8.dat" ]; then
     ./show_message "Copying PICO-8 files from Bios folder" -t 2
@@ -36,24 +32,54 @@ if [ ! -f "$picodir/bin/pico8_64" ] || [ ! -f "$picodir/bin/pico8.dat" ]; then
     exit 1
   fi
 fi
-
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 AUTO_RESUME_SCRIPT="$SCRIPT_DIR/auto_resume.sh"
 SCREEN_MODE_FILE="$picodir/.screen_mode"
 [ -f "$SCREEN_MODE_FILE" ] && SCREEN_MODE=$(cat "$SCREEN_MODE_FILE") || echo "$SCREEN_MODE" > "$SCREEN_MODE_FILE"
-
-BITPAL_DIR="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/bitpal_data"
-BITPAL_ACTIVE_MISSIONS_DIR="$BITPAL_DIR/active_missions"
-BITPAL_ACTIVE_MISSION="$BITPAL_DIR/active_mission.txt"
+find_bitpal_dir() {
+    local found_dir=""
+    for check_dir in "/mnt/SDCARD/Tools/$PLATFORM"/*; do
+        if [ -d "$check_dir" ]; then
+            base_name=$(basename "$check_dir")
+            if echo "$base_name" | grep -qi "bitpal" > /dev/null; then
+                found_dir="$check_dir"
+                break
+            fi
+        fi
+    done
+    if [ -z "$found_dir" ]; then
+        for check_dir in "/mnt/SDCARD/Roms"/*; do
+            if [ -d "$check_dir" ]; then
+                base_name=$(basename "$check_dir")
+                if echo "$base_name" | grep -qi "bitpal" > /dev/null; then
+                    found_dir="$check_dir"
+                    break
+                fi
+            fi
+        done
+    fi
+    echo "$found_dir"
+}
+BITPAL_DIR=$(find_bitpal_dir)
+if [ -n "$BITPAL_DIR" ]; then
+    BITPAL_ACTIVE_MISSIONS_DIR="$BITPAL_DIR/bitpal_data/active_missions"
+    BITPAL_ACTIVE_MISSION="$BITPAL_DIR/bitpal_data/active_mission.txt"
+    BITPAL_SESSION_FILE="$BITPAL_DIR/current_session.txt"
+    BITPAL_LAST_SESSION_FILE="$BITPAL_DIR/last_session_duration.txt"
+else
+    BITPAL_DIR="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak"
+    BITPAL_ACTIVE_MISSIONS_DIR="$BITPAL_DIR/bitpal_data/active_missions"
+    BITPAL_ACTIVE_MISSION="$BITPAL_DIR/bitpal_data/active_mission.txt"
+    BITPAL_SESSION_FILE="$BITPAL_DIR/current_session.txt"
+    BITPAL_LAST_SESSION_FILE="$BITPAL_DIR/last_session_duration.txt"
+fi
 BITPAL_MISSION_ROM=""
 BITPAL_MISSION_FILE=""
 TRACK_BITPAL=0
-
 format_cart_name() {
   local name="$1"
   name=$(echo "$name" | sed 's/\.p8\.png$//' | sed 's/\.p8$//')
   name=$(echo "$name" | sed 's/-[0-9]*$//' | sed 's/[0-9]*$//')
-  
   if echo "$name" | grep -q "[-_]"; then
     local words=""
     local IFS='-_'
@@ -68,56 +94,42 @@ format_cart_name() {
     local rest=$(echo "$name" | cut -c2-)
     name="$first_char$rest"
   fi
-  
   echo "$name"
 }
-
 check_cart_exists() {
   local cart_name="$1"
   [ -f "$PICO8_ROMS_FOLDER/$cart_name.p8" ] && return 0
   [ -f "$PICO8_ROMS_FOLDER/$cart_name.p8.png" ] && return 0
   return 1
 }
-
 show_cart_list() {
   local cache_dir="$picodir/.lexaloffle/pico-8/bbs/carts"
   local output_file="/tmp/cached_carts.txt"
-  
   > "$output_file"
-  
-  if [ ! -d "$cache_dir" ]; then
-    mkdir -p "$cache_dir"
-  fi
-  
+  [ ! -d "$cache_dir" ] && mkdir -p "$cache_dir"
   local cart_count=$(find "$cache_dir" -maxdepth 1 -type f \( -name "*.p8" -o -name "*.p8.png" \) | wc -l)
-  
   if [ "$cart_count" -eq 0 ]; then
     ./show_message "No carts found|Play games in Splore first" -t 3
     return
   fi
-  
   find "$cache_dir" -maxdepth 1 -type f \( -name "*.p8" -o -name "*.p8.png" \) | sort | while read -r cart; do
     local cart_filename=$(basename "$cart")
     local display_name=$(format_cart_name "$cart_filename")
     echo "$display_name|$cart_filename" >> "$output_file"
   done
-  
   while true; do
     picker_output=$(./picker "$output_file" -a "SELECT" -b "BACK" -t "Download Carts")
     picker_status=$?
     [ $picker_status = 2 ] && return
-    
     local cart_option=$(echo "$picker_output" | cut -d'|' -f2)
     local cart_filename="$cart_option"
     local display_name=$(echo "$picker_output" | cut -d'|' -f1)
     local formatted_name=$(format_cart_name "$cart_filename")
-    
     if check_cart_exists "$formatted_name"; then
       ./show_message "Cart already exists|Do you want to update?" -a "YES" -b "NO"
       update_status=$?
       [ $update_status = 2 ] && continue
     fi
-    
     local source_file=""
     if [ -f "$cache_dir/$cart_filename" ]; then
       source_file="$cache_dir/$cart_filename"
@@ -126,60 +138,42 @@ show_cart_list() {
     elif [ -f "$cache_dir/$cart_filename.p8.png" ]; then
       source_file="$cache_dir/$cart_filename.p8.png"
     fi
-    
     if [ -n "$source_file" ]; then
       cp "$source_file" "$PICO8_ROMS_FOLDER/$formatted_name.p8"
       chmod 644 "$PICO8_ROMS_FOLDER/$formatted_name.p8"
-      
-      if [[ "$source_file" == *.p8.png ]]; then
-        cp "$source_file" "$PICO8_RES_FOLDER/$formatted_name.p8.png"
-        chmod 644 "$PICO8_RES_FOLDER/$formatted_name.p8.png"
-      else
-        cp "$source_file" "$PICO8_RES_FOLDER/$formatted_name.p8.png"
-        chmod 644 "$PICO8_RES_FOLDER/$formatted_name.p8.png"
-      fi
-      
+      cp "$source_file" "$PICO8_RES_FOLDER/$formatted_name.p8.png"
+      chmod 644 "$PICO8_RES_FOLDER/$formatted_name.p8.png"
       ./show_message "$formatted_name|Added to ROM folder" -t 2
     else
       ./show_message "$formatted_name|Cart not found" -t 2
     fi
   done
 }
-
 show_delete_cart_list() {
   local cache_dir="$picodir/.lexaloffle/pico-8/bbs/carts"
   local output_file="/tmp/delete_carts.txt"
   > "$output_file"
-  
-  # Add "Delete All" as the first option.
   echo "Delete All|delete_all" >> "$output_file"
-  
-  # List cart files from the cache (only *.p8 and *.p8.png).
   find "$cache_dir" -maxdepth 1 -type f \( -name "*.p8" -o -name "*.p8.png" \) | sort | while read -r cart; do
     local cart_filename=$(basename "$cart")
     local display_name=$(format_cart_name "$cart_filename")
     echo "$display_name|$cart_filename" >> "$output_file"
   done
-  
   while true; do
     picker_output=$(./picker "$output_file" -a "SELECT" -b "BACK" -t "Delete Carts (Cache)")
     picker_status=$?
     [ $picker_status = 2 ] && return
-    
     local selection=$(echo "$picker_output" | cut -d'|' -f2)
-    
     if [ "$selection" = "delete_all" ]; then
-      rm -f "$cache_dir"/*.p8
-      rm -f "$cache_dir"/*.p8.png
+      rm -f "$cache_dir"/*.p8 "$cache_dir"/*.p8.png
       ./show_message "All cached carts deleted" -t 2
       return
     else
       rm -f "$cache_dir/$selection"
       local formatted_name=$(format_cart_name "$selection")
       ./show_message "$formatted_name deleted from cache" -t 2
-      # Refresh the list after deletion.
       > "$output_file"
-      echo "Delete All|delete_all" >> "$output_file"
+      echo "Delete All|delete_all" > "$output_file"
       find "$cache_dir" -maxdepth 1 -type f \( -name "*.p8" -o -name "*.p8.png" \) | sort | while read -r cart; do
         local cart_filename=$(basename "$cart")
         local display_name=$(format_cart_name "$cart_filename")
@@ -188,16 +182,10 @@ show_delete_cart_list() {
     fi
   done
 }
-
 check_bitpal_missions() {
     local rom_path="$1"
     BITPAL_MISSION_ROM=""
     BITPAL_MISSION_FILE=""
-    
-    if is_splore "$rom_path"; then
-        return 1
-    fi
-    
     if [ -d "$BITPAL_ACTIVE_MISSIONS_DIR" ]; then
         for mission_file in "$BITPAL_ACTIVE_MISSIONS_DIR"/mission_*.txt; do
             if [ -f "$mission_file" ]; then
@@ -211,7 +199,6 @@ check_bitpal_missions() {
             fi
         done
     fi
-    
     if [ -f "$BITPAL_ACTIVE_MISSION" ]; then
         mission=$(cat "$BITPAL_ACTIVE_MISSION")
         mission_rom=$(echo "$mission" | cut -d'|' -f7)
@@ -221,15 +208,12 @@ check_bitpal_missions() {
             return 0
         fi
     fi
-    
     return 1
 }
-
 is_splore() {
   [ "$1" = "splore" ] && return 0
   [ -n "$1" ] && echo "$(basename "$1")" | grep -qi "splore"
 }
-
 update_auto_resume_script() {
   if is_splore "$1"; then
     sed -i "s|^ROM_PATH=.*|ROM_PATH=\"splore\"|" "$AUTO_RESUME_SCRIPT"
@@ -237,21 +221,16 @@ update_auto_resume_script() {
     sed -i "s|^ROM_PATH=.*|ROM_PATH=\"$1\"|" "$AUTO_RESUME_SCRIPT"
   fi
 }
-
 remove_auto_resume_line() {
   local auto_sh_path="/mnt/SDCARD/.userdata/$PLATFORM/auto.sh"
-  if [ -f "$auto_sh_path" ]; then
-    sed -i '/auto_resume.sh/d' "$auto_sh_path"
-  fi
+  [ -f "$auto_sh_path" ] && sed -i '/auto_resume.sh/d' "$auto_sh_path"
 }
-
 add_to_auto_sh() {
   local f="/mnt/SDCARD/.userdata/$1/auto.sh"
   local w="$AUTO_RESUME_SCRIPT"
-  [ ! -f "$f" ] && mkdir -p "$(dirname "$f")" && echo "#!/bin/sh" > "$f" && chmod +x "$f"
+  [ ! -f "$f" ] && { mkdir -p "$(dirname "$f")"; echo "#!/bin/sh" > "$f"; chmod +x "$f"; }
   grep -q "$w" "$f" || { [ -s "$f" ] && [ "$(tail -c 1 "$f" | xxd -p)" != "0a" ] && echo "" >> "$f"; echo "\"$w\"" >> "$f"; }
 }
-
 check_wifi_connectivity() {
   ping -c 1 -W 2 8.8.8.8 >/dev/null 2>&1 ||
   ping -c 1 -W 2 1.1.1.1 >/dev/null 2>&1 ||
@@ -259,12 +238,10 @@ check_wifi_connectivity() {
   ping -c 1 -W 2 114.114.114.114 >/dev/null 2>&1 ||
   ping -c 1 -W 2 119.29.29.29 >/dev/null 2>&1
 }
-
 toggle_screen_mode() {
   SCREEN_MODE="$1"
   echo "$SCREEN_MODE" > "$SCREEN_MODE_FILE"
 }
-
 handle_orphan_sessions() {
   if [ -f "$SESSION_FILE" ]; then
     orphan_data=$(cat "$SESSION_FILE")
@@ -284,7 +261,7 @@ handle_orphan_sessions() {
               session_time=$orphan_elapsed
               total_time=$((total_time + session_time))
               hours=$((total_time / 3600))
-              minutes=$(((total_time % 3600) / 60))
+              minutes=$(((total_time % 3600)/60))
               seconds=$((total_time % 60))
               if [ $hours -gt 0 ]; then
                 time_display="${hours}h ${minutes}m"
@@ -303,7 +280,7 @@ handle_orphan_sessions() {
         else
           emulator="PICO-8"
           game_name=$(basename "$orphan_rom")
-          game_name=$(echo "$game_name" | sed 's/([^)]*)//g' | sed 's/\.[^.]*$//' | tr '_' ' ' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' -e 's/^[0-9]\+[)\._ -]\+//')
+          game_name=$(echo "$game_name" | sed 's/([^)]*)//g; s/\.[^.]*$//' | tr '_' ' ' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' -e 's/^[0-9]\+[)\._ -]\+//')
           session_time=$orphan_elapsed
           hours=$((session_time / 3600))
           minutes=$(((session_time % 3600)/60))
@@ -332,48 +309,110 @@ handle_orphan_sessions() {
     fi
     rm -f "$SESSION_FILE"
   fi
-
-  if [ -f "/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/current_session.txt" ]; then
-    orphan_data=$(cat "/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/current_session.txt")
+  if [ -f "$BITPAL_SESSION_FILE" ]; then
+    orphan_data=$(cat "$BITPAL_SESSION_FILE")
     orphan_rom=$(echo "$orphan_data" | cut -d'|' -f1)
     orphan_elapsed=$(echo "$orphan_data" | cut -d'|' -f2)
-    
     if [ -f "$orphan_rom" ]; then
       check_bitpal_missions "$orphan_rom"
       if [ -n "$BITPAL_MISSION_FILE" ]; then
         mission=$(cat "$BITPAL_MISSION_FILE")
         field_count=$(echo "$mission" | awk -F'|' '{print NF}')
-        if [ "$field_count" -lt 8 ]; then
-          current_accum=0
-        else
-          current_accum=$(echo "$mission" | cut -d'|' -f8)
-        fi
+        [ "$field_count" -lt 8 ] && current_accum=0 || current_accum=$(echo "$mission" | cut -d'|' -f8)
         new_total=$((current_accum + orphan_elapsed))
-        
-        if [ "$field_count" -lt 8 ]; then
-          mission=$(echo "$mission" | sed "s/\$/|${new_total}/")
-        else
-          mission=$(echo "$mission" | awk -F'|' -v newval="$new_total" 'BEGIN{OFS="|"} {$8=newval; print}')
-        fi
+        [ "$field_count" -lt 8 ] && mission=$(echo "$mission" | sed "s/\$/|${new_total}/") || mission=$(echo "$mission" | awk -F'|' -v newval="$new_total" 'BEGIN{OFS="|"} {$8=newval; print}')
         echo "$mission" > "$BITPAL_MISSION_FILE"
-        
         target_seconds=$(( $(echo "$mission" | cut -d'|' -f4) * 60 ))
-        if [ "$new_total" -ge "$target_seconds" ]; then
-          touch "${BITPAL_MISSION_FILE}.complete"
-        fi
+        [ "$new_total" -ge "$target_seconds" ] && touch "${BITPAL_MISSION_FILE}.complete"
       fi
+      echo "$orphan_elapsed" > "$BITPAL_LAST_SESSION_FILE"
     fi
-    
-    rm -f "/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/current_session.txt"
+    rm -f "$BITPAL_SESSION_FILE"
   fi
 }
-
 update_gtt() {
   local r="$1"
   local session_duration=$2
-  [ -z "$r" ] || is_splore "$r" && return
+  [ -z "$r" ] && return
+  if is_splore "$r"; then
+    r="splore"
+    if [ -f "$GTT_LIST" ]; then
+      if grep -q "|$r|" "$GTT_LIST"; then
+        local t="/tmp/gtt_update.txt"
+        while IFS= read -r line; do
+          if echo "$line" | grep -q "|$r|"; then
+            local gn=$(echo "$line" | cut -d'|' -f1 | sed 's/^\[[^]]*\] //')
+            local emu=$(echo "$line" | cut -d'|' -f3)
+            local pc=$(echo "$line" | cut -d'|' -f4)
+            local tt=$(echo "$line" | cut -d'|' -f5)
+            pc=$((pc+1))
+            local st=$session_duration
+            tt=$((tt+st))
+            local h=$((tt/3600))
+            local m=$(((tt%3600)/60))
+            local s=$((tt%60))
+            if [ $h -gt 0 ]; then
+              td="${h}h ${m}m"
+            elif [ $m -gt 0 ]; then
+              td="${m}m"
+            else
+              td="${s}s"
+            fi
+            local dn="[${td}] $gn"
+            echo "$dn|$r|$emu|$pc|$tt|$td|launch|$st" >> "$t"
+          else
+            echo "$line" >> "$t"
+          fi
+        done < "$GTT_LIST"
+        mv "$t" "$GTT_LIST"
+      else
+        local gn="PICO-8 Splore"
+        local st=$session_duration
+        local h=$((st/3600))
+        local m=$(((st%3600)/60))
+        local s=$((st%60))
+        if [ $h -gt 0 ]; then
+          td="${h}h ${m}m"
+        elif [ $m -gt 0 ]; then
+          td="${m}m"
+        else
+          td="${s}s"
+        fi
+        local t="/tmp/gtt_list_temp.txt"
+        local hl=$(head -n 1 "$GTT_LIST")
+        echo "$hl" > "$t"
+        local dn="[${td}] $gn"
+        echo "$dn|$r|PICO-8|1|$st|$td|launch|$st" >> "$t"
+        tail -n +2 "$GTT_LIST" >> "$t"
+        mv "$t" "$GTT_LIST"
+      fi
+      local u="/tmp/gtt_sorted.txt"
+      local hline=$(head -n 1 "$GTT_LIST")
+      echo "$hline" > "$u"
+      tail -n +2 "$GTT_LIST" | sort -t'|' -k5,5nr >> "$u"
+      mv "$u" "$GTT_LIST"
+    elif [ -d "/mnt/SDCARD/Tools/$PLATFORM/Game Time Tracker.pak" ]; then
+      mkdir -p "$(dirname "$GTT_LIST")"
+      echo "Game Time Tracker|__HEADER__|header" > "$GTT_LIST"
+      local gn="PICO-8 Splore"
+      local st=$session_duration
+      local h=$((st/3600))
+      local m=$(((st%3600)/60))
+      local s=$((st%60))
+      if [ $h -gt 0 ]; then
+        td="${h}h ${m}m"
+      elif [ $m -gt 0 ]; then
+        td="${m}m"
+      else
+        td="${s}s"
+      fi
+      local dn="[${td}] $gn"
+      echo "$dn|$r|PICO-8|1|$st|$td|launch|$st" >> "$GTT_LIST"
+    fi
+    echo "$session_duration" > "$LAST_SESSION_FILE"
+    return
+  fi
   [ ! -f "$r" ] && return
-  
   if [ -f "$GTT_LIST" ]; then
     if grep -q "|$r|" "$GTT_LIST"; then
       local t="/tmp/gtt_update.txt"
@@ -447,45 +486,28 @@ update_gtt() {
     local dn="[${td}] $gn"
     echo "$dn|$r|PICO-8|1|$st|$td|launch|$st" >> "$GTT_LIST"
   fi
-  
   echo "$session_duration" > "$LAST_SESSION_FILE"
 }
-
 update_bitpal_mission() {
   local session_duration=$1
-  
   if [ "$TRACK_BITPAL" -eq 1 ]; then
-    echo "$session_duration" > "/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/last_session_duration.txt"
-    
-    if [ -f "$BITPAL_MISSION_FILE" ]; then
-      mission=$(cat "$BITPAL_MISSION_FILE")
-      field_count=$(echo "$mission" | awk -F'|' '{print NF}')
-      if [ "$field_count" -lt 8 ]; then
-        current_accum=0
-      else
-        current_accum=$(echo "$mission" | cut -d'|' -f8)
-      fi
-      new_total=$((current_accum + session_duration))
-      
-      if [ "$field_count" -lt 8 ]; then
-        mission=$(echo "$mission" | sed "s/\$/|${new_total}/")
-      else
-        mission=$(echo "$mission" | awk -F'|' -v newval="$new_total" 'BEGIN{OFS="|"} {$8=newval; print}')
-      fi
-      echo "$mission" > "$BITPAL_MISSION_FILE"
-      
-      target_seconds=$(( $(echo "$mission" | cut -d'|' -f4) * 60 ))
-      if [ "$new_total" -ge "$target_seconds" ]; then
-        touch "${BITPAL_MISSION_FILE}.complete"
-      fi
-    fi
+    echo "$session_duration" > "$BITPAL_LAST_SESSION_FILE"
+    [ ! -f "$BITPAL_MISSION_FILE" ] || [ ! -s "$BITPAL_MISSION_FILE" ] && echo "PICO-8 Game|$CURRENT_ROM|PICO-8|60|0|0|launch|0" > "$BITPAL_MISSION_FILE"
+    mission=$(cat "$BITPAL_MISSION_FILE")
+    field_count=$(echo "$mission" | awk -F'|' '{print NF}')
+    [ "$field_count" -lt 8 ] && current_accum=0 || current_accum=$(echo "$mission" | cut -d'|' -f8)
+    new_total=$((current_accum + session_duration))
+    [ "$field_count" -lt 8 ] && mission=$(echo "$mission" | sed "s/\$/|${new_total}/") || mission=$(echo "$mission" | awk -F'|' -v newval="$new_total" 'BEGIN{OFS="|"} {$8=newval; print}')
+    echo "$mission" > "$BITPAL_MISSION_FILE"
+    target_seconds=$(( $(echo "$mission" | cut -d'|' -f4) * 60 ))
+    [ "$new_total" -ge "$target_seconds" ] && touch "${BITPAL_MISSION_FILE}.complete"
+  else
+    echo "$session_duration" > "$LAST_SESSION_FILE"
   fi
 }
-
 show_main_menu() {
   local menu_file="/tmp/main_menu.txt"
   > "$menu_file"
-  
   echo "Resume Game|resume" >> "$menu_file"
   echo "Restart Game|restart" >> "$menu_file"
   echo "Open Splore|splore" >> "$menu_file"
@@ -497,74 +519,58 @@ show_main_menu() {
     echo "Switch to Square Mode|switch_std" >> "$menu_file"
   fi
   echo "Exit to MinUI|exit" >> "$menu_file"
-  
   picker_output=$(./picker "$menu_file" -a "SELECT" -b "BACK")
-  picker_status=$?
-  [ $picker_status = 2 ] && return "cancel"
-  
+  [ $? = 2 ] && return "cancel"
   local option=$(echo "$picker_output" | cut -d'|' -f2)
   echo "$option"
 }
-
 start_game() {
   handle_orphan_sessions
-  
   echo "" > "$ACTION_FILE"
   START_TIME=$(date +%s)
-  
   TRACK_BITPAL=0
-  check_bitpal_missions "$1"
-  if [ -n "$BITPAL_MISSION_ROM" ]; then
-    BITPAL_SESSION_FILE="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/current_session.txt"
-    TRACK_BITPAL=1
-  fi
-  
-  update_auto_resume_script "$1"
+  check_bitpal_missions "$CURRENT_ROM"
+  [ -n "$BITPAL_MISSION_ROM" ] && TRACK_BITPAL=1
+  update_auto_resume_script "$CURRENT_ROM"
   remove_auto_resume_line
-  
   (
     while true; do
       curr_time=$(date +%s)
       elapsed=$((curr_time - START_TIME))
-      echo "$1|$elapsed" > "$SESSION_FILE"
-      if [ "$TRACK_BITPAL" -eq 1 ]; then
-        echo "$1|$elapsed" > "$BITPAL_SESSION_FILE"
-      fi
+      echo "$CURRENT_ROM|$elapsed" > "$SESSION_FILE"
+      [ "$TRACK_BITPAL" -eq 1 ] && echo "$CURRENT_ROM|$elapsed" > "$BITPAL_SESSION_FILE"
       sleep 10
     done
   ) &
   BG_PID=$!
-  
   echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
   mount --bind "$PICO8_ROMS_FOLDER" /mnt/SDCARD/Emus/$PLATFORM/PICO-8.pak/PICO8_Wrapper/.lexaloffle/pico-8/carts
   if [ "$SCREEN_MODE" = "widescreen" ]; then
-    local geo="$(fbset | grep 'geometry' | awk '{print $2,$3}')"
-    local w="$(echo "$geo" | awk '{print $1}')"
-    local h="$(echo "$geo" | awk '{print $2}')"
+    geo="$(fbset | grep 'geometry' | awk '{print $2,$3}')"
+    w="$(echo "$geo" | awk '{print $1}')"
+    h="$(echo "$geo" | awk '{print $2}')"
     DRAW_RECT="-draw_rect 0,0,${w},${h}"
   else
     DRAW_RECT=""
   fi
-  local rom="$1"
-  if is_splore "$rom"; then
+  if is_splore "$CURRENT_ROM"; then
     if ! check_wifi_connectivity; then
       ./show_message "No WiFi connection|Turn on WiFi for Splore" -t 2
     fi
     pico8_64 -preblit_scale 3 -splore $DRAW_RECT &
   else
-    if [ -n "$rom" ]; then
-      pico8_64 -preblit_scale 3 -run "$rom" -root_path "$(dirname "$rom")" $DRAW_RECT &
+    if [ -n "$CURRENT_ROM" ]; then
+      pico8_64 -preblit_scale 3 -run "$CURRENT_ROM" -root_path "$(dirname "$CURRENT_ROM")" $DRAW_RECT &
     else
-      local c="$(find /mnt/SDCARD/Roms/*\(PICO\) -type f \( -name '*.p8' -o -name '*.p8.png' \) | head -n 1)"
+      c="$(find /mnt/SDCARD/Roms/*\(PICO\) -type f \( -name '*.p8' -o -name '*.p8.png' \) | head -n 1)"
       [ -z "$c" ] && exit 1
       pico8_64 -preblit_scale 3 -run "$c" -root_path "$(dirname "$c")" $DRAW_RECT &
       CURRENT_ROM="$c"
     fi
   fi
   GAME_PID=$!
-
   (
-    local evp="/dev/input/event1"
+    evp="/dev/input/event1"
     while kill -0 "$GAME_PID" 2>/dev/null; do
       if timeout 0.04s "$SCRIPT_DIR/evtest" "$evp" 2>/dev/null | grep "code 116 (KEY_POWER)" | grep -q "value 1"; then
         kill -9 "$GAME_PID"
@@ -576,19 +582,13 @@ start_game() {
           update_auto_resume_script "$CURRENT_ROM"
         fi
         add_to_auto_sh "$PLATFORM"
-        
         END_TIME=$(date +%s)
         SESSION_DURATION=$((END_TIME - START_TIME))
-        
         kill $BG_PID 2>/dev/null
         rm -f "$SESSION_FILE"
-        if [ "$TRACK_BITPAL" -eq 1 ]; then
-          rm -f "$BITPAL_SESSION_FILE"
-        fi
-        
+        [ "$TRACK_BITPAL" -eq 1 ] && rm -f "$BITPAL_SESSION_FILE"
         update_gtt "$CURRENT_ROM" "$SESSION_DURATION"
         update_bitpal_mission "$SESSION_DURATION"
-        
         sync
         poweroff
         break
@@ -597,21 +597,14 @@ start_game() {
     done
   ) &
   POWER_MONITOR_PID=$!
-
   (
-    local evm="/dev/input/event3"
+    evm="/dev/input/event3"
     while kill -0 "$GAME_PID" 2>/dev/null; do
       if timeout 0.04s "$SCRIPT_DIR/evtest" "$evm" 2>/dev/null | grep "code 316 (BTN_MODE)" | grep -q "value 1"; then
         kill -STOP "$GAME_PID"
-        
         while true; do
           menu_choice=$(show_main_menu)
-          
-          if [ "$menu_choice" = "cancel" ]; then
-            kill -CONT "$GAME_PID"
-            break
-          fi
-          
+          [ "$menu_choice" = "cancel" ] && { kill -CONT "$GAME_PID"; break; }
           case "$menu_choice" in
             resume)
               kill -CONT "$GAME_PID"
@@ -659,30 +652,21 @@ start_game() {
     done
   ) &
   MENU_MONITOR_PID=$!
-
   while kill -0 "$GAME_PID" 2>/dev/null; do
     sleep 0.1
   done
-  
   END_TIME=$(date +%s)
   SESSION_DURATION=$((END_TIME - START_TIME))
-  
   kill "$POWER_MONITOR_PID" 2>/dev/null
   kill "$MENU_MONITOR_PID" 2>/dev/null
   kill $BG_PID 2>/dev/null
-  
   rm -f "$SESSION_FILE"
-  if [ "$TRACK_BITPAL" -eq 1 ]; then
-    rm -f "$BITPAL_SESSION_FILE"
-  fi
-  
+  [ "$TRACK_BITPAL" -eq 1 ] && rm -f "$BITPAL_SESSION_FILE"
   update_gtt "$CURRENT_ROM" "$SESSION_DURATION"
   update_bitpal_mission "$SESSION_DURATION"
-  
   umount /mnt/SDCARD/Emus/$PLATFORM/PICO-8.pak/PICO8_Wrapper/.lexaloffle/pico-8/carts 2>/dev/null
   echo ondemand > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 }
-
 while true; do
   rm -f "$ACTION_FILE"
   start_game "$CURRENT_ROM"

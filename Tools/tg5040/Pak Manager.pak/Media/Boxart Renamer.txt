@@ -1,0 +1,3 @@
+Rename your Boxart png for MinUI
+Game.png to Game.(ext).png
+Add to .res folder of rom folder

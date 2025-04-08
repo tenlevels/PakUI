@@ -1,1 +1,0 @@
-The RA cores listed in the image in this folder were too big to upload so they were 7z'd.

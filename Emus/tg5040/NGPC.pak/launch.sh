@@ -1,6 +1,6 @@
 #!/bin/sh
+
 : ${PLATFORM:?PLATFORM variable not set}
-# Use environment overrides if provided; otherwise default to GTT paths.
 : ${SESSION_FILE:="/mnt/SDCARD/Tools/$PLATFORM/Game Time Tracker.pak/current_session.txt"}
 : ${LAST_SESSION_FILE:="/mnt/SDCARD/Tools/$PLATFORM/Game Time Tracker.pak/last_session_duration.txt"}
 
@@ -9,14 +9,16 @@ GTT_LIST="/mnt/SDCARD/Tools/$PLATFORM/Game Time Tracker.pak/gtt_list.txt"
 AUTO_RESUME_SCRIPT="$SCRIPT_DIR/auto_resume.sh"
 ROM="$1"
 
-# --- NEW: Find BitPal directory (Tools or Roms) ---
+EMU_TAG=$(basename "$(dirname "$0")" .pak)
+
+mkdir -p "$BIOS_PATH/$EMU_TAG"
+mkdir -p "$SAVES_PATH/$EMU_TAG"
+
 find_bitpal_dir() {
     local found_dir=""
-    # Check Tools path first (with or without .pak)
     for check_dir in "/mnt/SDCARD/Tools/$PLATFORM"/*; do
         if [ -d "$check_dir" ]; then
             base_name=$(basename "$check_dir")
-            # Case-insensitive match for "bitpal" in directory name
             if echo "$base_name" | grep -i "bitpal" > /dev/null; then
                 found_dir="$check_dir"
                 break
@@ -24,12 +26,10 @@ find_bitpal_dir() {
         fi
     done
 
-    # If not found in Tools, check Roms path
     if [ -z "$found_dir" ]; then
         for check_dir in "/mnt/SDCARD/Roms"/*; do
             if [ -d "$check_dir" ]; then
                 base_name=$(basename "$check_dir")
-                # Case-insensitive match for "bitpal" in directory name
                 if echo "$base_name" | grep -i "bitpal" > /dev/null; then
                     found_dir="$check_dir"
                     break
@@ -41,17 +41,14 @@ find_bitpal_dir() {
     echo "$found_dir"
 }
 
-# Find the BitPal directory
 BITPAL_DIR=$(find_bitpal_dir)
 
-# If BitPal directory is found, set up the paths
 if [ -n "$BITPAL_DIR" ]; then
     BITPAL_ACTIVE_MISSIONS_DIR="$BITPAL_DIR/bitpal_data/active_missions"
     BITPAL_ACTIVE_MISSION="$BITPAL_DIR/bitpal_data/active_mission.txt"
     BITPAL_SESSION_FILE="$BITPAL_DIR/current_session.txt"
     BITPAL_LAST_SESSION_FILE="$BITPAL_DIR/last_session_duration.txt"
 else
-    # Fallback to the old path if BitPal is not found
     BITPAL_DIR="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak"
     BITPAL_ACTIVE_MISSIONS_DIR="$BITPAL_DIR/bitpal_data/active_missions"
     BITPAL_ACTIVE_MISSION="$BITPAL_DIR/bitpal_data/active_mission.txt"
@@ -62,13 +59,11 @@ fi
 BITPAL_MISSION_ROM=""
 BITPAL_MISSION_FILE=""
 
-# Check if this ROM is part of an active BitPal mission
 check_bitpal_missions() {
     local rom_path="$1"
     BITPAL_MISSION_ROM=""
     BITPAL_MISSION_FILE=""
     
-    # Check the active missions directory
     if [ -d "$BITPAL_ACTIVE_MISSIONS_DIR" ]; then
         for mission_file in "$BITPAL_ACTIVE_MISSIONS_DIR"/mission_*.txt; do
             if [ -f "$mission_file" ]; then
@@ -83,7 +78,6 @@ check_bitpal_missions() {
         done
     fi
     
-    # Also check legacy active mission
     if [ -f "$BITPAL_ACTIVE_MISSION" ]; then
         mission=$(cat "$BITPAL_ACTIVE_MISSION")
         mission_rom=$(echo "$mission" | cut -d'|' -f7)
@@ -97,21 +91,20 @@ check_bitpal_missions() {
     return 1
 }
 
-# Call the function to check BitPal missions
 check_bitpal_missions "$ROM"
+
 if [ -n "$BITPAL_MISSION_ROM" ]; then
-    # We'll track for both GTT and BitPal
     TRACK_BITPAL=1
 else
     TRACK_BITPAL=0
 fi
 
-# --- ORPHAN SESSION RECOVERY ---
+
 if [ -f "$SESSION_FILE" ]; then
-    # File format: ROM|elapsed_time
     orphan_data=$(cat "$SESSION_FILE")
     orphan_rom=$(echo "$orphan_data" | cut -d'|' -f1)
     orphan_elapsed=$(echo "$orphan_data" | cut -d'|' -f2)
+    
     if [ -f "$orphan_rom" ]; then
         if [ -f "$GTT_LIST" ]; then
             if grep -q "|$orphan_rom|" "$GTT_LIST"; then
@@ -172,17 +165,17 @@ if [ -f "$SESSION_FILE" ]; then
             mv "$temp_sorted" "$GTT_LIST"
         fi
     fi
+    
     rm -f "$SESSION_FILE"
 fi
 
-# --- NEW: BITPAL ORPHAN SESSION RECOVERY ---
+
 if [ -f "$BITPAL_SESSION_FILE" ]; then
     orphan_data=$(cat "$BITPAL_SESSION_FILE")
     orphan_rom=$(echo "$orphan_data" | cut -d'|' -f1)
     orphan_elapsed=$(echo "$orphan_data" | cut -d'|' -f2)
     
     if [ -f "$orphan_rom" ]; then
-        # Check if this ROM belongs to a BitPal mission
         check_bitpal_missions "$orphan_rom"
         if [ -n "$BITPAL_MISSION_FILE" ]; then
             mission=$(cat "$BITPAL_MISSION_FILE")
@@ -201,7 +194,6 @@ if [ -f "$BITPAL_SESSION_FILE" ]; then
             fi
             echo "$mission" > "$BITPAL_MISSION_FILE"
             
-            # Create a marker file for BitPal to check if mission is complete
             target_seconds=$(( $(echo "$mission" | cut -d'|' -f4) * 60 ))
             if [ "$new_total" -ge "$target_seconds" ]; then
                 touch "${BITPAL_MISSION_FILE}.complete"
@@ -209,31 +201,30 @@ if [ -f "$BITPAL_SESSION_FILE" ]; then
         fi
     fi
     
-    # Clean up the session file
     rm -f "$BITPAL_SESSION_FILE"
 fi
 
-# Record start time
+
 START_TIME=$(date +%s)
 
-# Update auto_resume script and remove previous auto_resume lines
 update_auto_resume_script() {
     local rom_path="$1"
     if [ -f "$AUTO_RESUME_SCRIPT" ]; then
         sed -i "s|^ROM_PATH=.*|ROM_PATH=\"$rom_path\"|" "$AUTO_RESUME_SCRIPT"
     fi
 }
+
 remove_auto_resume_line() {
     local auto_sh_path="/mnt/SDCARD/.userdata/$PLATFORM/auto.sh"
     if [ -f "$auto_sh_path" ]; then
         sed -i '/auto_resume.sh/d' "$auto_sh_path"
     fi
 }
+
 remove_auto_resume_line
 update_auto_resume_script "$ROM"
 
-# --- Start Background Updater ---
-# Every 10 seconds, write "ROM|elapsed_time" into SESSION_FILE and BitPal session file if needed.
+
 ( while true; do
       curr_time=$(date +%s)
       elapsed=$((curr_time - START_TIME))
@@ -245,22 +236,20 @@ update_auto_resume_script "$ROM"
   done ) &
 BG_PID=$!
 
-# Launch the emulator via universal launcher
+
 "$SCRIPT_DIR/universal_launcher" "$@"
 RET=$?
 
-# On normal shutdown: kill background updater and remove SESSION_FILE.
 kill $BG_PID 2>/dev/null
 rm -f "$SESSION_FILE"
 if [ "$TRACK_BITPAL" -eq 1 ]; then
     rm -f "$BITPAL_SESSION_FILE"
 fi
 
-# Calculate final session duration.
+
 END_TIME=$(date +%s)
 SESSION_DURATION=$((END_TIME - START_TIME))
 
-# Update GTT list (same as before)
 if [ -f "$ROM" ]; then
     if [ -f "$GTT_LIST" ]; then
         if grep -q "|$ROM|" "$GTT_LIST"; then
@@ -340,12 +329,9 @@ if [ -f "$ROM" ]; then
     fi
 fi
 
-# --- NEW: UPDATE BITPAL MISSION TIME ---
+
 if [ "$TRACK_BITPAL" -eq 1 ]; then
-    # Write the session duration for BitPal
     echo "$SESSION_DURATION" > "$BITPAL_LAST_SESSION_FILE"
-    
-    # Also update the mission file directly
     if [ -f "$BITPAL_MISSION_FILE" ]; then
         mission=$(cat "$BITPAL_MISSION_FILE")
         field_count=$(echo "$mission" | awk -F'|' '{print NF}')
@@ -363,15 +349,12 @@ if [ "$TRACK_BITPAL" -eq 1 ]; then
         fi
         echo "$mission" > "$BITPAL_MISSION_FILE"
         
-        # Create a marker file for BitPal to check if mission is complete
         target_seconds=$(( $(echo "$mission" | cut -d'|' -f4) * 60 ))
         if [ "$new_total" -ge "$target_seconds" ]; then
             touch "${BITPAL_MISSION_FILE}.complete"
         fi
     fi
 else
-    # Even if we're not actively tracking a BitPal mission, write the session duration
-    # This allows BitPal to detect the time when launching games
     echo "$SESSION_DURATION" > "$LAST_SESSION_FILE"
 fi
 

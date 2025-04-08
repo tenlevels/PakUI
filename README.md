@@ -553,3 +553,9 @@ PakUI stands on the shoulders of many talented individuals whose contributions, 
   
 - **PortMaster Team**
   Created the amazing PortMaster that brings hundreds of games to PakUI.
+
+  - **Russ (RetroGameCorps)**  
+  Inspired our passion for retro gaming and ensured we never forgot the importance of snacks and drinks during long sessions.
+
+### Personal Thanks
+We extend our heartfelt appreciation to our families, whose support and encouragement enable us to pursue our passions and share what we love with this amazing community.

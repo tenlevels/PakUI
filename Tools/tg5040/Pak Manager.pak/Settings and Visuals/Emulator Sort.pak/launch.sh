@@ -5,7 +5,7 @@ export LD_LIBRARY_PATH=/usr/trimui/lib:$LD_LIBRARY_PATH
 
 ROM_DIR="/mnt/SDCARD/Roms"
 RES_DIR="/mnt/SDCARD/Roms/.res"
-BITPAL_DIR="/mnt/SDCARD/Tools"
+TOOLS_DIR="/mnt/SDCARD/Tools"
 
 FOLDERS_LIST="/tmp/rom_folders.txt"
 DISPLAY_LIST="/tmp/display_folders.txt"  
@@ -21,9 +21,73 @@ cleanup() {
          "/tmp/rename_display.txt" "/tmp/folder_mapping.txt" "/tmp/sort_options.txt"
 }
 
+is_valid_rom() {
+    local file="$1"
+    local basename=$(basename "$file")
+    
+    if echo "$basename" | grep -q "^\."; then
+        return 1
+    fi
+    
+    if echo "$basename" | grep -q "^_"; then
+        return 1
+    fi
+    
+    if echo "$file" | grep -q "\.gitkeep$"; then
+        return 1
+    fi
+    
+    if echo "$file" | grep -qiE '\.png$'; then
+        folder=$(dirname "$file")
+        if echo "$folder" | grep -qi "pico"; then
+            return 0
+        fi
+    fi
+    
+    if echo "$file" | grep -qiE '\.(txt|log|cfg|ini)$'; then
+        return 1
+    fi
+    
+    if echo "$file" | grep -qiE '\.(jpg|jpeg|png|bmp|gif|tiff|webp)$'; then
+        return 1
+    fi
+    
+    if echo "$file" | grep -qiE '\.(xml|json|md|html|css|js|map)$'; then
+        return 1
+    fi
+    
+    return 0
+}
+
 folder_has_roms() {
+    local folder="$1"
+    
+    if echo "$folder" | grep -q "\.res"; then
+        return 1
+    fi
+    
+    for file in "$folder"/*; do
+        if [ -f "$file" ] && is_valid_rom "$file"; then
+            return 0
+        fi
+    done
+    
+    for subdir in "$folder"/*; do
+        if [ -d "$subdir" ]; then
+            for file in "$subdir"/*; do
+                if [ -f "$file" ] && is_valid_rom "$file"; then
+                    return 0
+                fi
+            done
+        fi
+    done
+    
+    return 1
+}
+
+is_ports_folder() {
    local folder="$1"
-   if [ "$(find "$folder" -type f ! -path "*.res*" | grep -Evi '\.(jpg|jpeg|png|bmp|gif|tiff|webp)$' | head -n 1)" ]; then
+   if [ "$(basename "$folder")" = "PORTS" ] || [ "$folder" = "/mnt/SDCARD/PORTS" ]; then
        return 0
    else
        return 1
@@ -40,6 +104,11 @@ get_rom_folders() {
    for folder in "$ROM_DIR"/*; do
        if [ -d "$folder" ] && folder_has_roms "$folder"; then
            folder_name=$(basename "$folder")
+           
+           if [ "$folder_name" = "PORTS" ]; then
+               continue
+           fi
+           
            if echo "$folder_name" | grep -qE "^[0-9]+"; then
                order="$folder_name"
                base=$(echo "$folder_name" | sed -E 's/^[0-9]+[)\._ -]+//')
@@ -112,6 +181,10 @@ rename_emulator() {
    tag=$(echo "$entry" | cut -d'|' -f3)
    folder=$(echo "$entry" | cut -d'|' -f4)
    
+   if is_ports_folder "$folder"; then
+       return 0
+   fi
+   
    new_base=$(./keyboard)
    
    if [ -n "$new_base" ]; then
@@ -157,6 +230,54 @@ manual_reorder() {
    done
 }
 
+find_bitpal_menu_files() {
+    local menu_files=""
+    
+    for folder in "$ROM_DIR"/*; do
+        if [ -d "$folder" ] && [ "$(basename "$folder" | grep -o "(BITPAL)")" ]; then
+            if [ -f "$folder/bitpal_menu.txt" ]; then
+                menu_files="$menu_files $folder/bitpal_menu.txt"
+            fi
+        fi
+    done
+    
+    for platform_dir in "$TOOLS_DIR"/*; do
+        if [ -d "$platform_dir" ]; then
+            bitpal_folder=$(find "$platform_dir" -type d -name "*BITPAL*" | head -1)
+            if [ -n "$bitpal_folder" ] && [ -f "$bitpal_folder/bitpal_menu.txt" ]; then
+                menu_files="$menu_files $bitpal_folder/bitpal_menu.txt"
+            fi
+        fi
+    done
+    
+    echo "$menu_files"
+}
+
+find_custom_menu_files() {
+    local menu_files=""
+    
+    for folder in "$ROM_DIR"/*; do
+        if [ -d "$folder" ] && [ "$(basename "$folder" | grep -o "(CUSTOM)")" ]; then
+            if [ -f "$folder/menu.txt" ]; then
+                menu_files="$menu_files $folder/menu.txt"
+            fi
+        fi
+    done
+    
+    for platform_dir in "$TOOLS_DIR"/*; do
+        if [ -d "$platform_dir" ]; then
+            custom_folders=$(find "$platform_dir" -type d -name "*CUSTOM*")
+            for custom_folder in $custom_folders; do
+                if [ -f "$custom_folder/menu.txt" ]; then
+                    menu_files="$menu_files $custom_folder/menu.txt"
+                fi
+            done
+        fi
+    done
+    
+    echo "$menu_files"
+}
+
 update_paths_in_configs() {
    local orig_name="$1"
    local final_name="$2"
@@ -169,15 +290,17 @@ update_paths_in_configs() {
        mv "$tmp_file" "$order_file"
    done
    
-   find "$BITPAL_DIR" -path "*/BitPal.pak/bitpal_menu.txt" -type f | while read -r bitpal_file; do
-       tmp_file="${bitpal_file}.tmp"
-       
-       sed "s|${ROM_DIR}/${orig_name}/|${ROM_DIR}/${final_name}/|g" "$bitpal_file" > "$tmp_file"
-       
-       mv "$tmp_file" "$bitpal_file"
+   for bitpal_file in $(find_bitpal_menu_files); do
+       if [ -f "$bitpal_file" ]; then
+           tmp_file="${bitpal_file}.tmp"
+           
+           sed "s|${ROM_DIR}/${orig_name}/|${ROM_DIR}/${final_name}/|g" "$bitpal_file" > "$tmp_file"
+           
+           mv "$tmp_file" "$bitpal_file"
+       fi
    done
    
-   find "$BITPAL_DIR" -path "*/Game Time Tracker.pak/gtt_list.txt" -type f | while read -r gtt_file; do
+   find "$TOOLS_DIR" -path "*/Game Time Tracker.pak/gtt_list.txt" -type f | while read -r gtt_file; do
        tmp_file="${gtt_file}.tmp"
        
        sed "s|${ROM_DIR}/${orig_name}/|${ROM_DIR}/${final_name}/|g" "$gtt_file" > "$tmp_file"
@@ -185,7 +308,7 @@ update_paths_in_configs() {
        mv "$tmp_file" "$gtt_file"
    done
    
-   find "$BITPAL_DIR" -path "*/Game Time Tracker.pak/finished_games.txt" -type f | while read -r finished_file; do
+   find "$TOOLS_DIR" -path "*/Game Time Tracker.pak/finished_games.txt" -type f | while read -r finished_file; do
        tmp_file="${finished_file}.tmp"
        
        awk -v old_path="${ROM_DIR}/${orig_name}/" -v new_path="${ROM_DIR}/${final_name}/" '
@@ -200,12 +323,14 @@ update_paths_in_configs() {
        mv "$tmp_file" "$finished_file"
    done
    
-   find "$ROM_DIR" -path "*CUSTOM*" -name "menu.txt" -type f | while read -r menu_file; do
-       tmp_file="${menu_file}.tmp"
-       
-       sed "s|${ROM_DIR}/${orig_name}/|${ROM_DIR}/${final_name}/|g" "$menu_file" > "$tmp_file"
-       
-       mv "$tmp_file" "$menu_file"
+   for menu_file in $(find_custom_menu_files); do
+       if [ -f "$menu_file" ]; then
+           tmp_file="${menu_file}.tmp"
+           
+           sed "s|${ROM_DIR}/${orig_name}/|${ROM_DIR}/${final_name}/|g" "$menu_file" > "$tmp_file"
+           
+           mv "$tmp_file" "$menu_file"
+       fi
    done
    
    for folder in "$ROM_DIR"/*; do
@@ -220,6 +345,95 @@ update_paths_in_configs() {
    done
 }
 
+update_pak_manager_files() {
+   local orig_name="$1"
+   local final_name="$2"
+   local base="$3"
+   local tag="$4"
+   
+   if echo "$tag" | grep -q "(BITPAL)"; then
+       for platform_dir in "$TOOLS_DIR"/*; do
+           if [ -d "$platform_dir" ]; then
+               bitpal_txt="$platform_dir/Pak Manager.pak/Gaming/0) BitPal (BITPAL).dual.txt"
+               if [ -f "$bitpal_txt" ]; then
+                   new_txt_name="$platform_dir/Pak Manager.pak/Gaming/$final_name.dual.txt"
+                   mv "$bitpal_txt" "$new_txt_name"
+               fi
+           fi
+       done
+       
+       for folder in "$ROM_DIR"/*; do
+           if [ -d "$folder" ] && [ "$(basename "$folder" | grep -o "(BITPAL)")" ]; then
+               bitpal_txt="$folder/Gaming/0) BitPal (BITPAL).dual.txt"
+               if [ -f "$bitpal_txt" ]; then
+                   new_txt_name="$folder/Gaming/$final_name.dual.txt"
+                   mv "$bitpal_txt" "$new_txt_name"
+               fi
+           fi
+       done
+   elif echo "$base" | grep -q "Favorites"; then
+       for platform_dir in "$TOOLS_DIR"/*; do
+           if [ -d "$platform_dir" ]; then
+               favorites_txt="$platform_dir/Pak Manager.pak/Gaming/0) Favorites (CUSTOM).dual.txt"
+               if [ -f "$favorites_txt" ]; then
+                   new_txt_name="$platform_dir/Pak Manager.pak/Gaming/$final_name.dual.txt"
+                   mv "$favorites_txt" "$new_txt_name"
+               fi
+           fi
+       done
+       
+       for folder in "$ROM_DIR"/*; do
+           if [ -d "$folder" ] && [ "$(basename "$folder" | grep -o "Favorites.*CUSTOM")" ]; then
+               favorites_txt="$folder/Gaming/0) Favorites (CUSTOM).dual.txt"
+               if [ -f "$favorites_txt" ]; then
+                   new_txt_name="$folder/Gaming/$final_name.dual.txt"
+                   mv "$favorites_txt" "$new_txt_name"
+               fi
+           fi
+       done
+   elif echo "$tag" | grep -q "(GS)"; then
+       for platform_dir in "$TOOLS_DIR"/*; do
+           if [ -d "$platform_dir" ]; then
+               gs_txt="$platform_dir/Pak Manager.pak/Gaming/0) Game Switcher (GS).dual.txt"
+               if [ -f "$gs_txt" ]; then
+                   new_txt_name="$platform_dir/Pak Manager.pak/Gaming/$final_name.dual.txt"
+                   mv "$gs_txt" "$new_txt_name"
+               fi
+           fi
+       done
+   elif echo "$tag" | grep -q "(RND)"; then
+       for platform_dir in "$TOOLS_DIR"/*; do
+           if [ -d "$platform_dir" ]; then
+               rnd_txt="$platform_dir/Pak Manager.pak/Gaming/0) Random Game (RND).dual.txt"
+               if [ -f "$rnd_txt" ]; then
+                   new_txt_name="$platform_dir/Pak Manager.pak/Gaming/$final_name.dual.txt"
+                   mv "$rnd_txt" "$new_txt_name"
+               fi
+           fi
+       done
+   elif echo "$base" | grep -q "KID"; then
+       for platform_dir in "$TOOLS_DIR"/*; do
+           if [ -d "$platform_dir" ]; then
+               kid_txt="$platform_dir/Pak Manager.pak/Gaming/0) KID (CUSTOM).dual.txt"
+               if [ -f "$kid_txt" ]; then
+                   new_txt_name="$platform_dir/Pak Manager.pak/Gaming/$final_name.dual.txt"
+                   mv "$kid_txt" "$new_txt_name"
+               fi
+           fi
+       done
+       
+       for folder in "$ROM_DIR"/*; do
+           if [ -d "$folder" ] && [ "$(basename "$folder" | grep -o "KID.*CUSTOM")" ]; then
+               kid_txt="$folder/Gaming/0) KID (CUSTOM).dual.txt"
+               if [ -f "$kid_txt" ]; then
+                   new_txt_name="$folder/Gaming/$final_name.dual.txt"
+                   mv "$kid_txt" "$new_txt_name"
+               fi
+           fi
+       done
+   fi
+}
+
 apply_sort_order() {
    > "/tmp/folder_sort_result.txt"
    
@@ -230,7 +444,9 @@ apply_sort_order() {
    counter=0
    
    while IFS='|' read -r order base tag folder; do
-       if [ "$remove_sort_mode" = "true" ]; then
+       if is_ports_folder "$folder"; then
+           final_name="PORTS"
+       elif [ "$remove_sort_mode" = "true" ]; then
            final_name="${base}${tag}"
        else
            prefix=$(printf "%02d" $counter)
@@ -241,21 +457,22 @@ apply_sort_order() {
        temp_path="$ROM_DIR/temp_${final_name}"
        orig_name=$(basename "$folder")
        
-       echo "$orig_name|$final_name|$folder|$temp_path|$final_path" >> "$mapping_file"
+       echo "$orig_name|$final_name|$folder|$temp_path|$final_path|$base|$tag" >> "$mapping_file"
        counter=$((counter + 1))
    done < "$REORDER_LIST"
    
-   while IFS='|' read -r orig_name final_name folder temp_path final_path; do
+   while IFS='|' read -r orig_name final_name folder temp_path final_path base tag; do
        update_paths_in_configs "$orig_name" "$final_name"
+       update_pak_manager_files "$orig_name" "$final_name" "$base" "$tag"
    done < "$mapping_file"
    
-   while IFS='|' read -r orig_name final_name folder temp_path final_path; do
+   while IFS='|' read -r orig_name final_name folder temp_path final_path base tag; do
        if [ -d "$folder" ]; then
            mv "$folder" "$temp_path"
        fi
    done < "$mapping_file"
    
-   while IFS='|' read -r orig_name final_name folder temp_path final_path; do
+   while IFS='|' read -r orig_name final_name folder temp_path final_path base tag; do
        if [ -d "$temp_path" ]; then
            mv "$temp_path" "$final_path"
            
@@ -281,11 +498,18 @@ apply_sort_order() {
                    else
                        tag=""
                    fi
-                   final_name="${base}${tag}"
+                   
+                   if [ "$base" = "PORTS" ]; then
+                       final_name="PORTS"
+                   else
+                       final_name="${base}${tag}"
+                   fi
+                   
                    final_path="$ROM_DIR/$final_name"
                    temp_path="$ROM_DIR/temp_${final_name}"
                    
                    update_paths_in_configs "$folder_name" "$final_name"
+                   update_pak_manager_files "$folder_name" "$final_name" "$base" "$tag"
                    
                    mv "$folder" "$temp_path"
                    mv "$temp_path" "$final_path"

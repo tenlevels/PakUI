@@ -1,16 +1,12 @@
 #!/bin/sh
-
-
 MENU="${MENU:-bitpal_menu.txt}"
 BITPAL_DIR="${BITPAL_DIR:-./bitpal_data}"
 BITPAL_DATA="${BITPAL_DATA:-$BITPAL_DIR/bitpal_data.txt}"
 ACTIVE_MISSIONS_DIR="${ACTIVE_MISSIONS_DIR:-$BITPAL_DIR/active_missions}"
 COMPLETED_FILE="${COMPLETED_FILE:-$BITPAL_DIR/completed.txt}"
-# If GTT is installed, we use it here only to suggest replay missions.
 GTT_LIST="${GTT_LIST:-/mnt/SDCARD/Tools/$PLATFORM/Game Time Tracker.pak/gtt_list.txt}"
 ROM_DIR="/mnt/SDCARD/Roms"
 SCRIPT_DIR=$(dirname "$0")
-
 mkdir -p "$ACTIVE_MISSIONS_DIR"
 
 get_clean_system_name() {
@@ -33,55 +29,33 @@ get_clean_rom_name() {
 disable_game_switcher() {
     local rom_path="$1"
     local rom_platform="$2"
-    
-    # Check if params are valid
     if [ -z "$rom_path" ] || [ -z "$rom_platform" ]; then
         return 1
     fi
-    
-    # Get base name without extension for the config file name
     local rom_name
     rom_name=$(basename "$rom_path")
     local rom_name_clean="${rom_name%.*}"
-    
-    # Create path to game settings directory and config file
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$rom_platform.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-    
-    # Create directory if it doesn't exist
     if [ ! -d "$game_config_dir" ]; then
         mkdir -p "$game_config_dir"
     fi
-    
-    # Check if the config file already exists
     if [ -f "$game_config" ]; then
-        # Check if BitPal has already modified this file
         if grep -q "^gameswitcher=.*#BitPal" "$game_config"; then
-            # Already modified by BitPal, no need to change
             return 0
         fi
-        
-        # Check if it already has a gameswitcher line (user setting)
         if grep -q "^gameswitcher=" "$game_config"; then
-            # Get the original setting
             local original_setting
             original_setting=$(grep "^gameswitcher=" "$game_config" | cut -d'=' -f2)
-            
-            # Only modify if not already OFF
             if [ "$original_setting" != "OFF" ]; then
-                # Update existing line but mark it with BitPal and the original setting
                 sed -i "s|^gameswitcher=.*|gameswitcher=OFF #BitPal original=$original_setting|" "$game_config"
             fi
         else
-            # Add line to existing file (no previous setting, so mark as "NONE")
             echo "gameswitcher=OFF #BitPal original=NONE" >> "$game_config"
         fi
     else
-        # Create new config file with gameswitcher=OFF and mark it (no previous file)
         echo "gameswitcher=OFF #BitPal original=NONE_FILE" > "$game_config"
     fi
-    
-    # Verify the change was made
     if [ -f "$game_config" ] && grep -q "gameswitcher=OFF" "$game_config"; then
         return 0
     else
@@ -204,11 +178,8 @@ find_completely_random_game() {
     return 1
 }
 
-# New function: Restore original GameSwitcher settings after mission completes
 restore_game_switcher() {
     local rom_path="$1"
-    
-    # Get ROM platform
     CURRENT_PATH=$(dirname "$rom_path")
     ROM_FOLDER_NAME=$(basename "$CURRENT_PATH")
     ROM_PLATFORM=""
@@ -217,40 +188,28 @@ restore_game_switcher() {
          ROM_PLATFORM=$(echo "$ROM_FOLDER_NAME" | sed -n 's/.*(\(.*\)).*/\1/p')
          [ -z "$ROM_PLATFORM" ] && { CURRENT_PATH=$(dirname "$CURRENT_PATH"); ROM_FOLDER_NAME=$(basename "$CURRENT_PATH"); }
     done
-    
-    # Get config file path
     local rom_name
     rom_name=$(basename "$rom_path")
     local rom_name_clean="${rom_name%.*}"
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-    
-    # Check if the file exists and was modified by BitPal
     if [ -f "$game_config" ] && grep -q "#BitPal original=" "$game_config"; then
-        # Extract the original setting
         local original_setting
         original_setting=$(grep "#BitPal original=" "$game_config" | sed -E 's/.*#BitPal original=([^ ]*).*/\1/')
-        
         if [ "$original_setting" = "NONE" ]; then
-            # No previous gameswitcher setting existed, remove the line
             grep -v "^gameswitcher=" "$game_config" > "$game_config.tmp"
             mv "$game_config.tmp" "$game_config"
-            
-            # If file is empty now, remove it
             if [ ! -s "$game_config" ]; then
                 rm -f "$game_config"
             fi
         elif [ "$original_setting" = "NONE_FILE" ]; then
-            # File was created by BitPal, remove it entirely
             rm -f "$game_config"
         else
-            # Restore the original setting
             sed -i "s|^gameswitcher=OFF #BitPal original=$original_setting|gameswitcher=$original_setting|" "$game_config"
         fi
     fi
 }
 
-# FINALIZE MISSION
 finalize_mission() {
     mission_file="$1"
     mission=$(cat "$mission_file")
@@ -258,40 +217,31 @@ finalize_mission() {
     start_time=$(echo "$mission" | cut -d'|' -f6)
     xp_reward=$(echo "$mission" | cut -d'|' -f5)
     complete_time=$(date +%s)
-    
-    # Restore GameSwitcher setting
     rom_path=$(echo "$mission" | cut -d'|' -f7)
     if [ -n "$rom_path" ] && [ -f "$rom_path" ]; then
         restore_game_switcher "$rom_path"
     fi
-    
     original_level="$level"
-    
     echo "$desc|$start_time|$complete_time|$xp_reward" >> "$COMPLETED_FILE"
-    
     . "$BITPAL_DATA"
     xp=$((xp + xp_reward))
     missions_completed=$((missions_completed + 1))
-    
     while [ "$xp" -ge "$xp_next" ]; do
         xp=$((xp - xp_next))
         level=$((level + 1))
         xp_next=$(( level * 50 + 50 ))
     done
-    
-if [ "$mood" = "sad" ]; then
-    mood="neutral"
-elif [ "$mood" = "neutral" ]; then
-    mood="happy"
-elif [ "$mood" = "angry" ]; then
-    mood="neutral"
-# Add this line:
-elif [ "$mood" = "surprised" ]; then
-    mood="happy"
-elif [ "$mood" = "happy" ] && [ $((RANDOM % 100)) -lt 40 ]; then
-    mood="excited"
-fi
-
+    if [ "$mood" = "sad" ]; then
+        mood="neutral"
+    elif [ "$mood" = "neutral" ]; then
+        mood="happy"
+    elif [ "$mood" = "angry" ]; then
+        mood="neutral"
+    elif [ "$mood" = "surprised" ]; then
+        mood="happy"
+    elif [ "$mood" = "happy" ] && [ $((RANDOM % 100)) -lt 40 ]; then
+        mood="excited"
+    fi
     cat > "$BITPAL_DATA" <<EOF
 name=$name
 level=$level
@@ -301,24 +251,20 @@ mood=$mood
 last_visit=$(date +%s)
 missions_completed=$missions_completed
 EOF
-
     if [ -f "$FACE_DIR/$mood.png" ]; then
         show.elf "$FACE_DIR/$mood.png" &
         sleep 2
         killall show.elf 2>/dev/null
     fi
-
     rm -f "$mission_file"
     ./show_message "Mission Complete!|$desc complete.|Earned: $xp_reward XP|Current XP: $xp|Level: $level" -l a
+    echo "$(date +%s)" > "$BITPAL_DIR/last_mission.txt"
 }
 
 mission_slot=$(check_mission_slots)
 [ $? -ne 0 ] && exit 0
-
 > /tmp/mission_types.txt
 mission_type_count=0
-
-# Option 1: Replay mission option using GTT data (if available)
 if [ -f "$GTT_LIST" ] && [ "$(grep -c "|launch" "$GTT_LIST")" -gt 2 ]; then
     total_games=$(grep -c "|launch" "$GTT_LIST")
     rand_idx=$((RANDOM % total_games + 1))
@@ -337,8 +283,6 @@ if [ -f "$GTT_LIST" ] && [ "$(grep -c "|launch" "$GTT_LIST")" -gt 2 ]; then
         mission_type_count=$((mission_type_count + 1))
     fi
 fi
-
-# Option 2: Mission based on a random system
 system_folder=$(get_random_system)
 if [ -n "$system_folder" ]; then
     system_name=$(get_clean_system_name "$system_folder")
@@ -346,8 +290,6 @@ if [ -n "$system_folder" ]; then
     echo "Play a game from $system_name for $mins minutes|system|$system_folder|$mins" >> /tmp/mission_types.txt
     mission_type_count=$((mission_type_count + 1))
 fi
-
-# Option 3: Mission based on a specific random game
 system_folder=$(get_random_system)
 if [ -n "$system_folder" ]; then
     rom_path=$(get_random_rom "$system_folder")
@@ -360,28 +302,20 @@ if [ -n "$system_folder" ]; then
         mission_type_count=$((mission_type_count + 1))
     fi
 fi
-
-# Option 4: Surprise mission option
 mins=$((RANDOM % 15 + 10))
 echo "SURPRISE GAME!|random_surprise|surprise|$mins" >> /tmp/mission_types.txt
-
-# Fallback option if no other mission options could be generated
 if [ "$mission_type_count" -eq 0 ]; then
     mins=$((RANDOM % 15 + 5))
     echo "Play any game for $mins minutes|any|any|$mins" >> /tmp/mission_types.txt
 fi
-
 ./show_message "Choose Your Mission!|BitPal has some missions for you.|Select one to begin!|Stack up to 5 at a time." -l a
 mission_choice=$(./picker "/tmp/mission_types.txt")
 mission_status=$?
 [ $mission_status -ne 0 ] && { rm -f /tmp/mission_types.txt; exit 0; }
-
 desc=$(echo "$mission_choice" | cut -d'|' -f1)
 type=$(echo "$mission_choice" | cut -d'|' -f2)
 path=$(echo "$mission_choice" | cut -d'|' -f3)
 mins=$(echo "$mission_choice" | cut -d'|' -f4)
-
-# Calculate XP award based on mission type
 case "$type" in
     gtt) xp_award=$((mins * 5)) ;;
     system) xp_award=$((mins * 6)) ;;
@@ -390,16 +324,6 @@ case "$type" in
     any) xp_award=$((mins * 5)) ;;
     *) xp_award=$((mins * 5)) ;;
 esac
-
-# Create the mission file with eight fields:
-# 1: Mission description
-# 2: Game name (or target)
-# 3: Mission type
-# 4: Mission duration (minutes)
-# 5: XP award
-# 6: Timestamp when mission is created
-# 7: ROM path
-# 8: Accumulated playtime (initialized to 0)
 case "$type" in
     gtt|random)
         rom_path="$path"
@@ -442,15 +366,10 @@ case "$type" in
         rom_path="$selected_rom"
         ;;
 esac
-
 rm -f /tmp/mission_types.txt
-
-# Inform the user about the mission and GameSwitcher
 ./show_message "Mission $mission_slot Accepted!|$desc|Reward: $xp_award XP|Note: GameSwitcher will be disabled|until this mission is completed." -l -a "START NOW" -b "LATER"
-
 confirm_status=$?
 if [ $confirm_status -eq 0 ] && [ -f "$rom_path" ]; then
-    # Determine ROM platform from the ROM's directory structure.
     CURRENT_PATH=$(dirname "$rom_path")
     ROM_FOLDER_NAME=$(basename "$CURRENT_PATH")
     ROM_PLATFORM=""
@@ -459,17 +378,13 @@ if [ $confirm_status -eq 0 ] && [ -f "$rom_path" ]; then
          ROM_PLATFORM=$(echo "$ROM_FOLDER_NAME" | sed -n 's/.*(\(.*\)).*/\1/p')
          [ -z "$ROM_PLATFORM" ] && { CURRENT_PATH=$(dirname "$CURRENT_PATH"); ROM_FOLDER_NAME=$(basename "$CURRENT_PATH"); }
     done
-    
-    # Disable GameSwitcher for this game
     disable_game_switcher "$rom_path" "$ROM_PLATFORM"
-    
-    # --- Use External Time Tracking ---
-    # Export BitPal-specific session file paths so the universal emulator launcher
-    # writes session data into BitPal's folder.
     export SESSION_FILE="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/current_session.txt"
     export LAST_SESSION_FILE="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/last_session_duration.txt"
-    
-    if [ -d "/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak" ]; then
+    if echo "$rom_path" | grep -qi "\.sh$"; then
+         PORTS_LAUNCH="/mnt/SDCARD/Emus/$PLATFORM/PORTS.pak/launch.sh"
+         "$PORTS_LAUNCH" "$rom_path"
+    elif [ -d "/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak" ]; then
          EMULATOR="/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak/launch.sh"
          "$EMULATOR" "$rom_path"
     elif [ -d "/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak" ]; then
@@ -478,23 +393,18 @@ if [ $confirm_status -eq 0 ] && [ -f "$rom_path" ]; then
     else
          ./show_message "Emulator not found for $ROM_PLATFORM" -l a
     fi
-    # Read the externally tracked session duration.
     SESSION_DURATION=$(cat "$LAST_SESSION_FILE")
     rm -f "$LAST_SESSION_FILE"
-    
-    # Update the mission file's accumulated playtime (field 8)
     mission_file="$ACTIVE_MISSIONS_DIR/mission_$mission_slot.txt"
     mission=$(cat "$mission_file")
     current_accum=$(echo "$mission" | cut -d'|' -f8)
     new_total=$((current_accum + SESSION_DURATION))
     mission=$(echo "$mission" | awk -F'|' -v newval="$new_total" 'BEGIN{OFS="|"} {$8=newval; print}')
     echo "$mission" > "$mission_file"
-    # Check if mission is complete
     target_seconds=$(( $(echo "$mission" | cut -d'|' -f4) * 60 ))
     if [ "$new_total" -ge "$target_seconds" ]; then
          finalize_mission "$mission_file"
          exit 0
     fi
 fi
-
 exit 0

@@ -29,13 +29,11 @@ EOF
 
 SESSION_FILE="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/current_session.txt"
 if [ -f "$SESSION_FILE" ]; then
-    # File format: ROM|elapsed_time
     orphan_data=$(cat "$SESSION_FILE")
     orphan_rom=$(echo "$orphan_data" | cut -d'|' -f1)
     orphan_elapsed=$(echo "$orphan_data" | cut -d'|' -f2)
     
     if [ -f "$orphan_rom" ]; then
-        # Check if this ROM is part of an active mission
         mission_found=0
         for mission_file in "$ACTIVE_MISSIONS_DIR"/mission_*.txt; do
             [ -f "$mission_file" ] && {
@@ -57,10 +55,8 @@ if [ -f "$SESSION_FILE" ]; then
                     fi
                     echo "$mission" > "$mission_file"
                     
-                    # Check if mission is now complete
                     target_seconds=$(( $(echo "$mission" | cut -d'|' -f4) * 60 ))
                     if [ "$new_total" -ge "$target_seconds" ]; then
-                        # Will finalize once the main script loads functions
                         touch "$mission_file.complete"
                     fi
                     break
@@ -83,25 +79,18 @@ if [ -f "$SESSION_FILE" ]; then
                 fi
                 echo "$mission" > "$BITPAL_DIR/active_mission.txt"
                 
-                # Check if mission is now complete
                 target_seconds=$(( $(echo "$mission" | cut -d'|' -f4) * 60 ))
                 if [ "$new_total" -ge "$target_seconds" ]; then
-                    # Will finalize once the main script loads functions
                     touch "$BITPAL_DIR/active_mission.txt.complete"
                 fi
             fi
         fi
     fi
-    
-    # Always clean up the session file after handling it
     rm -f "$SESSION_FILE"
 fi
 
-# Function to restore original GameSwitcher settings
 restore_game_switcher() {
     local rom_path="$1"
-    
-    # Get ROM platform
     CURRENT_PATH=$(dirname "$rom_path")
     ROM_FOLDER_NAME=$(basename "$CURRENT_PATH")
     ROM_PLATFORM=""
@@ -110,34 +99,25 @@ restore_game_switcher() {
          ROM_PLATFORM=$(echo "$ROM_FOLDER_NAME" | sed -n 's/.*(\(.*\)).*/\1/p')
          [ -z "$ROM_PLATFORM" ] && { CURRENT_PATH=$(dirname "$CURRENT_PATH"); ROM_FOLDER_NAME=$(basename "$CURRENT_PATH"); }
     done
-    
-    # Get config file path
     local rom_name
     rom_name=$(basename "$rom_path")
     local rom_name_clean="${rom_name%.*}"
     local game_config_dir="/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak/game_settings"
     local game_config="$game_config_dir/$rom_name_clean.conf"
-    
-    # Check if the file exists and was modified by BitPal
     if [ -f "$game_config" ] && grep -q "#BitPal original=" "$game_config"; then
-        # Extract the original setting
         local original_setting
         original_setting=$(grep "#BitPal original=" "$game_config" | sed -E 's/.*#BitPal original=([^ ]*).*/\1/')
         
         if [ "$original_setting" = "NONE" ]; then
-            # No previous gameswitcher setting existed, remove the line
             grep -v "^gameswitcher=" "$game_config" > "$game_config.tmp"
             mv "$game_config.tmp" "$game_config"
             
-            # If file is empty now, remove it
             if [ ! -s "$game_config" ]; then
                 rm -f "$game_config"
             fi
         elif [ "$original_setting" = "NONE_FILE" ]; then
-            # File was created by BitPal, remove it entirely
             rm -f "$game_config"
         else
-            # Restore the original setting
             sed -i "s|^gameswitcher=OFF #BitPal original=$original_setting|gameswitcher=$original_setting|" "$game_config"
         fi
     fi
@@ -151,7 +131,6 @@ finalize_mission() {
     xp_reward=$(echo "$mission" | cut -d'|' -f5)
     complete_time=$(date +%s)
     
-    # Restore GameSwitcher setting for the mission's game
     rom_path=$(echo "$mission" | cut -d'|' -f7)
     if [ -n "$rom_path" ] && [ -f "$rom_path" ]; then
         restore_game_switcher "$rom_path"
@@ -170,21 +149,6 @@ finalize_mission() {
         xp_next=$(( level * 50 + 50 ))
     done
     
-    # Store original mood but determine new mood
-    new_mood="$mood"
-    if [ "$mood" = "sad" ]; then
-        new_mood="neutral"
-    elif [ "$mood" = "neutral" ]; then
-        new_mood="happy"
-    elif [ "$mood" = "angry" ]; then
-        new_mood="neutral"
-    elif [ "$mood" = "surprised" ]; then
-        new_mood="happy"
-    elif [ "$mood" = "happy" ] && [ $((RANDOM % 100)) -lt 40 ]; then
-        new_mood="excited"
-    fi
-
-    # First show mission completion message with CURRENT mood
     if [ -f "$FACE_DIR/$mood.png" ]; then
         show.elf "$FACE_DIR/$mood.png" &
         sleep 2
@@ -193,9 +157,10 @@ finalize_mission() {
 
     rm -f "$mission_file"
     ./show_message "Mission Complete!|$desc complete.|Earned: $xp_reward XP|Current XP: $xp|Level: $level" -l a
-    
-    # Now update mood in data file
-    mood="$new_mood"
+
+    echo "$(date +%s)" > "$BITPAL_DIR/last_mission.txt"
+
+    mood="$mood"
     cat > "$BITPAL_DATA" <<EOF
 name=$name
 level=$level
@@ -206,21 +171,17 @@ last_visit=$(date +%s)
 missions_completed=$missions_completed
 EOF
 
-    # And now show the NEW mood face to show the transition
     if [ -f "$FACE_DIR/$mood.png" ]; then
         show.elf "$FACE_DIR/$mood.png" &
         sleep 2
         killall show.elf 2>/dev/null
     fi
     
-    # Update the background to match new mood
     update_background "$mood"
     
-    # If we leveled up, show a special message about it
     if [ "$level" -gt "$original_level" ]; then
         ./show_message "Level Up!|BitPal has reached Level $level!|Feel my gaming power grow!" -l a
     elif [ "$mood" != "$1" ]; then
-        # If mood changed but level didn't, show a mood change message
         case "$mood" in
             happy)
                 ./show_message "Mood improved!|BitPal is happy now!|Thank you for helping me|complete that mission!" -l a
@@ -234,10 +195,10 @@ EOF
         esac
     fi
     
-    return 1  # Return 1 to indicate a mission was completed
+    return 1
 }
 
-# Get a random gaming fact
+
 get_random_fact() {
     fact_num=$((RANDOM % 84 + 1))
     case $fact_num in
@@ -250,7 +211,7 @@ get_random_fact() {
 7) echo "The Game Boy's most popular game,|Tetris, sold over|35 million copies!" ;;
 8) echo "Pong, released by Atari in 1972,|was the first commercially|successful video game." ;;
 9) echo "The term 'Easter egg' for hidden|game content comes from Adventure|on the Atari 2600." ;;
-10) echo "Battletoads on NES had exactly|tenlevels, but the infamous Turbo Tunnel|at level 3 stopped most players cold!" ;;
+10) echo "You must earn 2,700 XP|to reach tenlevels in BitPal" ;;
 11) echo "Sonic the Hedgehog was created|to give SEGA a mascot|to compete with Mario." ;;
 12) echo "The Legend of Zelda was inspired|by creator Miyamoto's childhood|explorations in the countryside." ;;
 13) echo "The PlayStation was originally|going to be a Nintendo CD add-on|until the deal fell through." ;;
@@ -308,7 +269,7 @@ get_random_fact() {
 65) echo "The 'invincibility star' in Mario|was created because designer|Miyamoto loved listening to music." ;;
 66) echo "The original Zelda cartridge is|gold colored because Miyamoto wanted|it to look like buried treasure." ;;
 67) echo "The Game Boy was so durable that|one survived a bombing in the Gulf War|and still works at Nintendo's NY store!" ;;
-68) echo "The 3DO console required developers|to pay just $3 in royalties,|compared to Nintendo's 10 usd per game." ;;
+68) echo "The 3DO console required developers|to pay just 3 usd in royalties,|compared to Nintendo's 10 usd per game." ;;
 69) echo "The very first Game & Watch device,|Ball, was inspired by a businessman|Yokoi saw playing with a calculator." ;;
 70) echo "The Power Glove's technology|was later used in medical devices|and virtual reality equipment." ;;
 71) echo "Earthbound (Mother 2) cost over|200,000 usd to translate to English,|an enormous sum in 1995." ;;
@@ -328,7 +289,6 @@ get_random_fact() {
     esac
 }
 
-# Show a random gaming fact
 show_random_fact() {
     fact=$(get_random_fact)
     ./show_message "Gaming Fact!|$fact" -l a
@@ -427,28 +387,28 @@ prepare_resume() {
    [ -f "$SLOT_FILE" ] && cat "$SLOT_FILE" > /tmp/resume_slot.txt
 }
 
-# --- Exit handler with VARIED MOODS ---
 handle_exit() {
-    # FIXED: Randomize exit moods between sad, angry and surprised
+    if [ -f "$BITPAL_DIR/last_mission.txt" ]; then
+        LAST_MISSION_TIME=$(cat "$BITPAL_DIR/last_mission.txt")
+        CURRENT_TIME=$(date +%s)
+        if [ $((CURRENT_TIME - LAST_MISSION_TIME)) -lt 300 ]; then
+            cleanup
+            exit 0
+        fi
+    fi
     exit_mood_num=$((RANDOM % 3))
     case $exit_mood_num in
         0) mood="sad" ;;
         1) mood="angry" ;;
         2) mood="surprised" ;;
     esac
-    
-    # Update the mood
     sed -i "s/^mood=.*/mood=$mood/" "$BITPAL_DATA"
-    
-    # Try to show face
     if [ -f "$FACE_DIR/$mood.png" ]; then
         show.elf "$FACE_DIR/$mood.png" &
         sleep 2
         killall show.elf 2>/dev/null
     fi
-    
     leave_face=$(get_face)
-
     guilt_trip=$((RANDOM % 20))
     case $guilt_trip in
         0) ./show_message "$leave_face|Don't quit now!|You haven't saved your progress!|Princess is in another castle!" -l -a "STAY" -b "QUIT" ;;
@@ -468,12 +428,10 @@ handle_exit() {
         14) ./show_message "$leave_face|THIS ISN'T GAME OVER!|The water level is next.|Brave enough to stay?" -l -a "BRAVE" -b "SCARED" ;;
         15) ./show_message "$leave_face|RAGE QUIT DETECTED!|Have you tried the Konami Code?|UUDDLRLRBA?" -l -a "TRY CODE" -b "QUIT" ;;
         16) ./show_message "$leave_face|CREDITS NOT EARNED YET!|True ending requires|100% completion!" -l -a "COMPLETE" -b "EXIT" ;;
-17) ./show_message "$leave_face|CHEAT ACTIVATED: Fun mode!|Your high score is climbing.|Leave the arcade now?" -l -a "STAY" -b "LEAVE" ;;
+        17) ./show_message "$leave_face|CHEAT ACTIVATED: Fun mode!|Your high score is climbing.|Leave the arcade now?" -l -a "STAY" -b "LEAVE" ;;
         18) ./show_message "$leave_face|1UP ACQUIRED!|BitPal needs you to|defeat the final boss!" -l -a "FIGHT" -b "RUN" ;;
         19) ./show_message "$leave_face|EXIT? THINK AGAIN!|All your base are belong to us!|You have no chance to survive!" -l -a "SURVIVE" -b "GIVE UP" ;;
     esac
-
-    # If the user pressed A (STAY), revert mood & show a thankful message
     if [ $? -eq 0 ]; then
         randompick=$((RANDOM % 2))
         if [ $randompick -eq 0 ]; then
@@ -482,18 +440,12 @@ handle_exit() {
             mood="surprised"
         fi
         sed -i "s/^mood=.*/mood=$mood/" "$BITPAL_DATA"
-
-        # Show the new mood face again
         if [ -f "$FACE_DIR/$mood.png" ]; then
             show.elf "$FACE_DIR/$mood.png" &
             sleep 2
             killall show.elf 2>/dev/null
         fi
-
-        # Update background to match new mood
         update_background "$mood"
-
-# Show a random "thank you for staying" style message
         thanks_num=$((RANDOM % 6))
         case $thanks_num in
             0) ./show_message "Phew! ...|I thought I'd be alone!|Thanks for sticking with me!" -l a ;;
@@ -510,26 +462,19 @@ handle_exit() {
     fi
 }
 
-# --- Export BitPal-specific session file paths before launching a game ---
-# These environment variables tell the universal emulator launcher to use BitPal's paths.
 export SESSION_FILE="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/current_session.txt"
 export LAST_SESSION_FILE="/mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/last_session_duration.txt"
 
-# --- Main Loop ---
 load_bitpal_data
 
-# Track if we completed any missions at startup
 missions_completed_at_startup=0
 
-# Process any mission completions from orphan recovery
 for mission_file in "$ACTIVE_MISSIONS_DIR"/mission_*.txt; do
     if [ -f "${mission_file}.complete" ]; then
         original_level="$level"
         original_mood="$mood"
         finalize_mission "$mission_file"
         rm -f "${mission_file}.complete"
-        
-        # The finalize_mission function now handles the mood transitions on its own
         missions_completed_at_startup=1
     fi
 done
@@ -539,21 +484,15 @@ if [ -f "$BITPAL_DIR/active_mission.txt.complete" ]; then
     original_mood="$mood"
     finalize_mission "$BITPAL_DIR/active_mission.txt"
     rm -f "$BITPAL_DIR/active_mission.txt.complete"
-    
-    # The finalize_mission function now handles the mood transitions on its own
     missions_completed_at_startup=1
 fi
 
-# Clean up any orphaned .complete files
 for complete_file in "$ACTIVE_MISSIONS_DIR"/*.complete; do
     if [ -f "$complete_file" ]; then
-        # Check if this is a mission_*.txt.complete file
         base_file=$(echo "$complete_file" | sed 's/\.complete$//')
         if [ -f "$base_file" ]; then
-            # Associated mission file exists, process it
             finalize_mission "$base_file"
         fi
-        # Always remove the .complete marker
         rm -f "$complete_file"
     fi
 done
@@ -577,8 +516,6 @@ fi
 
 sed -i "s/^last_visit=.*/last_visit=$(date +%s)/" "$BITPAL_DATA"
 
-# Only show face at startup if we didn't just complete a mission
-# (since finalize_mission already shows the appropriate faces)
 if [ "$missions_completed_at_startup" -eq 0 ]; then
     if [ -f "$FACE_DIR/$mood.png" ]; then
         show.elf "$FACE_DIR/$mood.png" &
@@ -605,12 +542,9 @@ echo "Mission History|mission_history" >> bitpal_options.txt
 echo "View Progress|view_mission" > mission_options.txt
 echo "Cancel Mission|cancel_mission" >> mission_options.txt
 
-# Only show greeting and fact if we didn't just complete a mission
 if [ "$missions_completed_at_startup" -eq 0 ]; then
     greeting=$(get_random_greeting)
     ./show_message "$greeting" -l a
-    
-    # Show a random gaming fact right after the greeting
     show_random_fact
 fi
 
@@ -680,27 +614,32 @@ while true; do
         ROM=$(echo "$picker_output" | cut -d'|' -f2)
         if [ -f "$ROM" ]; then
             prepare_resume "$ROM"
-            # --- Centralized Mission Time Tracking ---
-            # Launch the game using the universal emulator launcher. Because we exported SESSION_FILE and LAST_SESSION_FILE earlier,
-            # the emulator launch script will write BitPal session data into /mnt/SDCARD/Tools/$PLATFORM/BitPal.pak/.
-            CURRENT_PATH=$(dirname "$ROM")
-            ROM_FOLDER_NAME=$(basename "$CURRENT_PATH")
-            ROM_PLATFORM=""
-            while [ -z "$ROM_PLATFORM" ]; do
-                [ "$ROM_FOLDER_NAME" = "Roms" ] && { ROM_PLATFORM="UNK"; break; }
-                ROM_PLATFORM=$(echo "$ROM_FOLDER_NAME" | sed -n 's/.*(\(.*\)).*/\1/p')
-                [ -z "$ROM_PLATFORM" ] && { CURRENT_PATH=$(dirname "$CURRENT_PATH"); ROM_FOLDER_NAME=$(basename "$CURRENT_PATH"); }
-            done
-            if [ -d "/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak" ]; then
-                EMULATOR="/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak/launch.sh"
-                "$EMULATOR" "$ROM"
-            elif [ -d "/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak" ]; then
-                EMULATOR="/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak/launch.sh"
-                "$EMULATOR" "$ROM"
+            if echo "$ROM" | grep -qi "\.sh$"; then
+                PORTS_LAUNCH="/mnt/SDCARD/Emus/$PLATFORM/PORTS.pak/launch.sh"
+                if [ -x "$PORTS_LAUNCH" ]; then
+                    "$PORTS_LAUNCH" "$ROM" "$@"
+                else
+                    /bin/sh "$ROM" "$@"
+                fi
             else
-                ./show_message "Emulator not found for $ROM_PLATFORM" -l a
+                CURRENT_PATH=$(dirname "$ROM")
+                ROM_FOLDER_NAME=$(basename "$CURRENT_PATH")
+                ROM_PLATFORM=""
+                while [ -z "$ROM_PLATFORM" ]; do
+                    [ "$ROM_FOLDER_NAME" = "Roms" ] && { ROM_PLATFORM="UNK"; break; }
+                    ROM_PLATFORM=$(echo "$ROM_FOLDER_NAME" | sed -n 's/.*(\(.*\)).*/\1/p')
+                    [ -z "$ROM_PLATFORM" ] && { CURRENT_PATH=$(dirname "$CURRENT_PATH"); ROM_FOLDER_NAME=$(basename "$CURRENT_PATH"); }
+                done
+                if [ -d "/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak" ]; then
+                    EMULATOR="/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak/launch.sh"
+                    "$EMULATOR" "$ROM"
+                elif [ -d "/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak" ]; then
+                    EMULATOR="/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak/launch.sh"
+                    "$EMULATOR" "$ROM"
+                else
+                    ./show_message "Emulator not found for $ROM_PLATFORM" -l a
+                fi
             fi
-            # Read the session duration from BitPal's LAST_SESSION_FILE.
             SESSION_DURATION=$(cat "$LAST_SESSION_FILE")
             rm -f "$LAST_SESSION_FILE"
             mission_found=0
@@ -748,26 +687,34 @@ while true; do
             ROM=$(echo "$picker_output" | cut -d'|' -f2)
             if [ -f "$ROM" ]; then
                 prepare_resume "$ROM"
-                CURRENT_PATH=$(dirname "$ROM")
-                ROM_FOLDER_NAME=$(basename "$CURRENT_PATH")
-                ROM_PLATFORM=""
-                while [ -z "$ROM_PLATFORM" ]; do
-                    [ "$ROM_FOLDER_NAME" = "Roms" ] && { ROM_PLATFORM="UNK"; break; }
-                    ROM_PLATFORM=$(echo "$ROM_FOLDER_NAME" | sed -n 's/.*(\(.*\)).*/\1/p')
-                    [ -z "$ROM_PLATFORM" ] && { CURRENT_PATH=$(dirname "$CURRENT_PATH"); ROM_FOLDER_NAME=$(basename "$CURRENT_PATH"); }
-                done
-                if [ -d "/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak" ]; then
-                    EMULATOR="/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak/launch.sh"
-                    "$EMULATOR" "$ROM"
-                elif [ -d "/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak" ]; then
-                    EMULATOR="/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak/launch.sh"
-                    "$EMULATOR" "$ROM"
+                if echo "$ROM" | grep -qi "\.sh$"; then
+                    PORTS_LAUNCH="/mnt/SDCARD/Emus/$PLATFORM/PORTS.pak/launch.sh"
+                    if [ -x "$PORTS_LAUNCH" ]; then
+                        "$PORTS_LAUNCH" "$ROM" "$@"
+                    else
+                        /bin/sh "$ROM" "$@"
+                    fi
                 else
-                    ./show_message "Game file not found|$ROM" -l a
+                    CURRENT_PATH=$(dirname "$ROM")
+                    ROM_FOLDER_NAME=$(basename "$CURRENT_PATH")
+                    ROM_PLATFORM=""
+                    while [ -z "$ROM_PLATFORM" ]; do
+                        [ "$ROM_FOLDER_NAME" = "Roms" ] && { ROM_PLATFORM="UNK"; break; }
+                        ROM_PLATFORM=$(echo "$ROM_FOLDER_NAME" | sed -n 's/.*(\(.*\)).*/\1/p')
+                        [ -z "$ROM_PLATFORM" ] && { CURRENT_PATH=$(dirname "$CURRENT_PATH"); ROM_FOLDER_NAME=$(basename "$CURRENT_PATH"); }
+                    done
+                    if [ -d "/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak" ]; then
+                        EMULATOR="/mnt/SDCARD/Emus/$PLATFORM/$ROM_PLATFORM.pak/launch.sh"
+                        "$EMULATOR" "$ROM"
+                    elif [ -d "/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak" ]; then
+                        EMULATOR="/mnt/SDCARD/.system/$PLATFORM/paks/Emus/$ROM_PLATFORM.pak/launch.sh"
+                        "$EMULATOR" "$ROM"
+                    else
+                        ./show_message "Game file not found|$ROM" -l a
+                    fi
                 fi
                 SESSION_DURATION=$(cat "$LAST_SESSION_FILE")
                 rm -f "$LAST_SESSION_FILE"
-                
                 mission_found=0
                 for mission_file in "$ACTIVE_MISSIONS_DIR"/mission_*.txt; do
                     [ -f "$mission_file" ] && {

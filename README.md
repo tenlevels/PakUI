@@ -60,7 +60,7 @@ A collection of paks/tools for MinUI ONLY - PakUI is a full set and most paks ta
 - Release both buttons once you see the green status bar
 - Wait for the installation to complete (approximately 5-10 minutes)
 - **Important**: Do not interrupt the installation process
-- Be patient during installation - interrupting can damage your device
+- Be patient during installation - interrupting can cause install to fail and brick device
   
 This special button sequence is required to install the firmware onto your device and prepare the environment for TrimUI_EX and PakUI. Without this process and the firmware file, first-time installation cannot succeed.
 

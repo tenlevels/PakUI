@@ -41,6 +41,8 @@ A collection of paks/tools for MinUI ONLY - PakUI is a full set and most paks ta
   - Ensure all files including hidden folders from the PakUI release are copied
   - Your SD card should contain ONLY the PakUI release files and the firmware file
   - Do not add any other files or folders before completing the installation
+ 
+  ![PakUI_install_files](https://github.com/user-attachments/assets/fe2247d1-36c7-4990-a37b-a05c8e09aef1)
 
 ### Step 2: Add Firmware File (REQUIRED FOR FIRST-TIME INSTALLATION)
 - ⚠️ **THIS STEP IS MANDATORY FOR FIRST-TIME USERS**

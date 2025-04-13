@@ -76,8 +76,37 @@ If you've successfully installed PakUI before:
 
 - You do **NOT** need to add the firmware file to your SD card
 - You do **NOT** need to use the special Volume Down + Power button sequence
-- Simply follow the standard update instructions in the release notes
 - Your device already has the necessary firmware installed from your previous installation
+
+### ⚠️ UPDATE INSTALLATION INSTRUCTIONS ⚠️
+**IMPORTANT: FOLLOW THESE STEPS FOR UPDATING**
+
+1. **REMOVE EXISTING FOLDERS** 
+   - Delete the "Emus" and "Tools" folders from your SD card as these typically contain updated components
+   - Always check the specific release notes for any additional folders that may need to be removed
+
+2. **KEEP YOUR PERSONAL DATA** 
+   - You can keep your Roms (including BitPal), Bios, Saves, Data and userdata folders
+   - These contain your personal content and settings that should be preserved
+
+3. **INSTALL THE UPDATE** 
+   - Extract the PakUI package and replace all other files on your SD card
+   - Make sure to follow any specific instructions in the current release notes
+
+4. **VERIFY INSTALLATION** 
+   - Restart your device and verify all features are working correctly
+
+### Special Note About BitPal
+
+BitPal lives in the Roms folder on your SD card. When updating:
+
+- Check the release notes to see if BitPal has been updated
+- You generally have two options for handling BitPal:
+  1. **Keep your existing BitPal**: This preserves all your mission data and progress
+  2. **Use new BitPal files**: If a new BitPal version is included in an update, you can copy the contents of the new BitPal and replace existing files in your current BitPal
+  3. **Transfer your progress**: To keep your mission data while using a new BitPal version, transfer your `bitpal_data` folder from your older version to the new BitPal folder
+
+**Note:** OTA (Over-The-Air) updates are a feature in development. Until then, manual installation is required for all updates.
 
 For specific update procedures, please refer to the detailed update instructions included in the release notes.
 
@@ -114,7 +143,6 @@ If your device doesn't turn on or installation repeatedly fails, use the recover
    - **Note**: The device will NOT boot after recovery is complete
 
 5. After recovery, perform a fresh installation again with the firmware file on the root of your SD card
-
 
 ## Contact & Support
 Need help? Want to share feedback? You can find the PakUI team on Discord only.

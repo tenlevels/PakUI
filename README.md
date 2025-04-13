@@ -70,6 +70,33 @@ The installation process will:
 - Install TrimUI_EX files
 - Install MinUI and PakUI
 
+## ⚠️ IMPORTANT: The "Limbo Bug" & Deep Sleep Solution ⚠️
+
+**New users should be aware of an important device issue:**
+
+The TrimUI devices have a notorious "limbo bug" that affects power management. When you power off the device normally, it may enter a "limbo state" where:
+- The device appears to be off but continues consuming battery
+- Battery may drain completely while in storage
+- Device may become unresponsive until recharged
+
+**Solution: Sleep Mode Fork**
+We highly recommend installing the Sleep Mode Fork after completing your initial PakUI setup:
+
+1. Launch the OTA Updater from your Tools menu
+2. Select "Install SleepModeFork"
+3. Follow the on-screen prompts
+
+**Benefits of Sleep Mode:**
+- Puts your device into a true sleep mode, preserving battery life
+- Screen turns off immediately when sleep is activated
+- LED lights stay on for 2 minutes, then turn off when deep sleep begins
+- Simply press the power button to wake your device
+- Compatible with the MinUI menu and minarch games
+
+**Note:** Sleep mode is currently not compatible with Paks or RetroArch. You can always revert to stock MinUI through the OTA Updater if needed.
+
+**Special Thanks:** to Froist for hosting and maintaining the Sleep Mode Fork files that make this feature possible!
+
 ## Updating Existing Installation
 
 If you've successfully installed PakUI before:

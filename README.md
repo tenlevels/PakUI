@@ -12,26 +12,106 @@ A collection of paks/tools for MinUI ONLY - PakUI is a full set and most paks ta
 
 ## Installation
 
-To get started with PakUI, follow these easy steps:
+# PakUI Installation Guide
 
-1. **Prepare Your SD Card:**  
-   Format a fresh SD card to fat32. Must use fresh format card and fat32 only.
+## Who Should Read Which Section
 
-2. **Extract & Install:**  
-   Unzip the entire release package—**do not unzip individual folders inside**. Make sure that all folders and hidden files are preserved. The release includes both MinUI and TrimUI_EX (NOTE: this changes your device and upgrades some internal files needed. A fresh format card is required and ALL files in the release for this reason) along with everything you need for a complete installation. Copy all the files and folders directly onto your formatted SD card. Paks are not compatible with other MinUI variations/forks and the full package needs to stay together for everything to work.
+### First-Time Users
+- You have never installed PakUI before
+- You need to follow the **First-Time Installation** section
+- You **MUST** place the firmware file on the root of your SD card
+- You **MUST** use the special button combination (Volume Down + Power)
 
-- **Your SD card should look like this**
+### Existing Users
+- You have successfully installed PakUI before
+- Skip to the **Updating Existing Installation** section
+- You do **NOT** need the firmware file
+- You do **NOT** need the special button combination
+
+## First-Time Installation
+
+### Prerequisites
+- SD card freshly formatted to FAT32
+- PakUI release package downloaded from GitHub
+
+### Step 1: Prepare Your SD Card
+- Format your SD card to FAT32 (fresh format is required)
+- Extract the **entire** PakUI release package to your SD card
+- **IMPORTANT**: 
+  - Ensure all files including hidden folders from the PakUI release are copied
+  - Your SD card should contain ONLY the PakUI release files and the firmware file
+  - Do not add any other files or folders before completing the installation
+
+### Step 2: Add Firmware File (REQUIRED FOR FIRST-TIME INSTALLATION)
+- ⚠️ **THIS STEP IS MANDATORY FOR FIRST-TIME USERS**
+- Locate the Firmware folder in the release package
+- For **TrimUI Brick**: Copy `trimui_tg3040.awimg` from the Brick folder to the **root** of your SD card
+- For **TrimUI Smart Pro**: Copy `trimui_tg5040.awimg` from the Smart Pro folder to the **root** of your SD card
+- If this file is not on the root of your SD card, first-time installation WILL FAIL
+
+### Step 3: Install to Your Device (FIRST-TIME INSTALLATION PROCEDURE)
+- ⚠️ **THIS SPECIAL BUTTON SEQUENCE IS ONLY FOR FIRST-TIME INSTALLATION**
+- Insert the SD card into your TrimUI device
+- Press and hold the **Volume Down** button
+- While holding Volume Down, press and hold the **Power** button
+- Continue holding **both** buttons until you see the green status bar
+- Release both buttons once you see the green status bar
+- Wait for the installation to complete (approximately 5-10 minutes)
+- **Important**: Do not interrupt the installation process
+- Be patient during installation - interrupting can damage your device
   
-   ![PakUI_install_files](https://github.com/user-attachments/assets/307a4bef-f774-49c3-b3e9-171e175d4359)
+This special button sequence is required to install the firmware onto your device and prepare the environment for TrimUI_EX and PakUI. Without this process and the firmware file, first-time installation cannot succeed.
 
+### What Happens During Installation
+The installation process will:
+- Flash your device firmware
+- Install TrimUI_EX files
+- Install MinUI and PakUI
 
-4. **Add Your Own Files:**  
-   Once the file transfer to your SD card is complete, simply add your games and BIOS files to the appropriate folders.
+## Updating Existing Installation
 
-5. **Boot Up:**  
-   Insert the SD card into your TrimUI Brick or TrimUI Smart Pro, then power on your device and let the magic happen!
+If you've successfully installed PakUI before:
 
-It's that simple—enjoy and happy gaming!
+- You do **NOT** need to add the firmware file to your SD card
+- You do **NOT** need to use the special Volume Down + Power button sequence
+- Simply follow the standard update instructions in the release notes
+- Your device already has the necessary firmware installed from your previous installation
+
+For specific update procedures, please refer to the detailed update instructions included in the release notes.
+
+## Troubleshooting
+
+### Common Issues for First-Time Installation
+
+**Screen Flashing Between Installing and Stock Firmware**
+- Format your SD card to FAT32 again (completely fresh format)
+- Ensure the firmware file is correctly placed on the root of your SD card
+- Make sure your SD card contains ONLY the PakUI release files and the firmware file
+- Check that all hidden folders were properly copied
+- Restart the installation process
+
+**Installation Taking Longer Than 20 Minutes**
+- This may indicate an issue with the installation
+- Try the process again with a freshly formatted SD card
+
+**Failed Installation or Device Not Turning On**
+
+If your device doesn't turn on or installation repeatedly fails, use the recovery process:
+
+1. Download the recovery image from GitHub:
+   - For TrimUI Brick: https://github.com/trimui/firmware_brick
+   - For TrimUI Smart Pro: https://github.com/trimui/firmware_smartpro
+
+2. Flash the recovery image to an SD card using Rufus or similar software
+   - Make sure to use the correct recovery image for your device model
+   - The recovery image may not be in the most recent release, so check all releases and assets
+
+3. Insert the SD card into your device and hold the power button until you see the status bar
+
+4. Release the button and let the recovery process complete
+   - **Note**: The device will NOT boot after recovery is complete
+
+5. After recovery, perform a fresh installation again with the firmware file on the root of your SD card
 
 
 ## Contact & Support

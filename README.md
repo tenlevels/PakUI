@@ -586,54 +586,51 @@ New RetroArch hotkeys are available for improved usability:
 
 ---
 
-## Credits & Acknowledgements
 
+
+
+## Credits & Acknowledgements
 PakUI stands on the shoulders of many talented individuals whose contributions, expertise, and support have made this project possible. We are deeply grateful to:
 
 ### Core Contributors
 - **JackMayHoffman**  
   Developed the picker, game picker, keyboard, and game switcher binary files, along with essential tools like LEDs, WiFi, Display, and Syncthing. His mentorship and support were instrumental in launching PakUI.
-
 - **Shaun Inman**  
   Creator of MinUI, the foundation for PakUI paks. His unparalleled knowledge and community contributions set the gold standard for custom firmware.
-
+- **Froist**  
+  For hosting and maintaining the Sleep Mode Fork files that make this feature possible.
 - **kloptops**  
   Developer of TrimUI_EX, which PakUI comes bundled with. His crucial system upgrades form the backbone that enables many of PakUI's features to work seamlessly. Many thanks!
-
 - **Nevrdid**  
   Provided the FBN core, enhanced Media Player functionality, added screenshot capabilities, and contributed to RetroArch integration.
-
 - **Karim**  
   Developed the NDS pak, adding valuable functionality to the project.
-
-- **Froist**
-  For hosting and maintaining the Sleep Mode Fork files that make this feature possible.
+- **Savant** (https://github.com/josegonzalez)  
+  Developed the N64 and Dreamcast paks, significantly expanding PakUI's emulation capabilities. His expertise and generosity in allowing inclusion of these paks has been invaluable to the project.
+- **Eronauta**  
+  Added PSP support to PakUI, enabling PlayStation Portable game emulation across TrimUI devices.
+- **Dandon**  
+  Customized and compiled the Files.pak for PakUI, providing essential functionality to the file management system.
 
 ### Testing & Feedback
 - **Ry, Lonko, and Sun**  
   Offered thorough testing and invaluable feedback that greatly refined the user experience. Thanks Sun for uploading the files!
 
 ### Visual Elements
-
 - **Ant**  
   Designed the themes, including icons and background images.
-
 - **Clintonium**  
   Created the Lens theme, adding a unique visual touch.
-  
 - **Jeltron and Oclain**  
   Crafted the overlays used in RetroArch.
 
 ### Community Support
 - **Spruce Team**  
   Provided unwavering support and assistance and being great friends!
-
-- **GrimWTF**
+- **GrimWTF**  
   Provided RetroArch hotkey configuration files.
-  
-- **PortMaster Team**
+- **PortMaster Team**  
   Created the amazing PortMaster that brings hundreds of games to PakUI.
-
 - **Russ (RetroGameCorps)**  
   Inspired our passion for retro gaming and ensured we never forgot the importance of snacks and drinks during long sessions.
 

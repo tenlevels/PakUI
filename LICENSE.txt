@@ -20,7 +20,7 @@ Permission is hereby granted, free of charge, to use, copy, modify, merge, publi
 4. Attribution
    When using or distributing the Software (modified or unmodified), you must include the following attribution in a prominent place:
    - The Software's name.
-   - The copyright notice (Copyright (c) 2025 PakUI, a project by SpruceUI).
+   - The copyright notice (Copyright (c) 2025 PakUI, a project by tenlevels).
    - A statement that the Software is used under the terms of this license.
 
 5. No Warranty

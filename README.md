@@ -2,7 +2,6 @@
 
 <img width="400" height="400" alt="bloom_flower" src="https://github.com/user-attachments/assets/b0735b99-3c4d-4fee-9f7b-536a3806e134" />
 
-
 PakUI has been discontinued — but everything you loved about it lives on, and it's better.
 
 PakUI was never planned. It started as a couple of paks I made for fun, and I just kept adding to it. No roadmap, no clear vision — just tinkering and seeing what was possible. That's what made it fun, but it's also why it grew into a bit of a patchwork. Being a wrapper on top of MinUI meant workarounds, limitations, and things that never quite flowed the way I wanted.

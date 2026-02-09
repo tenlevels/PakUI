@@ -1,6 +1,6 @@
 # PakUI has grown into Bloom
 
-<img width="400" height="400" alt="bloom_flower" src="https://github.com/user-attachments/assets/b0735b99-3c4d-4fee-9f7b-536a3806e134" />
+<img width="200" height="200" alt="bloom_git" src="https://github.com/user-attachments/assets/d4782320-c8dd-42f0-aaec-78443265d759" />
 
 PakUI has been discontinued — but everything you loved about it lives on, and it's better.
 

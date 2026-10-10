@@ -1,4 +1,4 @@
-<img width="280" height="52" alt="bloom-logo" src="https://github.com/user-attachments/assets/42fc5f7f-38be-404e-a6f5-158e7534d323" />
+<img width="280" height="52" alt="bloom-logo" src="https://github.com/user-attachments/assets/43c8ec03-41d3-46ed-af4b-35fb18892090" />
 
 **Bloom — Brick / Hammer Preview (10/10)**
 
